@@ -1,0 +1,52 @@
+[2021-06-24 16:27:39,208] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: parallel_dag.task_2 2020-01-16T00:00:00+00:00 [queued]>
+[2021-06-24 16:27:39,216] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: parallel_dag.task_2 2020-01-16T00:00:00+00:00 [queued]>
+[2021-06-24 16:27:39,216] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 16:27:39,216] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-24 16:27:39,216] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 16:27:39,226] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): task_2> on 2020-01-16T00:00:00+00:00
+[2021-06-24 16:27:39,229] {standard_task_runner.py:52} INFO - Started process 2553 to run task
+[2021-06-24 16:27:39,234] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_dag', 'task_2', '2020-01-16T00:00:00+00:00', '--job-id', '103', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/parallel_dag.py', '--cfg-path', '/tmp/tmpl55zzxuu', '--error-file', '/tmp/tmpsre5yf4i']
+[2021-06-24 16:27:39,235] {standard_task_runner.py:77} INFO - Job 103: Subtask task_2
+[2021-06-24 16:27:39,298] {logging_mixin.py:104} INFO - Running <TaskInstance: parallel_dag.task_2 2020-01-16T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-24 16:27:39,374] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=parallel_dag
+AIRFLOW_CTX_TASK_ID=task_2
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-16T00:00:00+00:00
+[2021-06-24 16:27:39,375] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-06-24 16:27:39,375] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'sleep 3']
+[2021-06-24 16:27:39,381] {subprocess.py:75} INFO - Output:
+[2021-06-24 16:27:42,388] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-06-24 16:27:42,416] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=parallel_dag, task_id=task_2, execution_date=20200116T000000, start_date=20210624T162739, end_date=20210624T162742
+[2021-06-24 16:27:42,442] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-06-24 16:27:42,469] {local_task_job.py:151} INFO - Task exited with return code 0
+[2021-06-24 17:05:00,224] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: parallel_dag.task_2 2020-01-16T00:00:00+00:00 [queued]>
+[2021-06-24 17:05:00,585] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: parallel_dag.task_2 2020-01-16T00:00:00+00:00 [queued]>
+[2021-06-24 17:05:00,586] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 17:05:00,586] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-24 17:05:00,587] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 17:05:00,735] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): task_2> on 2020-01-16T00:00:00+00:00
+[2021-06-24 17:05:00,785] {standard_task_runner.py:52} INFO - Started process 10434 to run task
+[2021-06-24 17:05:00,827] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_dag', 'task_2', '2020-01-16T00:00:00+00:00', '--job-id', '58', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/parallel_dag.py', '--cfg-path', '/tmp/tmphbod4u80', '--error-file', '/tmp/tmpu1592pur']
+[2021-06-24 17:05:00,849] {standard_task_runner.py:77} INFO - Job 58: Subtask task_2
+[2021-06-24 17:05:02,022] {logging_mixin.py:104} INFO - Running <TaskInstance: parallel_dag.task_2 2020-01-16T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-24 17:05:03,458] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=parallel_dag
+AIRFLOW_CTX_TASK_ID=task_2
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-16T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-16T00:00:00+00:00
+[2021-06-24 17:05:03,459] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-06-24 17:05:03,459] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'sleep 3']
+[2021-06-24 17:05:03,538] {subprocess.py:75} INFO - Output:
+[2021-06-24 17:05:06,548] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-06-24 17:05:06,823] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=parallel_dag, task_id=task_2, execution_date=20200116T000000, start_date=20210624T170500, end_date=20210624T170506
+[2021-06-24 17:05:07,101] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-24 17:05:07,156] {local_task_job.py:151} INFO - Task exited with return code 0

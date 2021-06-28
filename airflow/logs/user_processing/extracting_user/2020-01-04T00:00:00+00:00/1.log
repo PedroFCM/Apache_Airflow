@@ -1,0 +1,25 @@
+[2021-06-24 14:15:50,246] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2020-01-04T00:00:00+00:00 [queued]>
+[2021-06-24 14:15:50,290] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2020-01-04T00:00:00+00:00 [queued]>
+[2021-06-24 14:15:50,292] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 14:15:50,292] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-24 14:15:50,292] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 14:15:50,325] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user> on 2020-01-04T00:00:00+00:00
+[2021-06-24 14:15:50,331] {standard_task_runner.py:52} INFO - Started process 6838 to run task
+[2021-06-24 14:15:50,347] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing', 'extracting_user', '2020-01-04T00:00:00+00:00', '--job-id', '38', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmp32171ag5', '--error-file', '/tmp/tmplaxi3jqb']
+[2021-06-24 14:15:50,353] {standard_task_runner.py:77} INFO - Job 38: Subtask extracting_user
+[2021-06-24 14:15:50,525] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing.extracting_user 2020-01-04T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-24 14:15:50,724] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extracting_user
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-04T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-04T00:00:00+00:00
+[2021-06-24 14:15:50,726] {http.py:111} INFO - Calling HTTP method
+[2021-06-24 14:15:50,734] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-06-24 14:15:50,738] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-06-24 14:15:50,990] {http.py:115} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Frederick","last":"Meyer"},"location":{"street":{"number":1093,"name":"Hunters Creek Dr"},"city":"Mildura","state":"Tasmania","country":"Australia","postcode":8018,"coordinates":{"latitude":"-88.1171","longitude":"-21.0119"},"timezone":{"offset":"+5:30","description":"Bombay, Calcutta, Madras, New Delhi"}},"email":"frederick.meyer@example.com","login":{"uuid":"59b169a5-183c-4d12-b753-357b4f624749","username":"goldenduck311","password":"hotrod","salt":"gGlVZejn","md5":"5b1d78d1796d51b23621e2034a328a36","sha1":"c6ed8829781065685e253d6152b464fe61ccd118","sha256":"0e30b61bb8df6540e1b3cc7e2aa2d3b6d25df64fe412278c5757782ee735d5ab"},"dob":{"date":"1963-09-02T00:27:40.306Z","age":58},"registered":{"date":"2010-05-02T07:23:37.513Z","age":11},"phone":"02-9412-4360","cell":"0484-824-322","id":{"name":"TFN","value":"105479499"},"picture":{"large":"https://randomuser.me/api/portraits/men/74.jpg","medium":"https://randomuser.me/api/portraits/med/men/74.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/74.jpg"},"nat":"AU"}],"info":{"seed":"166adfe9c01ae41c","results":1,"page":1,"version":"1.3"}}
+[2021-06-24 14:15:51,017] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extracting_user, execution_date=20200104T000000, start_date=20210624T141550, end_date=20210624T141551
+[2021-06-24 14:15:51,096] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-24 14:15:51,111] {local_task_job.py:151} INFO - Task exited with return code 0

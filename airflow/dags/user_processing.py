@@ -34,11 +34,11 @@ def _processing_user(task_instance):
 with DAG('user_processing', 
          schedule_interval = '@daily', 
          default_args = default_args, 
-         catchup = False) as dag:
+         catchup = True) as dag:
     # Define tasks/operators
     creating_table = SqliteOperator(task_id = 'creating_table',
                                     sqlite_conn_id = 'db_sqlite',
-                                    sql = ''' CREATE TABLE users (
+                                    sql = ''' CREATE TABLE IF NOT EXISTS users (
                                         first_name TEXT NOT NULL,
                                         last_name TEXT NOT NULL,
                                         country TEXT NOT NULL,

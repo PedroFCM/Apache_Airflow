@@ -1,0 +1,29 @@
+[2021-06-24 17:06:47,698] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: parallel_dag.task_1 2020-02-07T00:00:00+00:00 [queued]>
+[2021-06-24 17:06:47,921] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: parallel_dag.task_1 2020-02-07T00:00:00+00:00 [queued]>
+[2021-06-24 17:06:47,921] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 17:06:47,922] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-24 17:06:47,922] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 17:06:47,991] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): task_1> on 2020-02-07T00:00:00+00:00
+[2021-06-24 17:06:48,010] {standard_task_runner.py:52} INFO - Started process 13219 to run task
+[2021-06-24 17:06:48,062] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'parallel_dag', 'task_1', '2020-02-07T00:00:00+00:00', '--job-id', '135', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/parallel_dag.py', '--cfg-path', '/tmp/tmp9f98uqer', '--error-file', '/tmp/tmpmjwrktv_']
+[2021-06-24 17:06:48,063] {standard_task_runner.py:77} INFO - Job 135: Subtask task_1
+[2021-06-24 17:06:48,453] {logging_mixin.py:104} INFO - Running <TaskInstance: parallel_dag.task_1 2020-02-07T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-24 17:06:49,174] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=parallel_dag
+AIRFLOW_CTX_TASK_ID=task_1
+AIRFLOW_CTX_EXECUTION_DATE=2020-02-07T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-02-07T00:00:00+00:00
+[2021-06-24 17:06:49,204] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-06-24 17:06:49,223] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'sleep 3']
+[2021-06-24 17:06:49,313] {subprocess.py:75} INFO - Output:
+[2021-06-24 17:06:52,336] {subprocess.py:83} INFO - Command exited with return code 0
+[2021-06-24 17:06:52,836] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=parallel_dag, task_id=task_1, execution_date=20200207T000000, start_date=20210624T170647, end_date=20210624T170652
+[2021-06-24 17:06:54,097] {local_task_job.py:196} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2021-06-24 17:06:54,463] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 13219
+[2021-06-24 17:06:55,692] {taskinstance.py:1264} ERROR - Received SIGTERM. Terminating subprocesses.
+[2021-06-24 17:06:55,693] {subprocess.py:89} INFO - Sending SIGTERM signal to process group
+[2021-06-24 17:06:55,708] {process_utils.py:66} INFO - Process psutil.Process(pid=13219, status='terminated', exitcode=1, started='17:06:47') (13219) terminated with exit code 1

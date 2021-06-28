@@ -1,0 +1,25 @@
+[2021-06-24 14:15:07,310] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2020-01-02T00:00:00+00:00 [queued]>
+[2021-06-24 14:15:07,330] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing.extracting_user 2020-01-02T00:00:00+00:00 [queued]>
+[2021-06-24 14:15:07,331] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 14:15:07,332] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-24 14:15:07,332] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-24 14:15:07,358] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user> on 2020-01-02T00:00:00+00:00
+[2021-06-24 14:15:07,363] {standard_task_runner.py:52} INFO - Started process 6739 to run task
+[2021-06-24 14:15:07,376] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing', 'extracting_user', '2020-01-02T00:00:00+00:00', '--job-id', '29', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmplhw2escp', '--error-file', '/tmp/tmp0suyewda']
+[2021-06-24 14:15:07,377] {standard_task_runner.py:77} INFO - Job 29: Subtask extracting_user
+[2021-06-24 14:15:07,488] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing.extracting_user 2020-01-02T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-24 14:15:07,691] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extracting_user
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-01-02T00:00:00+00:00
+[2021-06-24 14:15:07,693] {http.py:111} INFO - Calling HTTP method
+[2021-06-24 14:15:07,706] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-06-24 14:15:07,708] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-06-24 14:15:07,937] {http.py:115} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Rosália","last":"da Cruz"},"location":{"street":{"number":6579,"name":"Rua da Paz "},"city":"Cariacica","state":"Paraná","country":"Brazil","postcode":25503,"coordinates":{"latitude":"-70.3984","longitude":"16.3417"},"timezone":{"offset":"-9:00","description":"Alaska"}},"email":"rosalia.dacruz@example.com","login":{"uuid":"d3b1a338-292d-48de-8a5c-1b1d97220905","username":"smallbird760","password":"edward","salt":"JkZIZ6sP","md5":"6162ee24d7d8f8af9df897a8b186bf0f","sha1":"0b9749444fc1ad594af1e068f59750104690ba29","sha256":"6e66921c37ccd1fb4751eb439bbd15233bd0972ce40a65f08470b16e879258c5"},"dob":{"date":"1950-10-09T04:33:33.822Z","age":71},"registered":{"date":"2016-08-16T21:02:19.680Z","age":5},"phone":"(41) 1050-3592","cell":"(18) 2960-2068","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/60.jpg","medium":"https://randomuser.me/api/portraits/med/women/60.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/60.jpg"},"nat":"BR"}],"info":{"seed":"a431a00229507667","results":1,"page":1,"version":"1.3"}}
+[2021-06-24 14:15:07,979] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extracting_user, execution_date=20200102T000000, start_date=20210624T141507, end_date=20210624T141507
+[2021-06-24 14:15:08,024] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-24 14:15:08,055] {local_task_job.py:151} INFO - Task exited with return code 0
