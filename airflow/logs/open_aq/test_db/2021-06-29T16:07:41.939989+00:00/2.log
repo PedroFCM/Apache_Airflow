@@ -1,0 +1,44 @@
+[2021-06-29 16:10:05,976] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.test_db 2021-06-29T16:07:41.939989+00:00 [queued]>
+[2021-06-29 16:10:06,003] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.test_db 2021-06-29T16:07:41.939989+00:00 [queued]>
+[2021-06-29 16:10:06,003] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 16:10:06,003] {taskinstance.py:1068} INFO - Starting attempt 2 of 2
+[2021-06-29 16:10:06,004] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 16:10:06,020] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): test_db> on 2021-06-29T16:07:41.939989+00:00
+[2021-06-29 16:10:06,029] {standard_task_runner.py:52} INFO - Started process 33448 to run task
+[2021-06-29 16:10:06,037] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'test_db', '2021-06-29T16:07:41.939989+00:00', '--job-id', '656', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp3t3p6x33', '--error-file', '/tmp/tmpluvif15c']
+[2021-06-29 16:10:06,038] {standard_task_runner.py:77} INFO - Job 656: Subtask test_db
+[2021-06-29 16:10:06,148] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.test_db 2021-06-29T16:07:41.939989+00:00 [running]> on host airflowvm
+[2021-06-29 16:10:06,295] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=test_db
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T16:07:41.939989+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T16:07:41.939989+00:00
+[2021-06-29 16:10:06,297] {postgres.py:68} INFO - Executing: INSERT INTO open_aq VALUES ('test', 'test', 'test', ARRAY[]);
+[2021-06-29 16:10:06,321] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-29 16:10:06,333] {dbapi.py:204} INFO - Running statement: INSERT INTO open_aq VALUES ('test', 'test', 'test', ARRAY[]);, parameters: None
+[2021-06-29 16:10:06,336] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/providers/postgres/operators/postgres.py", line 70, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 184, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 208, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/psycopg2/extras.py", line 236, in execute
+    return super().execute(query, vars)
+psycopg2.errors.IndeterminateDatatype: cannot determine type of empty array
+LINE 1: ...NSERT INTO open_aq VALUES ('test', 'test', 'test', ARRAY[]);
+                                                              ^
+HINT:  Explicitly cast to the desired type, for example ARRAY[]::integer[].
+
+[2021-06-29 16:10:06,343] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=open_aq, task_id=test_db, execution_date=20210629T160741, start_date=20210629T161005, end_date=20210629T161006
+[2021-06-29 16:10:06,415] {local_task_job.py:151} INFO - Task exited with return code 1

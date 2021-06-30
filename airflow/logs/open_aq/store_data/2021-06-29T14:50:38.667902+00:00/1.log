@@ -1,0 +1,37 @@
+[2021-06-29 14:50:58,473] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.store_data 2021-06-29T14:50:38.667902+00:00 [queued]>
+[2021-06-29 14:50:58,563] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.store_data 2021-06-29T14:50:38.667902+00:00 [queued]>
+[2021-06-29 14:50:58,566] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:50:58,570] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-29 14:50:58,572] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:50:58,621] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): store_data> on 2021-06-29T14:50:38.667902+00:00
+[2021-06-29 14:50:58,632] {standard_task_runner.py:52} INFO - Started process 25455 to run task
+[2021-06-29 14:50:58,708] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'store_data', '2021-06-29T14:50:38.667902+00:00', '--job-id', '626', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmpno5pc_iq', '--error-file', '/tmp/tmpqeglrpwa']
+[2021-06-29 14:50:58,711] {standard_task_runner.py:77} INFO - Job 626: Subtask store_data
+[2021-06-29 14:50:58,912] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.store_data 2021-06-29T14:50:38.667902+00:00 [running]> on host airflowvm
+[2021-06-29 14:50:59,141] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=store_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T14:50:38.667902+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T14:50:38.667902+00:00
+[2021-06-29 14:50:59,177] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-29 14:50:59,190] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/open_aq.py", line 49, in _storing
+    cur.copy_expert(sql = copy_sql, file = f)
+psycopg2.errors.UndefinedTable: relation "table_name" does not exist
+
+[2021-06-29 14:50:59,192] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=open_aq, task_id=store_data, execution_date=20210629T145038, start_date=20210629T145058, end_date=20210629T145059
+[2021-06-29 14:50:59,279] {local_task_job.py:151} INFO - Task exited with return code 1

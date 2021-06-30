@@ -1,0 +1,25 @@
+[2021-06-29 14:46:50,198] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.check_data 2021-06-29T14:40:44.038326+00:00 [queued]>
+[2021-06-29 14:46:50,227] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.check_data 2021-06-29T14:40:44.038326+00:00 [queued]>
+[2021-06-29 14:46:50,227] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:46:50,227] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-29 14:46:50,228] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:46:50,239] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): check_data> on 2021-06-29T14:40:44.038326+00:00
+[2021-06-29 14:46:50,243] {standard_task_runner.py:52} INFO - Started process 24910 to run task
+[2021-06-29 14:46:50,249] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'check_data', '2021-06-29T14:40:44.038326+00:00', '--job-id', '620', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp9kmaplgc', '--error-file', '/tmp/tmpho3kyt4b']
+[2021-06-29 14:46:50,251] {standard_task_runner.py:77} INFO - Job 620: Subtask check_data
+[2021-06-29 14:46:50,351] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.check_data 2021-06-29T14:40:44.038326+00:00 [running]> on host airflowvm
+[2021-06-29 14:46:50,511] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=check_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T14:40:44.038326+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T14:40:44.038326+00:00
+[2021-06-29 14:46:50,513] {postgres.py:68} INFO - Executing: SELECT * FROM open_aq;
+[2021-06-29 14:46:50,535] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-29 14:46:50,555] {dbapi.py:204} INFO - Running statement: SELECT * FROM open_aq;, parameters: None
+[2021-06-29 14:46:50,558] {dbapi.py:212} INFO - Rows affected: 0
+[2021-06-29 14:46:50,580] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=check_data, execution_date=20210629T144044, start_date=20210629T144650, end_date=20210629T144650
+[2021-06-29 14:46:50,636] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-06-29 14:46:50,675] {local_task_job.py:151} INFO - Task exited with return code 0

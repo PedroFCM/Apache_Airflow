@@ -1,0 +1,32 @@
+[2021-06-30 08:08:47,914] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.create_table 2021-06-29T00:00:00+00:00 [queued]>
+[2021-06-30 08:08:48,024] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.create_table 2021-06-29T00:00:00+00:00 [queued]>
+[2021-06-30 08:08:48,025] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 08:08:48,025] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-30 08:08:48,029] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 08:08:48,090] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): create_table> on 2021-06-29T00:00:00+00:00
+[2021-06-30 08:08:48,103] {standard_task_runner.py:52} INFO - Started process 2422 to run task
+[2021-06-30 08:08:48,127] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'create_table', '2021-06-29T00:00:00+00:00', '--job-id', '742', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp97n8vrsu', '--error-file', '/tmp/tmpoqn6dr7m']
+[2021-06-30 08:08:48,130] {standard_task_runner.py:77} INFO - Job 742: Subtask create_table
+[2021-06-30 08:08:48,438] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.create_table 2021-06-29T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-30 08:08:48,936] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-29T00:00:00+00:00
+[2021-06-30 08:08:48,938] {postgres.py:68} INFO - Executing: CREATE TABLE open_aq (
+                                        city VARCHAR not null primary key,
+                                        country VARCHAR not null,
+                                        count INT not null,
+                                        parameters TEXT []);
+[2021-06-30 08:08:49,017] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-30 08:08:49,038] {dbapi.py:204} INFO - Running statement: CREATE TABLE open_aq (
+                                        city VARCHAR not null primary key,
+                                        country VARCHAR not null,
+                                        count INT not null,
+                                        parameters TEXT []);, parameters: None
+[2021-06-30 08:08:49,261] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=create_table, execution_date=20210629T000000, start_date=20210630T080847, end_date=20210630T080849
+[2021-06-30 08:08:49,535] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 08:08:49,573] {local_task_job.py:151} INFO - Task exited with return code 0

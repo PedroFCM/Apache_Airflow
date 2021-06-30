@@ -1,0 +1,258 @@
+[2021-06-28 10:34:47,163] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_es_info 2021-06-27T00:00:00+00:00 [queued]>
+[2021-06-28 10:34:47,193] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: elasticsearch_dag.print_es_info 2021-06-27T00:00:00+00:00 [queued]>
+[2021-06-28 10:34:47,195] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-28 10:34:47,195] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-28 10:34:47,196] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-28 10:34:47,212] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): print_es_info> on 2021-06-27T00:00:00+00:00
+[2021-06-28 10:34:47,216] {standard_task_runner.py:52} INFO - Started process 2371 to run task
+[2021-06-28 10:34:47,224] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'elasticsearch_dag', 'print_es_info', '2021-06-27T00:00:00+00:00', '--job-id', '505', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/elasticsearch_dag.py', '--cfg-path', '/tmp/tmphpdvwviw', '--error-file', '/tmp/tmpzb_m5iut']
+[2021-06-28 10:34:47,226] {standard_task_runner.py:77} INFO - Job 505: Subtask print_es_info
+[2021-06-28 10:34:47,340] {logging_mixin.py:104} INFO - Running <TaskInstance: elasticsearch_dag.print_es_info 2021-06-27T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-28 10:34:47,503] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=elasticsearch_dag
+AIRFLOW_CTX_TASK_ID=print_es_info
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-27T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-27T00:00:00+00:00
+[2021-06-28 10:34:47,543] {base.py:69} INFO - Using connection to: id: elasticsearch_default. Host: localhost, Port: 9200, Schema: http, Login: None, Password: None, extra: {}
+[2021-06-28 10:34:47,545] {base.py:144} WARNING - GET http://localhost:9200/ [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    response = self.pool.urlopen(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/retry.py", line 507, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fd3ebf28580>: Failed to establish a new connection: [Errno 111] Connection refused
+[2021-06-28 10:34:47,577] {base.py:144} WARNING - GET http://localhost:9200/ [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    response = self.pool.urlopen(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/retry.py", line 507, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fd3ebf286a0>: Failed to establish a new connection: [Errno 111] Connection refused
+[2021-06-28 10:34:47,578] {base.py:144} WARNING - GET http://localhost:9200/ [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    response = self.pool.urlopen(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/retry.py", line 507, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fd3ebf28880>: Failed to establish a new connection: [Errno 111] Connection refused
+[2021-06-28 10:34:47,579] {base.py:144} WARNING - GET http://localhost:9200/ [status:N/A request:0.001s]
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    response = self.pool.urlopen(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/retry.py", line 507, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fd3ebf28a90>: Failed to establish a new connection: [Errno 111] Connection refused
+[2021-06-28 10:34:47,587] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/http_urllib3.py", line 241, in perform_request
+    response = self.pool.urlopen(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/util/retry.py", line 507, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fd3ebf28a90>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/elasticsearch_dag.py", line 11, in _print_es_info
+    print(hook.info())
+  File "/home/airflow/airflow/plugins/elasticsearch_plugin/hooks/elastic_hook.py", line 26, in info
+    return self.es.info()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/client/utils.py", line 84, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/client/__init__.py", line 291, in info
+    return self.transport.perform_request("GET", "/", params=params)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/transport.py", line 351, in perform_request
+    status, headers_response, data = connection.perform_request(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/elasticsearch/connection/http_urllib3.py", line 254, in perform_request
+    raise ConnectionError("N/A", str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7fd3ebf28a90>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7fd3ebf28a90>: Failed to establish a new connection: [Errno 111] Connection refused)
+[2021-06-28 10:34:47,604] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=elasticsearch_dag, task_id=print_es_info, execution_date=20210627T000000, start_date=20210628T103447, end_date=20210628T103447
+[2021-06-28 10:34:47,683] {local_task_job.py:151} INFO - Task exited with return code 1

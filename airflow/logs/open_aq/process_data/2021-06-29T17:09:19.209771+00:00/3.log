@@ -1,0 +1,25 @@
+[2021-06-30 08:44:16,912] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 08:44:17,001] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 08:44:17,001] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 08:44:17,002] {taskinstance.py:1068} INFO - Starting attempt 3 of 3
+[2021-06-30 08:44:17,002] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 08:44:17,025] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): process_data> on 2021-06-29T17:09:19.209771+00:00
+[2021-06-30 08:44:17,036] {standard_task_runner.py:52} INFO - Started process 6253 to run task
+[2021-06-30 08:44:17,079] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'process_data', '2021-06-29T17:09:19.209771+00:00', '--job-id', '758', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmpxzf7xoke', '--error-file', '/tmp/tmp8j7_yx36']
+[2021-06-30 08:44:17,090] {standard_task_runner.py:77} INFO - Job 758: Subtask process_data
+[2021-06-30 08:44:17,330] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [running]> on host airflowvm
+[2021-06-30 08:44:17,578] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=process_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T17:09:19.209771+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T17:09:19.209771+00:00
+[2021-06-30 08:44:17,670] {logging_mixin.py:104} INFO - {'country': 'US', 'city': '007', 'count': 1372, 'locations': 5, 'firstUpdated': '2018-08-09T09:00:00+00:00', 'lastUpdated': '2018-11-09T23:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 08:44:17,720] {logging_mixin.py:104} INFO - Json normalized:   city country  count     parameters
+0  007      US   1372  ARRAY['pm25']
+[2021-06-30 08:44:17,742] {python.py:151} INFO - Done. Returned value was: None
+[2021-06-30 08:44:17,792] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=process_data, execution_date=20210629T170919, start_date=20210630T084416, end_date=20210630T084417
+[2021-06-30 08:44:17,937] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 08:44:17,983] {local_task_job.py:151} INFO - Task exited with return code 0

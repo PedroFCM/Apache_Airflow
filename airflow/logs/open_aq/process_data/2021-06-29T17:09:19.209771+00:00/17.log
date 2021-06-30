@@ -1,0 +1,426 @@
+[2021-06-30 09:22:51,987] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 09:22:52,014] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 09:22:52,015] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 09:22:52,015] {taskinstance.py:1068} INFO - Starting attempt 17 of 17
+[2021-06-30 09:22:52,015] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 09:22:52,032] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): process_data> on 2021-06-29T17:09:19.209771+00:00
+[2021-06-30 09:22:52,042] {standard_task_runner.py:52} INFO - Started process 10379 to run task
+[2021-06-30 09:22:52,052] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'process_data', '2021-06-29T17:09:19.209771+00:00', '--job-id', '786', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp2sr2asbz', '--error-file', '/tmp/tmpcliu31_3']
+[2021-06-30 09:22:52,054] {standard_task_runner.py:77} INFO - Job 786: Subtask process_data
+[2021-06-30 09:22:52,139] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [running]> on host airflowvm
+[2021-06-30 09:22:52,249] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=process_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T17:09:19.209771+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T17:09:19.209771+00:00
+[2021-06-30 09:22:52,270] {logging_mixin.py:104} INFO - [{'country': 'US', 'city': '007', 'count': 1372, 'locations': 5, 'firstUpdated': '2018-08-09T09:00:00+00:00', 'lastUpdated': '2018-11-09T23:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': '019', 'count': 704, 'locations': 1, 'firstUpdated': '2020-09-18T16:00:00+00:00', 'lastUpdated': '2020-10-23T17:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': '037', 'count': 2683, 'locations': 23, 'firstUpdated': '2017-08-28T20:00:00+00:00', 'lastUpdated': '2020-10-28T20:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': '039', 'count': 380, 'locations': 1, 'firstUpdated': '2017-08-28T20:00:00+00:00', 'lastUpdated': '2018-08-07T21:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': '047', 'count': 101, 'locations': 1, 'firstUpdated': '2018-09-06T18:00:00+00:00', 'lastUpdated': '2018-09-13T18:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': '051', 'count': 330, 'locations': 7, 'firstUpdated': '2017-08-28T20:00:00+00:00', 'lastUpdated': '2019-07-26T15:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': '077', 'count': 670334, 'locations': 1, 'firstUpdated': '2020-09-18T22:00:00+00:00', 'lastUpdated': '2021-01-04T15:00:00+00:00', 'parameters': ['pm25']}, {'country': 'CH', 'city': 'Aargau', 'count': 4054, 'locations': 1, 'firstUpdated': '2017-09-22T07:00:00+00:00', 'lastUpdated': '2018-01-08T13:00:00+00:00', 'parameters': ['no2', 'o3']}, {'country': 'MX', 'city': 'Abasolo', 'count': 32422943, 'locations': 2, 'firstUpdated': '2017-10-11T16:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': 'ABBEVILLE', 'count': 4619, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2017-01-10T18:00:00+00:00', 'parameters': ['o3']}, {'country': 'US', 'city': 'Aberdeen', 'count': 43018851, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['pm25']}, {'country': 'GB', 'city': 'Aberdeen', 'count': 161282393, 'locations': 3, 'firstUpdated': '2016-02-27T20:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'CI', 'city': 'Abidjan', 'count': 33997283, 'locations': 1, 'firstUpdated': '2020-03-15T21:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}, {'country': 'AE', 'city': 'Abu Dhabi', 'count': 67144963, 'locations': 1, 'firstUpdated': '2017-12-26T23:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'GH', 'city': 'Accra', 'count': 33890048, 'locations': 12, 'firstUpdated': '2006-11-13T06:30:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm10', 'pm25']}, {'country': 'ES', 'city': 'A Coruña', 'count': 484086496, 'locations': 5, 'firstUpdated': '2016-11-17T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'ADA', 'count': 29956005, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'pm25']}, {'country': 'US', 'city': 'ADAIR', 'count': 32778896, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'ADAMS', 'count': 28230007, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['pm25', 'so2']}, {'country': 'TR', 'city': 'Adana', 'count': 205462, 'locations': 6, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'so2']}, {'country': 'ET', 'city': 'Addis Ababa', 'count': 33951591, 'locations': 1, 'firstUpdated': '2016-11-08T18:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}, {'country': 'AU', 'city': 'Adelaide', 'count': 663866393, 'locations': 8, 'firstUpdated': '2019-12-23T15:30:00+00:00', 'lastUpdated': '2021-02-01T12:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'Adrian', 'count': 30420094, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'MK', 'city': 'Aerodrom Municipality', 'count': 133028371, 'locations': 1, 'firstUpdated': '2016-12-10T20:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}, {'country': 'IN', 'city': 'Agartala', 'count': 24547260, 'locations': 1, 'firstUpdated': '2020-11-08T13:45:00+00:00', 'lastUpdated': '2021-01-25T23:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'IN', 'city': 'Agra', 'count': 21512785, 'locations': 1, 'firstUpdated': '2016-03-22T00:20:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm25', 'so2']}, {'country': 'TR', 'city': 'Ağrı', 'count': 133254, 'locations': 2, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}, {'country': 'MX', 'city': 'Aguascalientes', 'count': 2542, 'locations': 1, 'firstUpdated': '2020-10-16T01:00:00+00:00', 'lastUpdated': '2020-11-23T01:00:00+00:00', 'parameters': ['no2', 'o3', 'so2']}, {'country': 'IN', 'city': 'Ahmedabad', 'count': 44994565, 'locations': 3, 'firstUpdated': '2016-06-28T05:12:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'FR', 'city': 'Ain', 'count': 199201563, 'locations': 2, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'FR', 'city': 'AIR BREIZH', 'count': 65722, 'locations': 5, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2019-12-19T14:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'FR', 'city': 'AIR NORMAND', 'count': 364, 'locations': 2, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2016-12-05T17:00:00+00:00', 'parameters': ['co', 'no2', 'pm10', 'pm25']}, {'country': 'FR', 'city': 'AIR PACA', 'count': 14347, 'locations': 6, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2017-07-18T20:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}, {'country': 'FR', 'city': 'AIRPARIF', 'count': 67888, 'locations': 3, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2019-09-23T08:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25']}, {'country': 'FR', 'city': 'AIR PAYS DE LA LOIRE', 'count': 924, 'locations': 1, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2017-03-28T16:00:00+00:00', 'parameters': ['no2']}, {'country': 'FR', 'city': 'AIR RHONE ALPES', 'count': 71, 'locations': 4, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2016-12-05T01:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10']}, {'country': 'FR', 'city': 'Aisne', 'count': 113498996, 'locations': 3, 'firstUpdated': '2017-02-18T08:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'IN', 'city': 'Aizawl', 'count': 26446446, 'locations': 1, 'firstUpdated': '2020-03-19T04:30:00+00:00', 'lastUpdated': '2021-01-25T23:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'IN', 'city': 'Ajmer', 'count': 47066892, 'locations': 4, 'firstUpdated': '2017-10-16T06:00:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'Akron', 'count': 89012191, 'locations': 4, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'o3', 'pm25', 'so2']}, {'country': 'IS', 'city': 'Akureyri', 'count': 94880152, 'locations': 1, 'firstUpdated': '2020-02-28T14:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'pm10', 'so2']}, {'country': 'US', 'city': 'ALAMEDA', 'count': 138178595, 'locations': 1, 'firstUpdated': '2016-07-25T22:00:00+00:00', 'lastUpdated': '2021-02-01T08:00:00+00:00', 'parameters': ['bc', 'co', 'no2', 'o3', 'pm25']}, {'country': 'RO', 'city': 'Alba', 'count': 167071062, 'locations': 3, 'firstUpdated': '2020-04-20T18:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'o3']}, {'country': 'ES', 'city': 'Albacete', 'count': 146171307, 'locations': 1, 'firstUpdated': '2016-11-17T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'Albany', 'count': 24827728, 'locations': 1, 'firstUpdated': '2019-04-05T17:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': 'Albany-Lebanon', 'count': 60300633, 'locations': 2, 'firstUpdated': '2016-03-10T08:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': 'Albany-Schenectady-Troy', 'count': 58998285, 'locations': 3, 'firstUpdated': '2016-03-10T07:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'CA', 'city': 'ALBERTA', 'count': 1378984033, 'locations': 29, 'firstUpdated': '2016-03-06T20:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm25', 'so2']}, {'country': 'US', 'city': 'Albuquerque', 'count': 579094846, 'locations': 7, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'IT', 'city': 'Alessandria', 'count': 97808034, 'locations': 3, 'firstUpdated': '2020-05-06T16:00:00+00:00', 'lastUpdated': '2021-02-01T02:00:00+00:00', 'parameters': ['no2', 'o3']}, {'country': 'NO', 'city': 'Ålesund', 'count': 93342466, 'locations': 3, 'firstUpdated': '2016-12-02T11:00:00+00:00', 'lastUpdated': '2021-02-01T13:00:00+00:00', 'parameters': ['no2', 'pm10']}, {'country': 'US', 'city': 'ALEXANDER', 'count': 41224, 'locations': 1, 'firstUpdated': '2016-03-28T21:00:00+00:00', 'lastUpdated': '2020-11-03T15:00:00+00:00', 'parameters': ['o3', 'pm10']}, {'country': 'IT', 'city': 'ALFONSINE', 'count': 36472, 'locations': 1, 'firstUpdated': '2017-11-01T23:00:00+00:00', 'lastUpdated': '2020-05-05T23:00:00+00:00', 'parameters': ['no2', 'o3', 'pm25']}, {'country': 'DZ', 'city': 'Algiers', 'count': 33544143, 'locations': 1, 'firstUpdated': '2019-06-15T22:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}, {'country': 'ES', 'city': 'Alicante/Alacant', 'count': 696818926, 'locations': 10, 'firstUpdated': '2016-11-18T07:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'Allegan', 'count': 29715900, 'locations': 1, 'firstUpdated': '2016-04-04T14:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'US', 'city': 'ALLEGANY', 'count': 32122, 'locations': 2, 'firstUpdated': '2017-08-10T21:00:00+00:00', 'lastUpdated': '2020-05-08T16:00:00+00:00', 'parameters': ['so2']}, {'country': 'US', 'city': 'Allentown-Bethlehem-Easton', 'count': 116272910, 'locations': 3, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'FR', 'city': 'Allier', 'count': 116266271, 'locations': 3, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'ES', 'city': 'Almería', 'count': 824959926, 'locations': 14, 'firstUpdated': '2017-01-29T18:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}, {'country': 'FR', 'city': 'Alpes-de-Haute-Provence', 'count': 192317276, 'locations': 2, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'FR', 'city': 'Alpes-Maritimes', 'count': 510758130, 'locations': 10, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'CL', 'city': 'Alto Hospicio', 'count': 31088545, 'locations': 3, 'firstUpdated': '2016-02-22T18:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}, {'country': 'AU', 'city': 'Altona North', 'count': 84563902, 'locations': 1, 'firstUpdated': '2020-10-21T01:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'pm25', 'so2']}, {'country': 'AU', 'city': 'Altona North 1', 'count': 81, 'locations': 1, 'firstUpdated': '2020-07-02T04:00:00+00:00', 'lastUpdated': '2020-07-06T04:00:00+00:00', 'parameters': ['pm25']}, {'country': 'AU', 'city': 'Altona North 2', 'count': 78, 'locations': 1, 'firstUpdated': '2020-07-02T04:00:00+00:00', 'lastUpdated': '2020-07-06T04:00:00+00:00', 'parameters': ['pm25']}, {'country': 'US', 'city': 'Altoona', 'count': 58678630, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'MX', 'city': 'Álvaro Obregón', 'count': 143734742, 'locations': 1, 'firstUpdated': '2020-10-16T01:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'IN', 'city': 'Alwar', 'count': 44715041, 'locations': 2, 'firstUpdated': '2017-11-03T09:45:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'LT', 'city': 'Alytus', 'count': 646229, 'locations': 1, 'firstUpdated': '2017-09-26T23:00:00+00:00', 'lastUpdated': '2021-01-31T23:00:00+00:00', 'parameters': ['o3']}, {'country': 'US', 'city': 'AMADOR', 'count': 25500192, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T08:00:00+00:00', 'parameters': ['o3']}, {'country': 'IN', 'city': 'Amaravati', 'count': 48537963, 'locations': 2, 'firstUpdated': '2017-11-27T04:30:00+00:00', 'lastUpdated': '2021-01-26T21:45:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'Amarillo', 'count': 25262749, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T03:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'TR', 'city': 'Amasya', 'count': 134064, 'locations': 4, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}, {'country': 'IN', 'city': 'Ambala ', 'count': 28715053, 'locations': 1, 'firstUpdated': '2019-02-12T01:45:00+00:00', 'lastUpdated': '2021-01-26T08:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'BR', 'city': 'Americana', 'count': 58778994, 'locations': 2, 'firstUpdated': '2016-03-06T00:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm10']}, {'country': 'US', 'city': 'Americus', 'count': 22297, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2020-11-04T16:00:00+00:00', 'parameters': ['o3']}, {'country': 'US', 'city': 'Ames', 'count': 4773, 'locations': 1, 'firstUpdated': '2016-04-01T12:00:00+00:00', 'lastUpdated': '2016-11-03T16:00:00+00:00', 'parameters': ['o3']}, {'country': 'JO', 'city': 'Amman', 'count': 33335940, 'locations': 1, 'firstUpdated': '2019-10-21T02:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}, {'country': 'IN', 'city': 'Amritsar', 'count': 77336644, 'locations': 2, 'firstUpdated': '2017-02-26T18:30:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'NL', 'city': 'Amsterdam', 'count': 1040867923, 'locations': 14, 'firstUpdated': '2015-09-14T04:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'AT', 'city': 'Amt der K�rntner Landesregierung', 'count': 5228, 'locations': 4, 'firstUpdated': '2016-11-18T05:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'pm10']}, {'country': 'AT', 'city': 'Amt der Nieder�sterreichischen Landesregierung', 'count': 5936, 'locations': 1, 'firstUpdated': '2017-02-18T07:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'pm10']}, {'country': 'AT', 'city': 'Amt der Ober�sterreichischen Landesregierung', 'count': 10765, 'locations': 1, 'firstUpdated': '2016-11-18T05:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'so2']}, {'country': 'AT', 'city': 'Amt der Salzburger Landesregierung', 'count': 8904, 'locations': 1, 'firstUpdated': '2017-02-18T07:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10']}, {'country': 'AT', 'city': 'Amt der Steierm�rkischen Landesregierung', 'count': 26707, 'locations': 3, 'firstUpdated': '2017-02-18T07:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'so2']}, {'country': 'US', 'city': 'Anchorage', 'count': 150005877, 'locations': 3, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'pm10', 'pm25']}, {'country': 'US', 'city': 'ANCHORAGE', 'count': 828, 'locations': 1, 'firstUpdated': '2018-06-19T17:00:00+00:00', 'lastUpdated': '2018-07-12T16:00:00+00:00', 'parameters': ['pm10', 'pm25']}, {'country': 'IT', 'city': 'Ancona', 'count': 677048457, 'locations': 5, 'firstUpdated': '2020-05-06T16:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'CL', 'city': 'Andacollo', 'count': 92036527, 'locations': 4, 'firstUpdated': '2015-09-23T13:00:00+00:00', 'lastUpdated': '2021-02-01T13:00:00+00:00', 'parameters': ['pm10']}, {'country': 'US', 'city': 'Anderson', 'count': 58522484, 'locations': 3, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'US', 'city': 'ANDERSON', 'count': 21946, 'locations': 2, 'firstUpdated': '2017-03-13T03:00:00+00:00', 'lastUpdated': '2020-11-05T16:00:00+00:00', 'parameters': ['o3']}, {'country': 'US', 'city': 'ANDREW', 'count': 22223, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2020-11-04T14:00:00+00:00', 'parameters': ['o3']}, {'country': 'TR', 'city': 'Ankara', 'count': 359493, 'locations': 8, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}, {'country': 'IN', 'city': 'Ankleshwar', 'count': 30503811, 'locations': 1, 'firstUpdated': '2019-02-12T02:00:00+00:00', 'lastUpdated': '2021-01-26T08:45:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'US', 'city': 'Ann Arbor', 'count': 48743393, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}, {'country': 'US', 'city': 'ANNE ARUNDEL', 'count': 1772, 'locations': 1, 'firstUpdated': '2018-06-05T17:00:00+00:00', 'lastUpdated': '2018-08-29T12:00:00+00:00', 'parameters': ['o3']}, {'country': 'DE', 'city': 'Annette Pausch', 'count': 5923, 'locations': 1, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2017-07-20T18:00:00+00:00', 'parameters': ['no2', 'o3']}, {'country': 'CN', 'city': 'Anqing', 'count': 117473, 'locations': 3, 'firstUpdated': '2017-12-27T21:00:00+00:00', 'lastUpdated': '2019-12-27T09:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'CL', 'city': 'Antofagasta', 'count': 46306953, 'locations': 1, 'firstUpdated': '2015-09-23T12:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm10', 'pm25', 'so2']}]
+[2021-06-30 09:22:52,276] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '007', 'count': 1372, 'locations': 5, 'firstUpdated': '2018-08-09T09:00:00+00:00', 'lastUpdated': '2018-11-09T23:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,286] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,306] {logging_mixin.py:104} INFO - Json normalized:   city country  count parameters
+0  007      US   1372   {'pm25'}
+[2021-06-30 09:22:52,309] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '019', 'count': 704, 'locations': 1, 'firstUpdated': '2020-09-18T16:00:00+00:00', 'lastUpdated': '2020-10-23T17:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,313] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,327] {logging_mixin.py:104} INFO - Json normalized:   city country  count parameters
+0  019      US    704   {'pm25'}
+[2021-06-30 09:22:52,328] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '037', 'count': 2683, 'locations': 23, 'firstUpdated': '2017-08-28T20:00:00+00:00', 'lastUpdated': '2020-10-28T20:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,330] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,342] {logging_mixin.py:104} INFO - Json normalized:   city country  count parameters
+0  037      US   2683   {'pm25'}
+[2021-06-30 09:22:52,344] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '039', 'count': 380, 'locations': 1, 'firstUpdated': '2017-08-28T20:00:00+00:00', 'lastUpdated': '2018-08-07T21:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,350] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,372] {logging_mixin.py:104} INFO - Json normalized:   city country  count parameters
+0  039      US    380   {'pm25'}
+[2021-06-30 09:22:52,375] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '047', 'count': 101, 'locations': 1, 'firstUpdated': '2018-09-06T18:00:00+00:00', 'lastUpdated': '2018-09-13T18:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,379] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,398] {logging_mixin.py:104} INFO - Json normalized:   city country  count parameters
+0  047      US    101   {'pm25'}
+[2021-06-30 09:22:52,401] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '051', 'count': 330, 'locations': 7, 'firstUpdated': '2017-08-28T20:00:00+00:00', 'lastUpdated': '2019-07-26T15:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,404] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,419] {logging_mixin.py:104} INFO - Json normalized:   city country  count parameters
+0  051      US    330   {'pm25'}
+[2021-06-30 09:22:52,419] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': '077', 'count': 670334, 'locations': 1, 'firstUpdated': '2020-09-18T22:00:00+00:00', 'lastUpdated': '2021-01-04T15:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,423] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,457] {logging_mixin.py:104} INFO - Json normalized:   city country   count parameters
+0  077      US  670334   {'pm25'}
+[2021-06-30 09:22:52,457] {logging_mixin.py:104} INFO - Each i: {'country': 'CH', 'city': 'Aargau', 'count': 4054, 'locations': 1, 'firstUpdated': '2017-09-22T07:00:00+00:00', 'lastUpdated': '2018-01-08T13:00:00+00:00', 'parameters': ['no2', 'o3']}
+[2021-06-30 09:22:52,459] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,471] {logging_mixin.py:104} INFO - Json normalized:      city country  count     parameters
+0  Aargau      CH   4054  {'no2', 'o3'}
+[2021-06-30 09:22:52,472] {logging_mixin.py:104} INFO - Each i: {'country': 'MX', 'city': 'Abasolo', 'count': 32422943, 'locations': 2, 'firstUpdated': '2017-10-11T16:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,474] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,486] {logging_mixin.py:104} INFO - Json normalized:       city country     count parameters
+0  Abasolo      MX  32422943   {'pm25'}
+[2021-06-30 09:22:52,486] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ABBEVILLE', 'count': 4619, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2017-01-10T18:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:52,488] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,497] {logging_mixin.py:104} INFO - Json normalized:         city country  count parameters
+0  ABBEVILLE      US   4619     {'o3'}
+[2021-06-30 09:22:52,497] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Aberdeen', 'count': 43018851, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,498] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,512] {logging_mixin.py:104} INFO - Json normalized:        city country     count parameters
+0  Aberdeen      US  43018851   {'pm25'}
+[2021-06-30 09:22:52,513] {logging_mixin.py:104} INFO - Each i: {'country': 'GB', 'city': 'Aberdeen', 'count': 161282393, 'locations': 3, 'firstUpdated': '2016-02-27T20:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:52,516] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,528] {logging_mixin.py:104} INFO - Json normalized:        city country      count                     parameters
+0  Aberdeen      GB  161282393  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:52,528] {logging_mixin.py:104} INFO - Each i: {'country': 'CI', 'city': 'Abidjan', 'count': 33997283, 'locations': 1, 'firstUpdated': '2020-03-15T21:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,530] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,543] {logging_mixin.py:104} INFO - Json normalized:       city country     count parameters
+0  Abidjan      CI  33997283   {'pm25'}
+[2021-06-30 09:22:52,543] {logging_mixin.py:104} INFO - Each i: {'country': 'AE', 'city': 'Abu Dhabi', 'count': 67144963, 'locations': 1, 'firstUpdated': '2017-12-26T23:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:52,545] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,558] {logging_mixin.py:104} INFO - Json normalized:         city country     count      parameters
+0  Abu Dhabi      AE  67144963  {'o3', 'pm25'}
+[2021-06-30 09:22:52,559] {logging_mixin.py:104} INFO - Each i: {'country': 'GH', 'city': 'Accra', 'count': 33890048, 'locations': 12, 'firstUpdated': '2006-11-13T06:30:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm10', 'pm25']}
+[2021-06-30 09:22:52,560] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,574] {logging_mixin.py:104} INFO - Json normalized:     city country     count        parameters
+0  Accra      GH  33890048  {'pm10', 'pm25'}
+[2021-06-30 09:22:52,574] {logging_mixin.py:104} INFO - Each i: {'country': 'ES', 'city': 'A Coruña', 'count': 484086496, 'locations': 5, 'firstUpdated': '2016-11-17T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,575] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,588] {logging_mixin.py:104} INFO - Json normalized:        city country      count                                  parameters
+0  A Coruña      ES  484086496  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:52,588] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ADA', 'count': 29956005, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'pm25']}
+[2021-06-30 09:22:52,589] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,598] {logging_mixin.py:104} INFO - Json normalized:   city country     count             parameters
+0  ADA      US  29956005  {'co', 'no2', 'pm25'}
+[2021-06-30 09:22:52,598] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ADAIR', 'count': 32778896, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,599] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,610] {logging_mixin.py:104} INFO - Json normalized:     city country     count                           parameters
+0  ADAIR      US  32778896  {'co', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:52,610] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ADAMS', 'count': 28230007, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['pm25', 'so2']}
+[2021-06-30 09:22:52,612] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,626] {logging_mixin.py:104} INFO - Json normalized:     city country     count       parameters
+0  ADAMS      US  28230007  {'pm25', 'so2'}
+[2021-06-30 09:22:52,627] {logging_mixin.py:104} INFO - Each i: {'country': 'TR', 'city': 'Adana', 'count': 205462, 'locations': 6, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:52,629] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,648] {logging_mixin.py:104} INFO - Json normalized:     city country   count                    parameters
+0  Adana      TR  205462  {'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:52,648] {logging_mixin.py:104} INFO - Each i: {'country': 'ET', 'city': 'Addis Ababa', 'count': 33951591, 'locations': 1, 'firstUpdated': '2016-11-08T18:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:52,650] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,670] {logging_mixin.py:104} INFO - Json normalized:           city country     count parameters
+0  Addis Ababa      ET  33951591   {'pm25'}
+[2021-06-30 09:22:52,670] {logging_mixin.py:104} INFO - Each i: {'country': 'AU', 'city': 'Adelaide', 'count': 663866393, 'locations': 8, 'firstUpdated': '2019-12-23T15:30:00+00:00', 'lastUpdated': '2021-02-01T12:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,674] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,694] {logging_mixin.py:104} INFO - Json normalized:        city country      count                                  parameters
+0  Adelaide      AU  663866393  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:52,694] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Adrian', 'count': 30420094, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:52,696] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,712] {logging_mixin.py:104} INFO - Json normalized:      city country     count      parameters
+0  Adrian      US  30420094  {'o3', 'pm25'}
+[2021-06-30 09:22:52,713] {logging_mixin.py:104} INFO - Each i: {'country': 'MK', 'city': 'Aerodrom Municipality', 'count': 133028371, 'locations': 1, 'firstUpdated': '2016-12-10T20:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:52,715] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,729] {logging_mixin.py:104} INFO - Json normalized:                     city country      count                          parameters
+0  Aerodrom Municipality      MK  133028371  {'co', 'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:52,729] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Agartala', 'count': 24547260, 'locations': 1, 'firstUpdated': '2020-11-08T13:45:00+00:00', 'lastUpdated': '2021-01-25T23:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,730] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,746] {logging_mixin.py:104} INFO - Json normalized:        city country     count                                  parameters
+0  Agartala      IN  24547260  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:52,746] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Agra', 'count': 21512785, 'locations': 1, 'firstUpdated': '2016-03-22T00:20:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm25', 'so2']}
+[2021-06-30 09:22:52,748] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,779] {logging_mixin.py:104} INFO - Json normalized:    city country     count                          parameters
+0  Agra      IN  21512785  {'co', 'no2', 'o3', 'pm25', 'so2'}
+[2021-06-30 09:22:52,779] {logging_mixin.py:104} INFO - Each i: {'country': 'TR', 'city': 'Ağrı', 'count': 133254, 'locations': 2, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:52,781] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,794] {logging_mixin.py:104} INFO - Json normalized:    city country   count                          parameters
+0  Ağrı      TR  133254  {'co', 'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:52,794] {logging_mixin.py:104} INFO - Each i: {'country': 'MX', 'city': 'Aguascalientes', 'count': 2542, 'locations': 1, 'firstUpdated': '2020-10-16T01:00:00+00:00', 'lastUpdated': '2020-11-23T01:00:00+00:00', 'parameters': ['no2', 'o3', 'so2']}
+[2021-06-30 09:22:52,796] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,819] {logging_mixin.py:104} INFO - Json normalized:              city country  count            parameters
+0  Aguascalientes      MX   2542  {'no2', 'o3', 'so2'}
+[2021-06-30 09:22:52,821] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Ahmedabad', 'count': 44994565, 'locations': 3, 'firstUpdated': '2016-06-28T05:12:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,824] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,837] {logging_mixin.py:104} INFO - Json normalized:         city country     count                                  parameters
+0  Ahmedabad      IN  44994565  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:52,838] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'Ain', 'count': 199201563, 'locations': 2, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:52,841] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,854] {logging_mixin.py:104} INFO - Json normalized:   city country      count                     parameters
+0  Ain      FR  199201563  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:52,855] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'AIR BREIZH', 'count': 65722, 'locations': 5, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2019-12-19T14:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:52,858] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,878] {logging_mixin.py:104} INFO - Json normalized:          city country  count                     parameters
+0  AIR BREIZH      FR  65722  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:52,880] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'AIR NORMAND', 'count': 364, 'locations': 2, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2016-12-05T17:00:00+00:00', 'parameters': ['co', 'no2', 'pm10', 'pm25']}
+[2021-06-30 09:22:52,883] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,897] {logging_mixin.py:104} INFO - Json normalized:           city country  count                     parameters
+0  AIR NORMAND      FR    364  {'co', 'no2', 'pm10', 'pm25'}
+[2021-06-30 09:22:52,897] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'AIR PACA', 'count': 14347, 'locations': 6, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2017-07-18T20:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:52,899] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,913] {logging_mixin.py:104} INFO - Json normalized:        city country  count                          parameters
+0  AIR PACA      FR  14347  {'co', 'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:52,914] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'AIRPARIF', 'count': 67888, 'locations': 3, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2019-09-23T08:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:52,917] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,930] {logging_mixin.py:104} INFO - Json normalized:        city country  count                           parameters
+0  AIRPARIF      FR  67888  {'co', 'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:52,930] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'AIR PAYS DE LA LOIRE', 'count': 924, 'locations': 1, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2017-03-28T16:00:00+00:00', 'parameters': ['no2']}
+[2021-06-30 09:22:52,933] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,947] {logging_mixin.py:104} INFO - Json normalized:                    city country  count parameters
+0  AIR PAYS DE LA LOIRE      FR    924    {'no2'}
+[2021-06-30 09:22:52,947] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'AIR RHONE ALPES', 'count': 71, 'locations': 4, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2016-12-05T01:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10']}
+[2021-06-30 09:22:52,948] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,963] {logging_mixin.py:104} INFO - Json normalized:               city country  count             parameters
+0  AIR RHONE ALPES      FR     71  {'no2', 'o3', 'pm10'}
+[2021-06-30 09:22:52,963] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'Aisne', 'count': 113498996, 'locations': 3, 'firstUpdated': '2017-02-18T08:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:52,964] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,976] {logging_mixin.py:104} INFO - Json normalized:     city country      count                     parameters
+0  Aisne      FR  113498996  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:52,976] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Aizawl', 'count': 26446446, 'locations': 1, 'firstUpdated': '2020-03-19T04:30:00+00:00', 'lastUpdated': '2021-01-25T23:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,977] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:52,994] {logging_mixin.py:104} INFO - Json normalized:      city country     count                                  parameters
+0  Aizawl      IN  26446446  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:52,994] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Ajmer', 'count': 47066892, 'locations': 4, 'firstUpdated': '2017-10-16T06:00:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:52,996] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,007] {logging_mixin.py:104} INFO - Json normalized:     city country     count                                  parameters
+0  Ajmer      IN  47066892  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,007] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Akron', 'count': 89012191, 'locations': 4, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'o3', 'pm25', 'so2']}
+[2021-06-30 09:22:53,009] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,021] {logging_mixin.py:104} INFO - Json normalized:     city country     count                   parameters
+0  Akron      US  89012191  {'co', 'o3', 'pm25', 'so2'}
+[2021-06-30 09:22:53,022] {logging_mixin.py:104} INFO - Each i: {'country': 'IS', 'city': 'Akureyri', 'count': 94880152, 'locations': 1, 'firstUpdated': '2020-02-28T14:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'pm10', 'so2']}
+[2021-06-30 09:22:53,023] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,036] {logging_mixin.py:104} INFO - Json normalized:        city country     count              parameters
+0  Akureyri      IS  94880152  {'no2', 'pm10', 'so2'}
+[2021-06-30 09:22:53,037] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ALAMEDA', 'count': 138178595, 'locations': 1, 'firstUpdated': '2016-07-25T22:00:00+00:00', 'lastUpdated': '2021-02-01T08:00:00+00:00', 'parameters': ['bc', 'co', 'no2', 'o3', 'pm25']}
+[2021-06-30 09:22:53,039] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,055] {logging_mixin.py:104} INFO - Json normalized:       city country      count                         parameters
+0  ALAMEDA      US  138178595  {'bc', 'co', 'no2', 'o3', 'pm25'}
+[2021-06-30 09:22:53,056] {logging_mixin.py:104} INFO - Each i: {'country': 'RO', 'city': 'Alba', 'count': 167071062, 'locations': 3, 'firstUpdated': '2020-04-20T18:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'o3']}
+[2021-06-30 09:22:53,057] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,068] {logging_mixin.py:104} INFO - Json normalized:    city country      count     parameters
+0  Alba      RO  167071062  {'no2', 'o3'}
+[2021-06-30 09:22:53,068] {logging_mixin.py:104} INFO - Each i: {'country': 'ES', 'city': 'Albacete', 'count': 146171307, 'locations': 1, 'firstUpdated': '2016-11-17T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,070] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,085] {logging_mixin.py:104} INFO - Json normalized:        city country      count                                  parameters
+0  Albacete      ES  146171307  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,085] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Albany', 'count': 24827728, 'locations': 1, 'firstUpdated': '2019-04-05T17:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,087] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,096] {logging_mixin.py:104} INFO - Json normalized:      city country     count parameters
+0  Albany      US  24827728   {'pm25'}
+[2021-06-30 09:22:53,096] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Albany-Lebanon', 'count': 60300633, 'locations': 2, 'firstUpdated': '2016-03-10T08:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,097] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,113] {logging_mixin.py:104} INFO - Json normalized:              city country     count parameters
+0  Albany-Lebanon      US  60300633   {'pm25'}
+[2021-06-30 09:22:53,114] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Albany-Schenectady-Troy', 'count': 58998285, 'locations': 3, 'firstUpdated': '2016-03-10T07:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,116] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,127] {logging_mixin.py:104} INFO - Json normalized:                       city country     count      parameters
+0  Albany-Schenectady-Troy      US  58998285  {'o3', 'pm25'}
+[2021-06-30 09:22:53,127] {logging_mixin.py:104} INFO - Each i: {'country': 'CA', 'city': 'ALBERTA', 'count': 1378984033, 'locations': 29, 'firstUpdated': '2016-03-06T20:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm25', 'so2']}
+[2021-06-30 09:22:53,128] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,140] {logging_mixin.py:104} INFO - Json normalized:       city country       count                          parameters
+0  ALBERTA      CA  1378984033  {'co', 'no2', 'o3', 'pm25', 'so2'}
+[2021-06-30 09:22:53,141] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Albuquerque', 'count': 579094846, 'locations': 7, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,142] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,155] {logging_mixin.py:104} INFO - Json normalized:           city country      count                                  parameters
+0  Albuquerque      US  579094846  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,155] {logging_mixin.py:104} INFO - Each i: {'country': 'IT', 'city': 'Alessandria', 'count': 97808034, 'locations': 3, 'firstUpdated': '2020-05-06T16:00:00+00:00', 'lastUpdated': '2021-02-01T02:00:00+00:00', 'parameters': ['no2', 'o3']}
+[2021-06-30 09:22:53,157] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,169] {logging_mixin.py:104} INFO - Json normalized:           city country     count     parameters
+0  Alessandria      IT  97808034  {'no2', 'o3'}
+[2021-06-30 09:22:53,169] {logging_mixin.py:104} INFO - Each i: {'country': 'NO', 'city': 'Ålesund', 'count': 93342466, 'locations': 3, 'firstUpdated': '2016-12-02T11:00:00+00:00', 'lastUpdated': '2021-02-01T13:00:00+00:00', 'parameters': ['no2', 'pm10']}
+[2021-06-30 09:22:53,172] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,185] {logging_mixin.py:104} INFO - Json normalized:       city country     count       parameters
+0  Ålesund      NO  93342466  {'no2', 'pm10'}
+[2021-06-30 09:22:53,185] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ALEXANDER', 'count': 41224, 'locations': 1, 'firstUpdated': '2016-03-28T21:00:00+00:00', 'lastUpdated': '2020-11-03T15:00:00+00:00', 'parameters': ['o3', 'pm10']}
+[2021-06-30 09:22:53,186] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,196] {logging_mixin.py:104} INFO - Json normalized:         city country  count      parameters
+0  ALEXANDER      US  41224  {'o3', 'pm10'}
+[2021-06-30 09:22:53,196] {logging_mixin.py:104} INFO - Each i: {'country': 'IT', 'city': 'ALFONSINE', 'count': 36472, 'locations': 1, 'firstUpdated': '2017-11-01T23:00:00+00:00', 'lastUpdated': '2020-05-05T23:00:00+00:00', 'parameters': ['no2', 'o3', 'pm25']}
+[2021-06-30 09:22:53,197] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,207] {logging_mixin.py:104} INFO - Json normalized:         city country  count             parameters
+0  ALFONSINE      IT  36472  {'no2', 'o3', 'pm25'}
+[2021-06-30 09:22:53,207] {logging_mixin.py:104} INFO - Each i: {'country': 'DZ', 'city': 'Algiers', 'count': 33544143, 'locations': 1, 'firstUpdated': '2019-06-15T22:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,209] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,225] {logging_mixin.py:104} INFO - Json normalized:       city country     count parameters
+0  Algiers      DZ  33544143   {'pm25'}
+[2021-06-30 09:22:53,226] {logging_mixin.py:104} INFO - Each i: {'country': 'ES', 'city': 'Alicante/Alacant', 'count': 696818926, 'locations': 10, 'firstUpdated': '2016-11-18T07:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,228] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,240] {logging_mixin.py:104} INFO - Json normalized:                city country      count                                  parameters
+0  Alicante/Alacant      ES  696818926  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,240] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Allegan', 'count': 29715900, 'locations': 1, 'firstUpdated': '2016-04-04T14:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,242] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,256] {logging_mixin.py:104} INFO - Json normalized:       city country     count      parameters
+0  Allegan      US  29715900  {'o3', 'pm25'}
+[2021-06-30 09:22:53,256] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ALLEGANY', 'count': 32122, 'locations': 2, 'firstUpdated': '2017-08-10T21:00:00+00:00', 'lastUpdated': '2020-05-08T16:00:00+00:00', 'parameters': ['so2']}
+[2021-06-30 09:22:53,257] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,265] {logging_mixin.py:104} INFO - Json normalized:        city country  count parameters
+0  ALLEGANY      US  32122    {'so2'}
+[2021-06-30 09:22:53,265] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Allentown-Bethlehem-Easton', 'count': 116272910, 'locations': 3, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,267] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,282] {logging_mixin.py:104} INFO - Json normalized:                          city country      count      parameters
+0  Allentown-Bethlehem-Easton      US  116272910  {'o3', 'pm25'}
+[2021-06-30 09:22:53,284] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'Allier', 'count': 116266271, 'locations': 3, 'firstUpdated': '2016-11-21T12:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:53,286] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,311] {logging_mixin.py:104} INFO - Json normalized:      city country      count                     parameters
+0  Allier      FR  116266271  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:53,312] {logging_mixin.py:104} INFO - Each i: {'country': 'ES', 'city': 'Almería', 'count': 824959926, 'locations': 14, 'firstUpdated': '2017-01-29T18:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:53,314] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,327] {logging_mixin.py:104} INFO - Json normalized:       city country      count                          parameters
+0  Almería      ES  824959926  {'co', 'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:53,328] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'Alpes-de-Haute-Provence', 'count': 192317276, 'locations': 2, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:53,329] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,349] {logging_mixin.py:104} INFO - Json normalized:                       city country      count                     parameters
+0  Alpes-de-Haute-Provence      FR  192317276  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:53,349] {logging_mixin.py:104} INFO - Each i: {'country': 'FR', 'city': 'Alpes-Maritimes', 'count': 510758130, 'locations': 10, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}
+[2021-06-30 09:22:53,352] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,371] {logging_mixin.py:104} INFO - Json normalized:               city country      count                     parameters
+0  Alpes-Maritimes      FR  510758130  {'no2', 'o3', 'pm10', 'pm25'}
+[2021-06-30 09:22:53,371] {logging_mixin.py:104} INFO - Each i: {'country': 'CL', 'city': 'Alto Hospicio', 'count': 31088545, 'locations': 3, 'firstUpdated': '2016-02-22T18:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,373] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,383] {logging_mixin.py:104} INFO - Json normalized:             city country     count parameters
+0  Alto Hospicio      CL  31088545   {'pm25'}
+[2021-06-30 09:22:53,383] {logging_mixin.py:104} INFO - Each i: {'country': 'AU', 'city': 'Altona North', 'count': 84563902, 'locations': 1, 'firstUpdated': '2020-10-21T01:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['no2', 'pm25', 'so2']}
+[2021-06-30 09:22:53,386] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,395] {logging_mixin.py:104} INFO - Json normalized:            city country     count              parameters
+0  Altona North      AU  84563902  {'no2', 'pm25', 'so2'}
+[2021-06-30 09:22:53,395] {logging_mixin.py:104} INFO - Each i: {'country': 'AU', 'city': 'Altona North 1', 'count': 81, 'locations': 1, 'firstUpdated': '2020-07-02T04:00:00+00:00', 'lastUpdated': '2020-07-06T04:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,396] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,412] {logging_mixin.py:104} INFO - Json normalized:              city country  count parameters
+0  Altona North 1      AU     81   {'pm25'}
+[2021-06-30 09:22:53,413] {logging_mixin.py:104} INFO - Each i: {'country': 'AU', 'city': 'Altona North 2', 'count': 78, 'locations': 1, 'firstUpdated': '2020-07-02T04:00:00+00:00', 'lastUpdated': '2020-07-06T04:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,414] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,431] {logging_mixin.py:104} INFO - Json normalized:              city country  count parameters
+0  Altona North 2      AU     78   {'pm25'}
+[2021-06-30 09:22:53,431] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Altoona', 'count': 58678630, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,434] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,448] {logging_mixin.py:104} INFO - Json normalized:       city country     count      parameters
+0  Altoona      US  58678630  {'o3', 'pm25'}
+[2021-06-30 09:22:53,448] {logging_mixin.py:104} INFO - Each i: {'country': 'MX', 'city': 'Álvaro Obregón', 'count': 143734742, 'locations': 1, 'firstUpdated': '2020-10-16T01:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,450] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,463] {logging_mixin.py:104} INFO - Json normalized:              city country      count                                  parameters
+0  Álvaro Obregón      MX  143734742  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,463] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Alwar', 'count': 44715041, 'locations': 2, 'firstUpdated': '2017-11-03T09:45:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,464] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,480] {logging_mixin.py:104} INFO - Json normalized:     city country     count                                  parameters
+0  Alwar      IN  44715041  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,480] {logging_mixin.py:104} INFO - Each i: {'country': 'LT', 'city': 'Alytus', 'count': 646229, 'locations': 1, 'firstUpdated': '2017-09-26T23:00:00+00:00', 'lastUpdated': '2021-01-31T23:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,482] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,497] {logging_mixin.py:104} INFO - Json normalized:      city country   count parameters
+0  Alytus      LT  646229     {'o3'}
+[2021-06-30 09:22:53,498] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'AMADOR', 'count': 25500192, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T08:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,499] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,513] {logging_mixin.py:104} INFO - Json normalized:      city country     count parameters
+0  AMADOR      US  25500192     {'o3'}
+[2021-06-30 09:22:53,513] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Amaravati', 'count': 48537963, 'locations': 2, 'firstUpdated': '2017-11-27T04:30:00+00:00', 'lastUpdated': '2021-01-26T21:45:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,514] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,532] {logging_mixin.py:104} INFO - Json normalized:         city country     count                                  parameters
+0  Amaravati      IN  48537963  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,532] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Amarillo', 'count': 25262749, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T03:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,534] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,545] {logging_mixin.py:104} INFO - Json normalized:        city country     count      parameters
+0  Amarillo      US  25262749  {'o3', 'pm25'}
+[2021-06-30 09:22:53,545] {logging_mixin.py:104} INFO - Each i: {'country': 'TR', 'city': 'Amasya', 'count': 134064, 'locations': 4, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:53,547] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,559] {logging_mixin.py:104} INFO - Json normalized:      city country   count                          parameters
+0  Amasya      TR  134064  {'co', 'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:53,559] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Ambala ', 'count': 28715053, 'locations': 1, 'firstUpdated': '2019-02-12T01:45:00+00:00', 'lastUpdated': '2021-01-26T08:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,561] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,573] {logging_mixin.py:104} INFO - Json normalized:       city country     count                                  parameters
+0  Ambala       IN  28715053  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,573] {logging_mixin.py:104} INFO - Each i: {'country': 'BR', 'city': 'Americana', 'count': 58778994, 'locations': 2, 'firstUpdated': '2016-03-06T00:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['o3', 'pm10']}
+[2021-06-30 09:22:53,574] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,586] {logging_mixin.py:104} INFO - Json normalized:         city country     count      parameters
+0  Americana      BR  58778994  {'o3', 'pm10'}
+[2021-06-30 09:22:53,586] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Americus', 'count': 22297, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2020-11-04T16:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,588] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,597] {logging_mixin.py:104} INFO - Json normalized:        city country  count parameters
+0  Americus      US  22297     {'o3'}
+[2021-06-30 09:22:53,597] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Ames', 'count': 4773, 'locations': 1, 'firstUpdated': '2016-04-01T12:00:00+00:00', 'lastUpdated': '2016-11-03T16:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,599] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,609] {logging_mixin.py:104} INFO - Json normalized:    city country  count parameters
+0  Ames      US   4773     {'o3'}
+[2021-06-30 09:22:53,609] {logging_mixin.py:104} INFO - Each i: {'country': 'JO', 'city': 'Amman', 'count': 33335940, 'locations': 1, 'firstUpdated': '2019-10-21T02:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['pm25']}
+[2021-06-30 09:22:53,610] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,622] {logging_mixin.py:104} INFO - Json normalized:     city country     count parameters
+0  Amman      JO  33335940   {'pm25'}
+[2021-06-30 09:22:53,622] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Amritsar', 'count': 77336644, 'locations': 2, 'firstUpdated': '2017-02-26T18:30:00+00:00', 'lastUpdated': '2021-01-26T21:30:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,623] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,632] {logging_mixin.py:104} INFO - Json normalized:        city country     count                                  parameters
+0  Amritsar      IN  77336644  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,633] {logging_mixin.py:104} INFO - Each i: {'country': 'NL', 'city': 'Amsterdam', 'count': 1040867923, 'locations': 14, 'firstUpdated': '2015-09-14T04:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,635] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,648] {logging_mixin.py:104} INFO - Json normalized:         city country       count                                  parameters
+0  Amsterdam      NL  1040867923  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,649] {logging_mixin.py:104} INFO - Each i: {'country': 'AT', 'city': 'Amt der K�rntner Landesregierung', 'count': 5228, 'locations': 4, 'firstUpdated': '2016-11-18T05:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'pm10']}
+[2021-06-30 09:22:53,651] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,659] {logging_mixin.py:104} INFO - Json normalized:                                city country  count       parameters
+0  Amt der K�rntner Landesregierung      AT   5228  {'no2', 'pm10'}
+[2021-06-30 09:22:53,659] {logging_mixin.py:104} INFO - Each i: {'country': 'AT', 'city': 'Amt der Nieder�sterreichischen Landesregierung', 'count': 5936, 'locations': 1, 'firstUpdated': '2017-02-18T07:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'pm10']}
+[2021-06-30 09:22:53,660] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,670] {logging_mixin.py:104} INFO - Json normalized:                                              city country  count       parameters
+0  Amt der Nieder�sterreichischen Landesregierung      AT   5936  {'no2', 'pm10'}
+[2021-06-30 09:22:53,670] {logging_mixin.py:104} INFO - Each i: {'country': 'AT', 'city': 'Amt der Ober�sterreichischen Landesregierung', 'count': 10765, 'locations': 1, 'firstUpdated': '2016-11-18T05:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:53,671] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,685] {logging_mixin.py:104} INFO - Json normalized:                                            city country  count                    parameters
+0  Amt der Ober�sterreichischen Landesregierung      AT  10765  {'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:53,686] {logging_mixin.py:104} INFO - Each i: {'country': 'AT', 'city': 'Amt der Salzburger Landesregierung', 'count': 8904, 'locations': 1, 'firstUpdated': '2017-02-18T07:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10']}
+[2021-06-30 09:22:53,687] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,697] {logging_mixin.py:104} INFO - Json normalized:                                  city country  count             parameters
+0  Amt der Salzburger Landesregierung      AT   8904  {'no2', 'o3', 'pm10'}
+[2021-06-30 09:22:53,698] {logging_mixin.py:104} INFO - Each i: {'country': 'AT', 'city': 'Amt der Steierm�rkischen Landesregierung', 'count': 26707, 'locations': 3, 'firstUpdated': '2017-02-18T07:00:00+00:00', 'lastUpdated': '2017-07-20T19:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:53,700] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,714] {logging_mixin.py:104} INFO - Json normalized:                                        city country  count                    parameters
+0  Amt der Steierm�rkischen Landesregierung      AT  26707  {'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:53,714] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Anchorage', 'count': 150005877, 'locations': 3, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'pm10', 'pm25']}
+[2021-06-30 09:22:53,715] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,725] {logging_mixin.py:104} INFO - Json normalized:         city country      count              parameters
+0  Anchorage      US  150005877  {'co', 'pm10', 'pm25'}
+[2021-06-30 09:22:53,725] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ANCHORAGE', 'count': 828, 'locations': 1, 'firstUpdated': '2018-06-19T17:00:00+00:00', 'lastUpdated': '2018-07-12T16:00:00+00:00', 'parameters': ['pm10', 'pm25']}
+[2021-06-30 09:22:53,726] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,736] {logging_mixin.py:104} INFO - Json normalized:         city country  count        parameters
+0  ANCHORAGE      US    828  {'pm10', 'pm25'}
+[2021-06-30 09:22:53,736] {logging_mixin.py:104} INFO - Each i: {'country': 'IT', 'city': 'Ancona', 'count': 677048457, 'locations': 5, 'firstUpdated': '2020-05-06T16:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,739] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,747] {logging_mixin.py:104} INFO - Json normalized:      city country      count                                  parameters
+0  Ancona      IT  677048457  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,747] {logging_mixin.py:104} INFO - Each i: {'country': 'CL', 'city': 'Andacollo', 'count': 92036527, 'locations': 4, 'firstUpdated': '2015-09-23T13:00:00+00:00', 'lastUpdated': '2021-02-01T13:00:00+00:00', 'parameters': ['pm10']}
+[2021-06-30 09:22:53,749] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,762] {logging_mixin.py:104} INFO - Json normalized:         city country     count parameters
+0  Andacollo      CL  92036527   {'pm10'}
+[2021-06-30 09:22:53,763] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Anderson', 'count': 58522484, 'locations': 3, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,764] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,781] {logging_mixin.py:104} INFO - Json normalized:        city country     count      parameters
+0  Anderson      US  58522484  {'o3', 'pm25'}
+[2021-06-30 09:22:53,782] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ANDERSON', 'count': 21946, 'locations': 2, 'firstUpdated': '2017-03-13T03:00:00+00:00', 'lastUpdated': '2020-11-05T16:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,787] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,801] {logging_mixin.py:104} INFO - Json normalized:        city country  count parameters
+0  ANDERSON      US  21946     {'o3'}
+[2021-06-30 09:22:53,801] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ANDREW', 'count': 22223, 'locations': 1, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2020-11-04T14:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,803] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,814] {logging_mixin.py:104} INFO - Json normalized:      city country  count parameters
+0  ANDREW      US  22223     {'o3'}
+[2021-06-30 09:22:53,814] {logging_mixin.py:104} INFO - Each i: {'country': 'TR', 'city': 'Ankara', 'count': 359493, 'locations': 8, 'firstUpdated': '2016-12-23T00:00:00+00:00', 'lastUpdated': '2018-10-13T21:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'so2']}
+[2021-06-30 09:22:53,816] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,827] {logging_mixin.py:104} INFO - Json normalized:      city country   count                          parameters
+0  Ankara      TR  359493  {'co', 'no2', 'o3', 'pm10', 'so2'}
+[2021-06-30 09:22:53,827] {logging_mixin.py:104} INFO - Each i: {'country': 'IN', 'city': 'Ankleshwar', 'count': 30503811, 'locations': 1, 'firstUpdated': '2019-02-12T02:00:00+00:00', 'lastUpdated': '2021-01-26T08:45:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,828] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,842] {logging_mixin.py:104} INFO - Json normalized:          city country     count                                  parameters
+0  Ankleshwar      IN  30503811  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,842] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'Ann Arbor', 'count': 48743393, 'locations': 2, 'firstUpdated': '2016-03-06T19:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['o3', 'pm25']}
+[2021-06-30 09:22:53,844] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,857] {logging_mixin.py:104} INFO - Json normalized:         city country     count      parameters
+0  Ann Arbor      US  48743393  {'o3', 'pm25'}
+[2021-06-30 09:22:53,857] {logging_mixin.py:104} INFO - Each i: {'country': 'US', 'city': 'ANNE ARUNDEL', 'count': 1772, 'locations': 1, 'firstUpdated': '2018-06-05T17:00:00+00:00', 'lastUpdated': '2018-08-29T12:00:00+00:00', 'parameters': ['o3']}
+[2021-06-30 09:22:53,858] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,868] {logging_mixin.py:104} INFO - Json normalized:            city country  count parameters
+0  ANNE ARUNDEL      US   1772     {'o3'}
+[2021-06-30 09:22:53,868] {logging_mixin.py:104} INFO - Each i: {'country': 'DE', 'city': 'Annette Pausch', 'count': 5923, 'locations': 1, 'firstUpdated': '2016-11-21T11:00:00+00:00', 'lastUpdated': '2017-07-20T18:00:00+00:00', 'parameters': ['no2', 'o3']}
+[2021-06-30 09:22:53,870] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,878] {logging_mixin.py:104} INFO - Json normalized:              city country  count     parameters
+0  Annette Pausch      DE   5923  {'no2', 'o3'}
+[2021-06-30 09:22:53,878] {logging_mixin.py:104} INFO - Each i: {'country': 'CN', 'city': 'Anqing', 'count': 117473, 'locations': 3, 'firstUpdated': '2017-12-27T21:00:00+00:00', 'lastUpdated': '2019-12-27T09:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,880] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,898] {logging_mixin.py:104} INFO - Json normalized:      city country   count                                  parameters
+0  Anqing      CN  117473  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,903] {logging_mixin.py:104} INFO - Each i: {'country': 'CL', 'city': 'Antofagasta', 'count': 46306953, 'locations': 1, 'firstUpdated': '2015-09-23T12:00:00+00:00', 'lastUpdated': '2021-02-01T12:00:00+00:00', 'parameters': ['pm10', 'pm25', 'so2']}
+[2021-06-30 09:22:53,907] {logging_mixin.py:104} INFO - here
+[2021-06-30 09:22:53,929] {logging_mixin.py:104} INFO - Json normalized:           city country     count               parameters
+0  Antofagasta      CL  46306953  {'pm10', 'pm25', 'so2'}
+[2021-06-30 09:22:53,932] {logging_mixin.py:104} INFO - Empty DataFrame
+Columns: [city, country, count, parameters]
+Index: []
+[2021-06-30 09:22:53,936] {python.py:151} INFO - Done. Returned value was: None
+[2021-06-30 09:22:53,956] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=process_data, execution_date=20210629T170919, start_date=20210630T092251, end_date=20210630T092253
+[2021-06-30 09:22:54,003] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 09:22:54,012] {local_task_job.py:151} INFO - Task exited with return code 0

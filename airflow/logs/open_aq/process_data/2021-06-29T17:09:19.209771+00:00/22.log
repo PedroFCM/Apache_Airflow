@@ -1,0 +1,41 @@
+[2021-06-30 09:40:30,187] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 09:40:30,215] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 09:40:30,216] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 09:40:30,216] {taskinstance.py:1068} INFO - Starting attempt 22 of 22
+[2021-06-30 09:40:30,216] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 09:40:30,239] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): process_data> on 2021-06-29T17:09:19.209771+00:00
+[2021-06-30 09:40:30,252] {standard_task_runner.py:52} INFO - Started process 12534 to run task
+[2021-06-30 09:40:30,259] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'process_data', '2021-06-29T17:09:19.209771+00:00', '--job-id', '808', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp88miizoe', '--error-file', '/tmp/tmpy9bq7t04']
+[2021-06-30 09:40:30,262] {standard_task_runner.py:77} INFO - Job 808: Subtask process_data
+[2021-06-30 09:40:30,380] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.process_data 2021-06-29T17:09:19.209771+00:00 [running]> on host airflowvm
+[2021-06-30 09:40:30,503] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=process_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T17:09:19.209771+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T17:09:19.209771+00:00
+[2021-06-30 09:40:30,518] {logging_mixin.py:104} INFO - [{'country': 'PT', 'city': 'Aveiro', 'count': 244229826, 'locations': 4, 'firstUpdated': '2017-09-24T23:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Braga', 'count': 84177486, 'locations': 3, 'firstUpdated': '2017-09-24T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10']}, {'country': 'PT', 'city': 'Castelo Branco', 'count': 109500248, 'locations': 1, 'firstUpdated': '2017-09-24T23:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Coimbra', 'count': 189714183, 'locations': 3, 'firstUpdated': '2017-09-24T23:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10']}, {'country': 'PT', 'city': 'Évora', 'count': 128494695, 'locations': 1, 'firstUpdated': '2017-09-23T12:00:00+00:00', 'lastUpdated': '2021-02-01T04:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Faro', 'count': 448468893, 'locations': 4, 'firstUpdated': '2018-01-08T05:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Ilha da Madeira', 'count': 353767571, 'locations': 3, 'firstUpdated': '2017-09-25T09:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Ilha do Faial', 'count': 106985048, 'locations': 1, 'firstUpdated': '2017-10-29T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Leiria', 'count': 131440148, 'locations': 1, 'firstUpdated': '2017-09-24T23:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Lisboa', 'count': 868087592, 'locations': 15, 'firstUpdated': '2017-09-21T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Porto', 'count': 580648822, 'locations': 15, 'firstUpdated': '2017-09-22T23:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Santarém', 'count': 80422109, 'locations': 1, 'firstUpdated': '2017-09-22T09:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Setúbal', 'count': 799261991, 'locations': 12, 'firstUpdated': '2017-09-22T01:00:00+00:00', 'lastUpdated': '2021-02-01T11:00:00+00:00', 'parameters': ['co', 'no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Viana do Castelo', 'count': 29397331, 'locations': 1, 'firstUpdated': '2018-05-06T13:00:00+00:00', 'lastUpdated': '2021-02-01T09:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25']}, {'country': 'PT', 'city': 'Vila Real', 'count': 26503791, 'locations': 1, 'firstUpdated': '2017-09-27T23:00:00+00:00', 'lastUpdated': '2021-02-01T09:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10', 'pm25', 'so2']}, {'country': 'PT', 'city': 'Viseu', 'count': 67731564, 'locations': 1, 'firstUpdated': '2017-09-24T23:00:00+00:00', 'lastUpdated': '2021-02-01T10:00:00+00:00', 'parameters': ['no2', 'o3', 'pm10']}]
+[2021-06-30 09:40:30,584] {logging_mixin.py:104} INFO - Final Dataframe:
+[2021-06-30 09:40:30,604] {logging_mixin.py:104} INFO -                 city country      count                                  parameters
+0             Aveiro      PT  244229826  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+1              Braga      PT   84177486                       {'no2', 'o3', 'pm10'}
+2     Castelo Branco      PT  109500248        {'no2', 'o3', 'pm10', 'pm25', 'so2'}
+3            Coimbra      PT  189714183                 {'co', 'no2', 'o3', 'pm10'}
+4              Évora      PT  128494695        {'no2', 'o3', 'pm10', 'pm25', 'so2'}
+5               Faro      PT  448468893  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+6    Ilha da Madeira      PT  353767571  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+7      Ilha do Faial      PT  106985048        {'no2', 'o3', 'pm10', 'pm25', 'so2'}
+8             Leiria      PT  131440148        {'no2', 'o3', 'pm10', 'pm25', 'so2'}
+9             Lisboa      PT  868087592  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+10             Porto      PT  580648822  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+11          Santarém      PT   80422109        {'no2', 'o3', 'pm10', 'pm25', 'so2'}
+12           Setúbal      PT  799261991  {'co', 'no2', 'o3', 'pm10', 'pm25', 'so2'}
+13  Viana do Castelo      PT   29397331               {'no2', 'o3', 'pm10', 'pm25'}
+14         Vila Real      PT   26503791        {'no2', 'o3', 'pm10', 'pm25', 'so2'}
+15             Viseu      PT   67731564                       {'no2', 'o3', 'pm10'}
+[2021-06-30 09:40:30,608] {python.py:151} INFO - Done. Returned value was: None
+[2021-06-30 09:40:30,622] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=process_data, execution_date=20210629T170919, start_date=20210630T094030, end_date=20210630T094030
+[2021-06-30 09:40:30,680] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 09:40:30,716] {local_task_job.py:151} INFO - Task exited with return code 0

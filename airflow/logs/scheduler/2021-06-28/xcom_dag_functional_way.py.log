@@ -1,0 +1,70 @@
+[2021-06-28 16:30:53,845] {scheduler_job.py:182} INFO - Started process (PID=17644) to work on /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:30:53,855] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/xcom_dag_functional_way.py for tasks to queue
+[2021-06-28 16:30:53,856] {logging_mixin.py:104} INFO - [2021-06-28 16:30:53,856] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:30:53,924] {logging_mixin.py:104} INFO - [2021-06-28 16:30:53,915] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/xcom_dag_functional_way.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/xcom_dag_functional_way.py", line 11, in <module>
+    @task
+NameError: name 'task' is not defined
+[2021-06-28 16:30:53,924] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:30:54,045] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/xcom_dag_functional_way.py took 0.221 seconds
+[2021-06-28 16:31:24,785] {scheduler_job.py:182} INFO - Started process (PID=17694) to work on /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:31:24,789] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/xcom_dag_functional_way.py for tasks to queue
+[2021-06-28 16:31:24,790] {logging_mixin.py:104} INFO - [2021-06-28 16:31:24,790] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:31:24,799] {logging_mixin.py:104} INFO - [2021-06-28 16:31:24,798] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/xcom_dag_functional_way.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/xcom_dag_functional_way.py", line 11, in <module>
+    @task
+NameError: name 'task' is not defined
+[2021-06-28 16:31:24,800] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:31:24,855] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/xcom_dag_functional_way.py took 0.074 seconds
+[2021-06-28 16:31:55,104] {scheduler_job.py:182} INFO - Started process (PID=17739) to work on /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:31:55,105] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/xcom_dag_functional_way.py for tasks to queue
+[2021-06-28 16:31:55,107] {logging_mixin.py:104} INFO - [2021-06-28 16:31:55,106] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:31:55,148] {logging_mixin.py:104} INFO - [2021-06-28 16:31:55,147] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/xcom_dag_functional_way.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/xcom_dag_functional_way.py", line 45, in <module>
+    training_model_a = training_model_a()
+NameError: name 'training_model_a' is not defined
+[2021-06-28 16:31:55,150] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:31:55,183] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/xcom_dag_functional_way.py took 0.082 seconds
+[2021-06-28 16:32:25,399] {scheduler_job.py:182} INFO - Started process (PID=17785) to work on /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:32:25,403] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/xcom_dag_functional_way.py for tasks to queue
+[2021-06-28 16:32:25,408] {logging_mixin.py:104} INFO - [2021-06-28 16:32:25,407] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:32:25,455] {logging_mixin.py:104} INFO - [2021-06-28 16:32:25,454] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/xcom_dag_functional_way.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/xcom_dag_functional_way.py", line 45, in <module>
+    training_model_a = training_model()
+NameError: name 'training_model' is not defined
+[2021-06-28 16:32:25,458] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:32:25,512] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/xcom_dag_functional_way.py took 0.121 seconds
+[2021-06-28 16:32:55,945] {scheduler_job.py:182} INFO - Started process (PID=17833) to work on /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:32:55,949] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/xcom_dag_functional_way.py for tasks to queue
+[2021-06-28 16:32:55,949] {logging_mixin.py:104} INFO - [2021-06-28 16:32:55,949] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:32:55,979] {logging_mixin.py:104} INFO - [2021-06-28 16:32:55,978] {dagbag.py:320} ERROR - Failed to import: /home/airflow/airflow/dags/xcom_dag_functional_way.py
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/airflow/airflow/dags/xcom_dag_functional_way.py", line 45, in <module>
+    training_model_a = training_model()
+NameError: name 'training_model' is not defined
+[2021-06-28 16:32:55,981] {scheduler_job.py:645} WARNING - No viable dags retrieved from /home/airflow/airflow/dags/xcom_dag_functional_way.py
+[2021-06-28 16:32:56,025] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/xcom_dag_functional_way.py took 0.083 seconds

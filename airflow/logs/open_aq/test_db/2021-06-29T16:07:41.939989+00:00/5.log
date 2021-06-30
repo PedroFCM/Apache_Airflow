@@ -1,0 +1,43 @@
+[2021-06-29 16:13:21,235] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.test_db 2021-06-29T16:07:41.939989+00:00 [queued]>
+[2021-06-29 16:13:21,279] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.test_db 2021-06-29T16:07:41.939989+00:00 [queued]>
+[2021-06-29 16:13:21,279] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 16:13:21,280] {taskinstance.py:1068} INFO - Starting attempt 5 of 5
+[2021-06-29 16:13:21,280] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 16:13:21,300] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): test_db> on 2021-06-29T16:07:41.939989+00:00
+[2021-06-29 16:13:21,306] {standard_task_runner.py:52} INFO - Started process 33805 to run task
+[2021-06-29 16:13:21,317] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'test_db', '2021-06-29T16:07:41.939989+00:00', '--job-id', '659', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmpwc2ojp1w', '--error-file', '/tmp/tmpwqmhkop0']
+[2021-06-29 16:13:21,320] {standard_task_runner.py:77} INFO - Job 659: Subtask test_db
+[2021-06-29 16:13:21,424] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.test_db 2021-06-29T16:07:41.939989+00:00 [running]> on host airflowvm
+[2021-06-29 16:13:21,549] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=test_db
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T16:07:41.939989+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T16:07:41.939989+00:00
+[2021-06-29 16:13:21,551] {postgres.py:68} INFO - Executing: INSERT INTO open_aq VALUES ('test', 'test', 'test', NULL);
+[2021-06-29 16:13:21,568] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-29 16:13:21,579] {dbapi.py:204} INFO - Running statement: INSERT INTO open_aq VALUES ('test', 'test', 'test', NULL);, parameters: None
+[2021-06-29 16:13:21,584] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/providers/postgres/operators/postgres.py", line 70, in execute
+    self.hook.run(self.sql, self.autocommit, parameters=self.parameters)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 184, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/hooks/dbapi.py", line 208, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/psycopg2/extras.py", line 236, in execute
+    return super().execute(query, vars)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "test"
+LINE 1: INSERT INTO open_aq VALUES ('test', 'test', 'test', NULL);
+                                                    ^
+
+[2021-06-29 16:13:21,588] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=open_aq, task_id=test_db, execution_date=20210629T160741, start_date=20210629T161321, end_date=20210629T161321
+[2021-06-29 16:13:21,651] {local_task_job.py:151} INFO - Task exited with return code 1

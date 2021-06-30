@@ -1,0 +1,38 @@
+[2021-06-30 08:17:22,811] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.store_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 08:17:22,919] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.store_data 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 08:17:22,925] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 08:17:22,927] {taskinstance.py:1068} INFO - Starting attempt 6 of 6
+[2021-06-30 08:17:22,929] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 08:17:22,992] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): store_data> on 2021-06-29T17:09:19.209771+00:00
+[2021-06-30 08:17:23,008] {standard_task_runner.py:52} INFO - Started process 3513 to run task
+[2021-06-30 08:17:23,041] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'store_data', '2021-06-29T17:09:19.209771+00:00', '--job-id', '750', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmpthvip37z', '--error-file', '/tmp/tmptguqzm4i']
+[2021-06-30 08:17:23,046] {standard_task_runner.py:77} INFO - Job 750: Subtask store_data
+[2021-06-30 08:17:23,223] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.store_data 2021-06-29T17:09:19.209771+00:00 [running]> on host airflowvm
+[2021-06-30 08:17:23,474] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=store_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T17:09:19.209771+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T17:09:19.209771+00:00
+[2021-06-30 08:17:23,484] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-06-30 08:17:23,487] {subprocess.py:63} INFO - Running command: ['bash', '-c', ' psql -d *** -U *** -P *** -c "copy open_aq from /tmp/processed_data.csv delimiter \';\' csv header;" ']
+[2021-06-30 08:17:23,507] {subprocess.py:75} INFO - Output:
+[2021-06-30 08:17:23,706] {subprocess.py:79} INFO - psql: error: \pset: unknown option: ***
+[2021-06-30 08:17:23,707] {subprocess.py:79} INFO - psql: fatal: could not set printing parameter "***"
+[2021-06-30 08:17:23,711] {subprocess.py:83} INFO - Command exited with return code 1
+[2021-06-30 08:17:23,751] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2021-06-30 08:17:23,756] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=open_aq, task_id=store_data, execution_date=20210629T170919, start_date=20210630T081722, end_date=20210630T081723
+[2021-06-30 08:17:23,815] {local_task_job.py:151} INFO - Task exited with return code 1

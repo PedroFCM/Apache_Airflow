@@ -1,0 +1,25 @@
+[2021-06-29 14:55:09,417] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.is_API_available 2021-06-29T14:55:02.878945+00:00 [queued]>
+[2021-06-29 14:55:09,440] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.is_API_available 2021-06-29T14:55:02.878945+00:00 [queued]>
+[2021-06-29 14:55:09,441] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:55:09,441] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-29 14:55:09,442] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:55:09,455] {taskinstance.py:1087} INFO - Executing <Task(HttpSensor): is_API_available> on 2021-06-29T14:55:02.878945+00:00
+[2021-06-29 14:55:09,460] {standard_task_runner.py:52} INFO - Started process 26005 to run task
+[2021-06-29 14:55:09,466] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'is_API_available', '2021-06-29T14:55:02.878945+00:00', '--job-id', '631', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp38phann2', '--error-file', '/tmp/tmpuaovwljc']
+[2021-06-29 14:55:09,467] {standard_task_runner.py:77} INFO - Job 631: Subtask is_API_available
+[2021-06-29 14:55:09,553] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.is_API_available 2021-06-29T14:55:02.878945+00:00 [running]> on host airflowvm
+[2021-06-29 14:55:09,673] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=is_API_available
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T14:55:02.878945+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T14:55:02.878945+00:00
+[2021-06-29 14:55:09,675] {http.py:101} INFO - Poking: v2/cities
+[2021-06-29 14:55:09,699] {base.py:69} INFO - Using connection to: id: open_aq_api. Host: https://u50g7n0cbj.execute-api.us-east-1.amazonaws.com/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-06-29 14:55:09,703] {http.py:140} INFO - Sending 'GET' to url: https://u50g7n0cbj.execute-api.us-east-1.amazonaws.com/v2/cities
+[2021-06-29 14:55:10,330] {base.py:243} INFO - Success criteria met. Exiting.
+[2021-06-29 14:55:10,368] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=is_API_available, execution_date=20210629T145502, start_date=20210629T145509, end_date=20210629T145510
+[2021-06-29 14:55:10,454] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-29 14:55:10,461] {local_task_job.py:151} INFO - Task exited with return code 0

@@ -1,0 +1,23 @@
+[2021-06-29 14:46:47,709] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.store_data 2021-06-29T14:40:44.038326+00:00 [queued]>
+[2021-06-29 14:46:47,750] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.store_data 2021-06-29T14:40:44.038326+00:00 [queued]>
+[2021-06-29 14:46:47,750] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:46:47,750] {taskinstance.py:1068} INFO - Starting attempt 4 of 4
+[2021-06-29 14:46:47,752] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-29 14:46:47,773] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): store_data> on 2021-06-29T14:40:44.038326+00:00
+[2021-06-29 14:46:47,781] {standard_task_runner.py:52} INFO - Started process 24885 to run task
+[2021-06-29 14:46:47,795] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'store_data', '2021-06-29T14:40:44.038326+00:00', '--job-id', '619', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmpy3_cb94m', '--error-file', '/tmp/tmp_ujcm3zm']
+[2021-06-29 14:46:47,798] {standard_task_runner.py:77} INFO - Job 619: Subtask store_data
+[2021-06-29 14:46:47,911] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.store_data 2021-06-29T14:40:44.038326+00:00 [running]> on host airflowvm
+[2021-06-29 14:46:48,025] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=store_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T14:40:44.038326+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T14:40:44.038326+00:00
+[2021-06-29 14:46:48,044] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-29 14:46:48,060] {python.py:151} INFO - Done. Returned value was: None
+[2021-06-29 14:46:48,080] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=store_data, execution_date=20210629T144044, start_date=20210629T144647, end_date=20210629T144648
+[2021-06-29 14:46:48,121] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-29 14:46:48,165] {local_task_job.py:151} INFO - Task exited with return code 0

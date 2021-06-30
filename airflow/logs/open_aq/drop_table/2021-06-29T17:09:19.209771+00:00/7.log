@@ -1,0 +1,24 @@
+[2021-06-30 09:40:19,320] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.drop_table 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 09:40:19,367] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: open_aq.drop_table 2021-06-29T17:09:19.209771+00:00 [queued]>
+[2021-06-30 09:40:19,367] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 09:40:19,367] {taskinstance.py:1068} INFO - Starting attempt 7 of 7
+[2021-06-30 09:40:19,368] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 09:40:19,407] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): drop_table> on 2021-06-29T17:09:19.209771+00:00
+[2021-06-30 09:40:19,423] {standard_task_runner.py:52} INFO - Started process 12427 to run task
+[2021-06-30 09:40:19,436] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'open_aq', 'drop_table', '2021-06-29T17:09:19.209771+00:00', '--job-id', '804', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/open_aq.py', '--cfg-path', '/tmp/tmp1ykh4bu6', '--error-file', '/tmp/tmpau5g0mzh']
+[2021-06-30 09:40:19,446] {standard_task_runner.py:77} INFO - Job 804: Subtask drop_table
+[2021-06-30 09:40:19,723] {logging_mixin.py:104} INFO - Running <TaskInstance: open_aq.drop_table 2021-06-29T17:09:19.209771+00:00 [running]> on host airflowvm
+[2021-06-30 09:40:19,918] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=open_aq
+AIRFLOW_CTX_TASK_ID=drop_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T17:09:19.209771+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-29T17:09:19.209771+00:00
+[2021-06-30 09:40:19,922] {postgres.py:68} INFO - Executing: DROP TABLE IF EXISTS open_aq
+[2021-06-30 09:40:19,948] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-30 09:40:19,959] {dbapi.py:204} INFO - Running statement: DROP TABLE IF EXISTS open_aq, parameters: None
+[2021-06-30 09:40:19,999] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=open_aq, task_id=drop_table, execution_date=20210629T170919, start_date=20210630T094019, end_date=20210630T094019
+[2021-06-30 09:40:20,066] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 09:40:20,099] {local_task_job.py:151} INFO - Task exited with return code 0
