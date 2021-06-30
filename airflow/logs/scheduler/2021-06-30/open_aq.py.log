@@ -1397,3 +1397,73 @@ SyntaxError: positional argument follows keyword argument
 [2021-06-30 09:52:58,127] {scheduler_job.py:182} INFO - Started process (PID=13928) to work on /home/airflow/airflow/dags/open_aq.py
 [2021-06-30 09:52:58,130] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
 [2021-06-30 09:52:58,138] {logging_mixin.py:104} INFO - [2021-06-30 09:52:58,138] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:52:59,180] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:52:59,225] {logging_mixin.py:104} INFO - [2021-06-30 09:52:59,225] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:52:59,256] {logging_mixin.py:104} INFO - [2021-06-30 09:52:59,256] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:52:59,268] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 1.146 seconds
+[2021-06-30 09:53:29,537] {scheduler_job.py:182} INFO - Started process (PID=13980) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:53:29,539] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:53:29,540] {logging_mixin.py:104} INFO - [2021-06-30 09:53:29,540] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:53:30,178] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:53:30,236] {logging_mixin.py:104} INFO - [2021-06-30 09:53:30,229] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:53:30,272] {logging_mixin.py:104} INFO - [2021-06-30 09:53:30,272] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:53:30,283] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.751 seconds
+[2021-06-30 09:54:00,318] {scheduler_job.py:182} INFO - Started process (PID=14026) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:54:00,319] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:54:00,321] {logging_mixin.py:104} INFO - [2021-06-30 09:54:00,321] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:54:00,894] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:54:00,925] {logging_mixin.py:104} INFO - [2021-06-30 09:54:00,924] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:54:00,949] {logging_mixin.py:104} INFO - [2021-06-30 09:54:00,949] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:54:00,961] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.647 seconds
+[2021-06-30 09:54:31,630] {scheduler_job.py:182} INFO - Started process (PID=14074) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:54:31,633] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:54:31,634] {logging_mixin.py:104} INFO - [2021-06-30 09:54:31,634] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:54:32,348] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:54:32,389] {logging_mixin.py:104} INFO - [2021-06-30 09:54:32,389] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:54:32,418] {logging_mixin.py:104} INFO - [2021-06-30 09:54:32,418] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:54:32,429] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.802 seconds
+[2021-06-30 09:55:02,608] {scheduler_job.py:182} INFO - Started process (PID=14156) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:55:02,609] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:55:02,610] {logging_mixin.py:104} INFO - [2021-06-30 09:55:02,609] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:55:03,199] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:55:03,243] {logging_mixin.py:104} INFO - [2021-06-30 09:55:03,243] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:55:03,281] {logging_mixin.py:104} INFO - [2021-06-30 09:55:03,280] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:55:03,295] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.692 seconds
+[2021-06-30 09:55:33,425] {scheduler_job.py:182} INFO - Started process (PID=14202) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:55:33,437] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:55:33,442] {logging_mixin.py:104} INFO - [2021-06-30 09:55:33,441] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:55:34,447] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:55:34,486] {logging_mixin.py:104} INFO - [2021-06-30 09:55:34,485] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:55:34,511] {logging_mixin.py:104} INFO - [2021-06-30 09:55:34,510] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:55:34,527] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 1.113 seconds
+[2021-06-30 09:56:04,712] {scheduler_job.py:182} INFO - Started process (PID=14248) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:56:04,714] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:56:04,714] {logging_mixin.py:104} INFO - [2021-06-30 09:56:04,714] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:56:05,406] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:56:05,446] {logging_mixin.py:104} INFO - [2021-06-30 09:56:05,446] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:56:05,475] {logging_mixin.py:104} INFO - [2021-06-30 09:56:05,474] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:56:05,489] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.783 seconds
+[2021-06-30 09:56:36,144] {scheduler_job.py:182} INFO - Started process (PID=14294) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:56:36,146] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:56:36,147] {logging_mixin.py:104} INFO - [2021-06-30 09:56:36,146] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:56:36,879] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:56:36,916] {logging_mixin.py:104} INFO - [2021-06-30 09:56:36,915] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:56:36,940] {logging_mixin.py:104} INFO - [2021-06-30 09:56:36,940] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:56:36,953] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.817 seconds
+[2021-06-30 09:57:07,348] {scheduler_job.py:182} INFO - Started process (PID=14341) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:57:07,351] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:57:07,352] {logging_mixin.py:104} INFO - [2021-06-30 09:57:07,352] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:57:08,010] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:57:08,041] {logging_mixin.py:104} INFO - [2021-06-30 09:57:08,041] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:57:08,058] {logging_mixin.py:104} INFO - [2021-06-30 09:57:08,058] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:57:08,075] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.733 seconds
+[2021-06-30 09:57:38,884] {scheduler_job.py:182} INFO - Started process (PID=14401) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:57:38,892] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:57:38,894] {logging_mixin.py:104} INFO - [2021-06-30 09:57:38,893] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:57:39,525] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['open_aq']) retrieved from /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:57:39,571] {logging_mixin.py:104} INFO - [2021-06-30 09:57:39,570] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-06-30 09:57:39,608] {logging_mixin.py:104} INFO - [2021-06-30 09:57:39,608] {dag.py:2305} INFO - Setting next_dagrun for open_aq to 2021-06-30 00:00:00+00:00
+[2021-06-30 09:57:39,624] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/open_aq.py took 0.746 seconds
+[2021-06-30 09:58:10,276] {scheduler_job.py:182} INFO - Started process (PID=14476) to work on /home/airflow/airflow/dags/open_aq.py
+[2021-06-30 09:58:10,278] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/open_aq.py for tasks to queue
+[2021-06-30 09:58:10,278] {logging_mixin.py:104} INFO - [2021-06-30 09:58:10,278] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/open_aq.py

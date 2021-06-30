@@ -32,12 +32,6 @@ def _process_data(ti):
         params = params.replace('[', '{')
         params = params.replace(']', '}')
 
-        city = data['city']
-        city = '\'' + city + '\''
-
-        country = data['country']
-        country = '\'' + country + '\''
-
         processed_data = json_normalize({'city': data['city'],
                                         'country': data['country'],
                                         'count': data['count'],
@@ -55,13 +49,10 @@ def _storing():
     with closing(PostgresHook(postgres_conn_id = 'postgres_default').get_conn()) as conn:
             with closing(conn.cursor()) as cur:
                 # CSV loading to table.
-                #with open('/tmp/processed_data.csv', 'r') as f:
-                    #next(f)
                 copy_sql = '''COPY open_aq (city, country, count, parameters) FROM '/tmp/processed_data.csv' DELIMITER ';' CSV;'''
+                
                 cur.itersize = 1000
                 cur.execute(copy_sql)
-
-                    #cur.copy_from(f, 'open_aq', sep=',')
                 conn.commit()
 
 
