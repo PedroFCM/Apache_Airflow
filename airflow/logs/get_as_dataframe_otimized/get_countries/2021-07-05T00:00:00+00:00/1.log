@@ -1,0 +1,26 @@
+[2021-07-06 14:03:09,367] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.get_countries 2021-07-05T00:00:00+00:00 [queued]>
+[2021-07-06 14:03:09,436] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.get_countries 2021-07-05T00:00:00+00:00 [queued]>
+[2021-07-06 14:03:09,436] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 14:03:09,436] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-06 14:03:09,437] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 14:03:09,452] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): get_countries> on 2021-07-05T00:00:00+00:00
+[2021-07-06 14:03:09,467] {standard_task_runner.py:52} INFO - Started process 5175 to run task
+[2021-07-06 14:03:09,480] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe_otimized', 'get_countries', '2021-07-05T00:00:00+00:00', '--job-id', '1215', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe_otimized.py', '--cfg-path', '/tmp/tmpoj1udpe9', '--error-file', '/tmp/tmp6oc57gcz']
+[2021-07-06 14:03:09,481] {standard_task_runner.py:77} INFO - Job 1215: Subtask get_countries
+[2021-07-06 14:03:09,653] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe_otimized.get_countries 2021-07-05T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-06 14:03:09,919] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe_otimized
+AIRFLOW_CTX_TASK_ID=get_countries
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-07-05T00:00:00+00:00
+[2021-07-06 14:03:09,960] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-07-06 14:03:10,131] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-06 14:03:10,194] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe_otimized, task_id=get_countries, execution_date=20210705T000000, start_date=20210706T140309, end_date=20210706T140310
+[2021-07-06 14:03:10,313] {dagrun.py:495} WARNING - Failed to get task '<TaskInstance: get_as_dataframe_otimized.getting_data.get_cataract_sex 2021-07-05 00:00:00+00:00 [removed]>' for dag 'get_as_dataframe_otimized'. Marking it as removed.
+[2021-07-06 14:03:10,323] {dagrun.py:495} WARNING - Failed to get task '<TaskInstance: get_as_dataframe_otimized.getting_data.get_diseases 2021-07-05 00:00:00+00:00 [removed]>' for dag 'get_as_dataframe_otimized'. Marking it as removed.
+[2021-07-06 14:03:10,326] {dagrun.py:495} WARNING - Failed to get task '<TaskInstance: get_as_dataframe_otimized.getting_data.get_countries 2021-07-05 00:00:00+00:00 [removed]>' for dag 'get_as_dataframe_otimized'. Marking it as removed.
+[2021-07-06 14:03:10,330] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-06 14:03:10,363] {local_task_job.py:151} INFO - Task exited with return code 0

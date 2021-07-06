@@ -1,0 +1,23 @@
+[2021-07-06 13:52:30,814] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.store_data 2021-07-06T13:52:22.033749+00:00 [queued]>
+[2021-07-06 13:52:30,848] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.store_data 2021-07-06T13:52:22.033749+00:00 [queued]>
+[2021-07-06 13:52:30,849] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 13:52:30,849] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-06 13:52:30,851] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 13:52:30,878] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): store_data> on 2021-07-06T13:52:22.033749+00:00
+[2021-07-06 13:52:30,885] {standard_task_runner.py:52} INFO - Started process 3320 to run task
+[2021-07-06 13:52:30,892] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe_otimized', 'store_data', '2021-07-06T13:52:22.033749+00:00', '--job-id', '1210', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe_otimized.py', '--cfg-path', '/tmp/tmpan9pilsi', '--error-file', '/tmp/tmpgxwxulb_']
+[2021-07-06 13:52:30,893] {standard_task_runner.py:77} INFO - Job 1210: Subtask store_data
+[2021-07-06 13:52:30,998] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe_otimized.store_data 2021-07-06T13:52:22.033749+00:00 [running]> on host airflowvm
+[2021-07-06 13:52:31,120] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe_otimized
+AIRFLOW_CTX_TASK_ID=store_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-06T13:52:22.033749+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-06T13:52:22.033749+00:00
+[2021-07-06 13:52:31,147] {logging_mixin.py:104} INFO - [None]
+[2021-07-06 13:52:31,148] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-06 13:52:31,164] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe_otimized, task_id=store_data, execution_date=20210706T135222, start_date=20210706T135230, end_date=20210706T135231
+[2021-07-06 13:52:31,205] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-06 13:52:31,239] {local_task_job.py:151} INFO - Task exited with return code 0

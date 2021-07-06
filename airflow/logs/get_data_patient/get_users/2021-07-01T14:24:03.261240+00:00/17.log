@@ -1,0 +1,24 @@
+[2021-07-01 15:08:46,248] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:08:46,271] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:08:46,273] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:08:46,274] {taskinstance.py:1068} INFO - Starting attempt 17 of 17
+[2021-07-01 15:08:46,280] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:08:46,312] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): get_users> on 2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:08:46,317] {standard_task_runner.py:52} INFO - Started process 14269 to run task
+[2021-07-01 15:08:46,323] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'get_users', '2021-07-01T14:24:03.261240+00:00', '--job-id', '981', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmp6gpg01cm', '--error-file', '/tmp/tmptnqkcpvp']
+[2021-07-01 15:08:46,325] {standard_task_runner.py:77} INFO - Job 981: Subtask get_users
+[2021-07-01 15:08:46,411] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [running]> on host airflowvm
+[2021-07-01 15:08:46,515] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=get_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T14:24:03.261240+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:08:46,529] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-07-01 15:08:46,539] {logging_mixin.py:104} INFO - ([('json_agg', [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}])])
+[2021-07-01 15:08:46,540] {python.py:151} INFO - Done. Returned value was: ([('json_agg', [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}])])
+[2021-07-01 15:08:46,596] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_data_patient, task_id=get_users, execution_date=20210701T142403, start_date=20210701T150846, end_date=20210701T150846
+[2021-07-01 15:08:46,638] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 15:08:46,662] {local_task_job.py:151} INFO - Task exited with return code 0

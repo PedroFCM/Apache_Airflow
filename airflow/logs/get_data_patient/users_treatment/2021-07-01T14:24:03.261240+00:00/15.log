@@ -1,0 +1,25 @@
+[2021-07-01 16:36:52,007] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.users_treatment 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 16:36:52,018] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.users_treatment 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 16:36:52,019] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 16:36:52,019] {taskinstance.py:1068} INFO - Starting attempt 15 of 15
+[2021-07-01 16:36:52,019] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 16:36:52,038] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): users_treatment> on 2021-07-01T14:24:03.261240+00:00
+[2021-07-01 16:36:52,043] {standard_task_runner.py:52} INFO - Started process 25043 to run task
+[2021-07-01 16:36:52,048] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'users_treatment', '2021-07-01T14:24:03.261240+00:00', '--job-id', '1001', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpo82i0bt9', '--error-file', '/tmp/tmp4jp1c7a_']
+[2021-07-01 16:36:52,049] {standard_task_runner.py:77} INFO - Job 1001: Subtask users_treatment
+[2021-07-01 16:36:52,129] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.users_treatment 2021-07-01T14:24:03.261240+00:00 [running]> on host airflowvm
+[2021-07-01 16:36:52,223] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=users_treatment
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T14:24:03.261240+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T14:24:03.261240+00:00
+[2021-07-01 16:36:52,236] {logging_mixin.py:104} INFO -  [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}]
+[2021-07-01 16:36:52,236] {logging_mixin.py:104} INFO - " [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}]"
+[2021-07-01 16:36:52,236] {logging_mixin.py:104} INFO - Users:  [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}]
+[2021-07-01 16:36:52,236] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-01 16:36:52,255] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_data_patient, task_id=users_treatment, execution_date=20210701T142403, start_date=20210701T163652, end_date=20210701T163652
+[2021-07-01 16:36:52,309] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 16:36:52,349] {local_task_job.py:151} INFO - Task exited with return code 0

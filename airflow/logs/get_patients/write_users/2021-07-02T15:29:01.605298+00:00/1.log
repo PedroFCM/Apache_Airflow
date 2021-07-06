@@ -1,0 +1,33 @@
+[2021-07-02 15:29:23,946] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_patients.write_users 2021-07-02T15:29:01.605298+00:00 [queued]>
+[2021-07-02 15:29:24,019] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_patients.write_users 2021-07-02T15:29:01.605298+00:00 [queued]>
+[2021-07-02 15:29:24,020] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 15:29:24,020] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-02 15:29:24,020] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 15:29:24,102] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_users> on 2021-07-02T15:29:01.605298+00:00
+[2021-07-02 15:29:24,110] {standard_task_runner.py:52} INFO - Started process 14087 to run task
+[2021-07-02 15:29:24,163] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_patients', 'write_users', '2021-07-02T15:29:01.605298+00:00', '--job-id', '1102', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmp_uhhdzu3', '--error-file', '/tmp/tmp1seal0cl']
+[2021-07-02 15:29:24,181] {standard_task_runner.py:77} INFO - Job 1102: Subtask write_users
+[2021-07-02 15:29:24,483] {logging_mixin.py:104} INFO - Running <TaskInstance: get_patients.write_users 2021-07-02T15:29:01.605298+00:00 [running]> on host airflowvm
+[2021-07-02 15:29:24,679] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_patients
+AIRFLOW_CTX_TASK_ID=write_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-02T15:29:01.605298+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-02T15:29:01.605298+00:00
+[2021-07-02 15:29:24,694] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 148, in execute
+    self.op_kwargs = determine_kwargs(self.python_callable, self.op_args, context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 115, in determine_kwargs
+    raise ValueError(f"The key {name} in args is part of kwargs and therefore reserved.")
+ValueError: The key ti in args is part of kwargs and therefore reserved.
+[2021-07-02 15:29:24,710] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_patients, task_id=write_users, execution_date=20210702T152901, start_date=20210702T152923, end_date=20210702T152924
+[2021-07-02 15:29:24,802] {local_task_job.py:151} INFO - Task exited with return code 1

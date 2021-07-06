@@ -1,0 +1,22 @@
+[2021-07-05 08:42:56,098] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_diseases 2021-07-05T08:41:49.353787+00:00 [queued]>
+[2021-07-05 08:42:56,125] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_diseases 2021-07-05T08:41:49.353787+00:00 [queued]>
+[2021-07-05 08:42:56,125] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 08:42:56,125] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-05 08:42:56,126] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 08:42:56,140] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_diseases> on 2021-07-05T08:41:49.353787+00:00
+[2021-07-05 08:42:56,154] {standard_task_runner.py:52} INFO - Started process 2496 to run task
+[2021-07-05 08:42:56,159] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe', 'write_diseases', '2021-07-05T08:41:49.353787+00:00', '--job-id', '1131', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe.py', '--cfg-path', '/tmp/tmpzzybas6k', '--error-file', '/tmp/tmpkec0luyu']
+[2021-07-05 08:42:56,161] {standard_task_runner.py:77} INFO - Job 1131: Subtask write_diseases
+[2021-07-05 08:42:56,264] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe.write_diseases 2021-07-05T08:41:49.353787+00:00 [running]> on host airflowvm
+[2021-07-05 08:42:56,419] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe
+AIRFLOW_CTX_TASK_ID=write_diseases
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T08:41:49.353787+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-05T08:41:49.353787+00:00
+[2021-07-05 08:42:56,420] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-05 08:42:56,447] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe, task_id=write_diseases, execution_date=20210705T084149, start_date=20210705T084256, end_date=20210705T084256
+[2021-07-05 08:42:56,509] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-05 08:42:56,539] {local_task_job.py:151} INFO - Task exited with return code 0

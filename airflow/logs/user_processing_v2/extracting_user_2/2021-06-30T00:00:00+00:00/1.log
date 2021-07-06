@@ -1,0 +1,25 @@
+[2021-07-01 08:32:40,297] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_2 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:40,498] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_2 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:40,500] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:40,500] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-01 08:32:40,502] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:40,601] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user_2> on 2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:40,610] {standard_task_runner.py:52} INFO - Started process 2079 to run task
+[2021-07-01 08:32:40,726] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'extracting_user_2', '2021-06-30T00:00:00+00:00', '--job-id', '906', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmphtev1u5u', '--error-file', '/tmp/tmpmx_qnbcv']
+[2021-07-01 08:32:40,744] {standard_task_runner.py:77} INFO - Job 906: Subtask extracting_user_2
+[2021-07-01 08:32:41,164] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.extracting_user_2 2021-06-30T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-01 08:32:41,796] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=extracting_user_2
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:41,851] {http.py:111} INFO - Calling HTTP method
+[2021-07-01 08:32:41,932] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-07-01 08:32:41,945] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-07-01 08:32:42,398] {http.py:115} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Benjamin","last":"Kumar"},"location":{"street":{"number":2383,"name":"Tennent Drive"},"city":"Christchurch","state":"West Coast","country":"New Zealand","postcode":25299,"coordinates":{"latitude":"66.6721","longitude":"-80.6221"},"timezone":{"offset":"+2:00","description":"Kaliningrad, South Africa"}},"email":"benjamin.kumar@example.com","login":{"uuid":"2683d1f2-adff-4c66-8d2f-3c03ff278d80","username":"blackzebra284","password":"slappy","salt":"P389VzxW","md5":"8ca19df48068bbb667a27acb6ab6081a","sha1":"870f64d6a9c2f74ac9f7ddaf066c4bd37c42e50d","sha256":"5daaa3deea36bc1c8b823725490f62e33c913e4128267e92144f5c7e0173fd9a"},"dob":{"date":"1988-02-23T17:47:08.459Z","age":33},"registered":{"date":"2002-12-05T17:27:18.921Z","age":19},"phone":"(991)-458-5001","cell":"(032)-585-6402","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/20.jpg","medium":"https://randomuser.me/api/portraits/med/men/20.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/20.jpg"},"nat":"NZ"}],"info":{"seed":"1f7524d1453120c3","results":1,"page":1,"version":"1.3"}}
+[2021-07-01 08:32:42,686] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=extracting_user_2, execution_date=20210630T000000, start_date=20210701T083240, end_date=20210701T083242
+[2021-07-01 08:32:42,935] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 08:32:43,026] {local_task_job.py:151} INFO - Task exited with return code 0

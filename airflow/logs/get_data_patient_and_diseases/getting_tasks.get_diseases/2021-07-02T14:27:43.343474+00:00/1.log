@@ -1,0 +1,22 @@
+[2021-07-02 14:27:47,372] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient_and_diseases.getting_tasks.get_diseases 2021-07-02T14:27:43.343474+00:00 [queued]>
+[2021-07-02 14:27:47,478] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient_and_diseases.getting_tasks.get_diseases 2021-07-02T14:27:43.343474+00:00 [queued]>
+[2021-07-02 14:27:47,478] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 14:27:47,479] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-02 14:27:47,479] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 14:27:47,522] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): getting_tasks.get_diseases> on 2021-07-02T14:27:43.343474+00:00
+[2021-07-02 14:27:47,537] {standard_task_runner.py:52} INFO - Started process 5807 to run task
+[2021-07-02 14:27:47,590] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient_and_diseases', 'getting_tasks.get_diseases', '2021-07-02T14:27:43.343474+00:00', '--job-id', '1075', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmp60c1l86o', '--error-file', '/tmp/tmpzydlsa67']
+[2021-07-02 14:27:47,593] {standard_task_runner.py:77} INFO - Job 1075: Subtask getting_tasks.get_diseases
+[2021-07-02 14:27:48,161] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient_and_diseases.getting_tasks.get_diseases 2021-07-02T14:27:43.343474+00:00 [running]> on host airflowvm
+[2021-07-02 14:27:48,522] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient_and_diseases
+AIRFLOW_CTX_TASK_ID=getting_tasks.get_diseases
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-02T14:27:43.343474+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-02T14:27:43.343474+00:00
+[2021-07-02 14:27:48,523] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-02 14:27:48,557] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_data_patient_and_diseases, task_id=getting_tasks.get_diseases, execution_date=20210702T142743, start_date=20210702T142747, end_date=20210702T142748
+[2021-07-02 14:27:48,861] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-02 14:27:48,943] {local_task_job.py:151} INFO - Task exited with return code 0

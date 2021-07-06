@@ -1,0 +1,35 @@
+[2021-06-30 14:33:15,923] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.processing_user_2 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:33:16,109] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.processing_user_2 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:33:16,109] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:33:16,109] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-30 14:33:16,110] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:33:16,293] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): processing_user_2> on 2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:33:16,341] {standard_task_runner.py:52} INFO - Started process 5220 to run task
+[2021-06-30 14:33:16,523] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'processing_user_2', '2021-06-30T14:29:12.044488+00:00', '--job-id', '839', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmp6apxwhgw', '--error-file', '/tmp/tmpnxodadol']
+[2021-06-30 14:33:16,628] {standard_task_runner.py:77} INFO - Job 839: Subtask processing_user_2
+[2021-06-30 14:33:17,160] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.processing_user_2 2021-06-30T14:29:12.044488+00:00 [running]> on host airflowvm
+[2021-06-30 14:33:17,792] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=processing_user_2
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T14:29:12.044488+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:33:17,868] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/user_processing_v2.py", line 22, in _processing_user
+    if not len(users) or 'results' not in users[0]:
+TypeError: argument of type 'NoneType' is not iterable
+[2021-06-30 14:33:17,896] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=user_processing_v2, task_id=processing_user_2, execution_date=20210630T142912, start_date=20210630T143315, end_date=20210630T143317
+[2021-06-30 14:33:18,141] {local_task_job.py:151} INFO - Task exited with return code 1

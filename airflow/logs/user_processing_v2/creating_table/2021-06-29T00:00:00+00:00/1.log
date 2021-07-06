@@ -1,0 +1,36 @@
+[2021-06-30 14:29:12,443] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.creating_table 2021-06-29T00:00:00+00:00 [queued]>
+[2021-06-30 14:29:12,515] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.creating_table 2021-06-29T00:00:00+00:00 [queued]>
+[2021-06-30 14:29:12,517] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:29:12,517] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-30 14:29:12,517] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:29:12,560] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): creating_table> on 2021-06-29T00:00:00+00:00
+[2021-06-30 14:29:12,566] {standard_task_runner.py:52} INFO - Started process 4334 to run task
+[2021-06-30 14:29:12,595] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'creating_table', '2021-06-29T00:00:00+00:00', '--job-id', '821', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmprmhq48_u', '--error-file', '/tmp/tmpr8ac4p53']
+[2021-06-30 14:29:12,606] {standard_task_runner.py:77} INFO - Job 821: Subtask creating_table
+[2021-06-30 14:29:12,770] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.creating_table 2021-06-29T00:00:00+00:00 [running]> on host airflowvm
+[2021-06-30 14:29:12,996] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=creating_table
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-29T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-29T00:00:00+00:00
+[2021-06-30 14:29:12,997] {postgres.py:68} INFO - Executing:  CREATE TABLE IF NOT EXISTS users (
+                                          first_name VARCHAR NOT NULL,
+                                          last_name VARCHAR NOT NULL,
+                                          country VARCHAR NOT NULL,
+                                          username VARCHAR NOT NULL,
+                                          password VARCHAR NOT NULL,
+                                          email VARCHAR NOT NULL PRIMARY KEY); 
+[2021-06-30 14:29:13,033] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-06-30 14:29:13,061] {dbapi.py:204} INFO - Running statement:  CREATE TABLE IF NOT EXISTS users (
+                                          first_name VARCHAR NOT NULL,
+                                          last_name VARCHAR NOT NULL,
+                                          country VARCHAR NOT NULL,
+                                          username VARCHAR NOT NULL,
+                                          password VARCHAR NOT NULL,
+                                          email VARCHAR NOT NULL PRIMARY KEY); , parameters: None
+[2021-06-30 14:29:13,157] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=creating_table, execution_date=20210629T000000, start_date=20210630T142912, end_date=20210630T142913
+[2021-06-30 14:29:13,327] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 14:29:13,363] {local_task_job.py:151} INFO - Task exited with return code 0

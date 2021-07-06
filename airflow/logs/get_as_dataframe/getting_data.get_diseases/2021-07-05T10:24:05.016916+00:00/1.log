@@ -1,0 +1,23 @@
+[2021-07-05 10:24:08,983] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.getting_data.get_diseases 2021-07-05T10:24:05.016916+00:00 [queued]>
+[2021-07-05 10:24:09,192] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.getting_data.get_diseases 2021-07-05T10:24:05.016916+00:00 [queued]>
+[2021-07-05 10:24:09,234] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:24:09,236] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-05 10:24:09,241] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:24:09,396] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): getting_data.get_diseases> on 2021-07-05T10:24:05.016916+00:00
+[2021-07-05 10:24:09,406] {standard_task_runner.py:52} INFO - Started process 17656 to run task
+[2021-07-05 10:24:09,457] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe', 'getting_data.get_diseases', '2021-07-05T10:24:05.016916+00:00', '--job-id', '1148', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe.py', '--cfg-path', '/tmp/tmpjw0nh6zc', '--error-file', '/tmp/tmpwsifh3wh']
+[2021-07-05 10:24:09,459] {standard_task_runner.py:77} INFO - Job 1148: Subtask getting_data.get_diseases
+[2021-07-05 10:24:09,911] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe.getting_data.get_diseases 2021-07-05T10:24:05.016916+00:00 [running]> on host airflowvm
+[2021-07-05 10:24:10,376] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe
+AIRFLOW_CTX_TASK_ID=getting_data.get_diseases
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T10:24:05.016916+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-05T10:24:05.016916+00:00
+[2021-07-05 10:24:10,424] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-07-05 10:24:10,508] {python.py:151} INFO - Done. Returned value was: {"Name of Disease":{"0":"Atrial Flutter","1":"Knee Osteoarthritis ","2":"Atrial Fibrillation","3":"Cataract","4":"Older Person","5":"Obesity","6":"Diabetes"},"Number of Pacients":{"0":2,"1":1,"2":60,"3":4482,"4":1,"5":380,"6":3}}
+[2021-07-05 10:24:10,631] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe, task_id=getting_data.get_diseases, execution_date=20210705T102405, start_date=20210705T102409, end_date=20210705T102410
+[2021-07-05 10:24:10,774] {taskinstance.py:1245} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2021-07-05 10:24:10,870] {local_task_job.py:151} INFO - Task exited with return code 0

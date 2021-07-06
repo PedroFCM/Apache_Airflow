@@ -1,0 +1,49 @@
+[2021-07-05 10:23:02,502] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.storing_data.write_diseases 2021-07-05T10:22:53.763157+00:00 [queued]>
+[2021-07-05 10:23:02,565] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.storing_data.write_diseases 2021-07-05T10:22:53.763157+00:00 [queued]>
+[2021-07-05 10:23:02,569] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:23:02,571] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-05 10:23:02,572] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:23:02,600] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): storing_data.write_diseases> on 2021-07-05T10:22:53.763157+00:00
+[2021-07-05 10:23:02,613] {standard_task_runner.py:52} INFO - Started process 17348 to run task
+[2021-07-05 10:23:02,672] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe', 'storing_data.write_diseases', '2021-07-05T10:22:53.763157+00:00', '--job-id', '1142', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe.py', '--cfg-path', '/tmp/tmp19pcx7tw', '--error-file', '/tmp/tmp7fq08n94']
+[2021-07-05 10:23:02,674] {standard_task_runner.py:77} INFO - Job 1142: Subtask storing_data.write_diseases
+[2021-07-05 10:23:02,875] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe.storing_data.write_diseases 2021-07-05T10:22:53.763157+00:00 [running]> on host airflowvm
+[2021-07-05 10:23:03,166] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe
+AIRFLOW_CTX_TASK_ID=storing_data.write_diseases
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T10:22:53.763157+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-05T10:22:53.763157+00:00
+[2021-07-05 10:23:03,195] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/get_as_Dataframe.py", line 48, in _write_diseases
+    users = read_json(users)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/util/_decorators.py", line 199, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/util/_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 540, in read_json
+    json_reader = JsonReader(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 622, in __init__
+    data = self._get_data_from_filepath(filepath_or_buffer)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 659, in _get_data_from_filepath
+    self.handles = get_handle(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/common.py", line 558, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/common.py", line 371, in _get_filepath_or_buffer
+    raise ValueError(msg)
+ValueError: Invalid file path or buffer object type: <class 'NoneType'>
+[2021-07-05 10:23:03,212] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_as_dataframe, task_id=storing_data.write_diseases, execution_date=20210705T102253, start_date=20210705T102302, end_date=20210705T102303
+[2021-07-05 10:23:03,267] {local_task_job.py:151} INFO - Task exited with return code 1

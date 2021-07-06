@@ -1,0 +1,49 @@
+[2021-06-30 14:57:16,788] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.processing_user_2 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:57:16,897] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.processing_user_2 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:57:16,898] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:57:16,900] {taskinstance.py:1068} INFO - Starting attempt 2 of 2
+[2021-06-30 14:57:16,910] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:57:16,956] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): processing_user_2> on 2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:57:16,983] {standard_task_runner.py:52} INFO - Started process 8434 to run task
+[2021-06-30 14:57:17,058] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'processing_user_2', '2021-06-30T14:29:12.044488+00:00', '--job-id', '870', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmp1n7vaeta', '--error-file', '/tmp/tmpuksugofv']
+[2021-06-30 14:57:17,081] {standard_task_runner.py:77} INFO - Job 870: Subtask processing_user_2
+[2021-06-30 14:57:17,412] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.processing_user_2 2021-06-30T14:29:12.044488+00:00 [running]> on host airflowvm
+[2021-06-30 14:57:17,611] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=processing_user_2
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T14:29:12.044488+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:57:17,669] {python.py:151} INFO - Done. Returned value was: ['first_name', 'last_name', 'country', 'username', 'password', 'email']
+[2021-06-30 14:57:17,678] {xcom.py:228} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your airflow config.
+[2021-06-30 14:57:17,680] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1344, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1919, in xcom_push
+    XCom.set(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/xcom.py", line 79, in set
+    value = XCom.serialize_value(value)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/xcom.py", line 226, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+[2021-06-30 14:57:17,699] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=user_processing_v2, task_id=processing_user_2, execution_date=20210630T142912, start_date=20210630T145716, end_date=20210630T145717
+[2021-06-30 14:57:17,814] {local_task_job.py:151} INFO - Task exited with return code 1

@@ -1,0 +1,49 @@
+[2021-07-01 16:43:14,802] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.write_users 2021-07-01T16:42:03.454547+00:00 [queued]>
+[2021-07-01 16:43:14,811] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.write_users 2021-07-01T16:42:03.454547+00:00 [queued]>
+[2021-07-01 16:43:14,811] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 16:43:14,811] {taskinstance.py:1068} INFO - Starting attempt 2 of 2
+[2021-07-01 16:43:14,812] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 16:43:14,828] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_users> on 2021-07-01T16:42:03.454547+00:00
+[2021-07-01 16:43:14,832] {standard_task_runner.py:52} INFO - Started process 25971 to run task
+[2021-07-01 16:43:14,837] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'write_users', '2021-07-01T16:42:03.454547+00:00', '--job-id', '1008', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpqnivjoh1', '--error-file', '/tmp/tmp0le6yt5g']
+[2021-07-01 16:43:14,838] {standard_task_runner.py:77} INFO - Job 1008: Subtask write_users
+[2021-07-01 16:43:14,918] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.write_users 2021-07-01T16:42:03.454547+00:00 [running]> on host airflowvm
+[2021-07-01 16:43:15,007] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=write_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T16:42:03.454547+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T16:42:03.454547+00:00
+[2021-07-01 16:43:15,019] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/get_Data_Patient.py", line 50, in _write_users
+    df = read_json(users[0])
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/util/_decorators.py", line 199, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/util/_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 563, in read_json
+    return json_reader.read()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 694, in read
+    obj = self._get_object_parser(self.data)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 716, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 831, in parse
+    self._parse_no_numpy()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 1079, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
+[2021-07-01 16:43:15,021] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_data_patient, task_id=write_users, execution_date=20210701T164203, start_date=20210701T164314, end_date=20210701T164315
+[2021-07-01 16:43:15,053] {local_task_job.py:151} INFO - Task exited with return code 1

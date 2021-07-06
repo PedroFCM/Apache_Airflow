@@ -1,0 +1,22 @@
+[2021-07-01 15:11:54,552] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.users_treatment 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:11:54,567] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.users_treatment 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:11:54,568] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:11:54,568] {taskinstance.py:1068} INFO - Starting attempt 5 of 5
+[2021-07-01 15:11:54,568] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:11:54,589] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): users_treatment> on 2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:11:54,594] {standard_task_runner.py:52} INFO - Started process 14738 to run task
+[2021-07-01 15:11:54,601] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'users_treatment', '2021-07-01T14:24:03.261240+00:00', '--job-id', '985', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpvsdmdlsq', '--error-file', '/tmp/tmp39h5h47z']
+[2021-07-01 15:11:54,602] {standard_task_runner.py:77} INFO - Job 985: Subtask users_treatment
+[2021-07-01 15:11:54,721] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.users_treatment 2021-07-01T14:24:03.261240+00:00 [running]> on host airflowvm
+[2021-07-01 15:11:54,830] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=users_treatment
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T14:24:03.261240+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:11:54,832] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-01 15:11:54,851] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_data_patient, task_id=users_treatment, execution_date=20210701T142403, start_date=20210701T151154, end_date=20210701T151154
+[2021-07-01 15:11:54,901] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 15:11:54,945] {local_task_job.py:151} INFO - Task exited with return code 0

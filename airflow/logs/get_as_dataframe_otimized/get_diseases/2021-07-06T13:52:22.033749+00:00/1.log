@@ -1,0 +1,26 @@
+[2021-07-06 13:57:30,411] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.get_diseases 2021-07-06T13:52:22.033749+00:00 [queued]>
+[2021-07-06 13:57:30,489] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.get_diseases 2021-07-06T13:52:22.033749+00:00 [queued]>
+[2021-07-06 13:57:30,489] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 13:57:30,490] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-06 13:57:30,490] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 13:57:30,519] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): get_diseases> on 2021-07-06T13:52:22.033749+00:00
+[2021-07-06 13:57:30,527] {standard_task_runner.py:52} INFO - Started process 4166 to run task
+[2021-07-06 13:57:30,544] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe_otimized', 'get_diseases', '2021-07-06T13:52:22.033749+00:00', '--job-id', '1212', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe_otimized.py', '--cfg-path', '/tmp/tmpnoctsio3', '--error-file', '/tmp/tmpdvtu2cz8']
+[2021-07-06 13:57:30,546] {standard_task_runner.py:77} INFO - Job 1212: Subtask get_diseases
+[2021-07-06 13:57:30,704] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe_otimized.get_diseases 2021-07-06T13:52:22.033749+00:00 [running]> on host airflowvm
+[2021-07-06 13:57:30,933] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe_otimized
+AIRFLOW_CTX_TASK_ID=get_diseases
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-06T13:52:22.033749+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-06T13:52:22.033749+00:00
+[2021-07-06 13:57:30,974] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-07-06 13:57:31,050] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-06 13:57:31,110] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe_otimized, task_id=get_diseases, execution_date=20210706T135222, start_date=20210706T135730, end_date=20210706T135731
+[2021-07-06 13:57:31,193] {dagrun.py:495} WARNING - Failed to get task '<TaskInstance: get_as_dataframe_otimized.getting_data.get_diseases 2021-07-06 13:52:22.033749+00:00 [removed]>' for dag 'get_as_dataframe_otimized'. Marking it as removed.
+[2021-07-06 13:57:31,195] {dagrun.py:495} WARNING - Failed to get task '<TaskInstance: get_as_dataframe_otimized.getting_data.get_cataract_sex 2021-07-06 13:52:22.033749+00:00 [removed]>' for dag 'get_as_dataframe_otimized'. Marking it as removed.
+[2021-07-06 13:57:31,206] {dagrun.py:495} WARNING - Failed to get task '<TaskInstance: get_as_dataframe_otimized.getting_data.get_countries 2021-07-06 13:52:22.033749+00:00 [removed]>' for dag 'get_as_dataframe_otimized'. Marking it as removed.
+[2021-07-06 13:57:31,218] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-06 13:57:31,244] {local_task_job.py:151} INFO - Task exited with return code 0

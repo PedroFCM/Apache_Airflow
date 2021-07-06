@@ -1,0 +1,22 @@
+[2021-07-01 15:08:21,661] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.write_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:08:21,682] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.write_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:08:21,683] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:08:21,683] {taskinstance.py:1068} INFO - Starting attempt 7 of 7
+[2021-07-01 15:08:21,684] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:08:21,721] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_users> on 2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:08:21,726] {standard_task_runner.py:52} INFO - Started process 14186 to run task
+[2021-07-01 15:08:21,739] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'write_users', '2021-07-01T14:24:03.261240+00:00', '--job-id', '980', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpo_gc5j5v', '--error-file', '/tmp/tmpq4idxk6l']
+[2021-07-01 15:08:21,741] {standard_task_runner.py:77} INFO - Job 980: Subtask write_users
+[2021-07-01 15:08:21,871] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.write_users 2021-07-01T14:24:03.261240+00:00 [running]> on host airflowvm
+[2021-07-01 15:08:22,099] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=write_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T14:24:03.261240+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:08:22,100] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-01 15:08:22,151] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_data_patient, task_id=write_users, execution_date=20210701T142403, start_date=20210701T150821, end_date=20210701T150822
+[2021-07-01 15:08:22,323] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 15:08:22,361] {local_task_job.py:151} INFO - Task exited with return code 0

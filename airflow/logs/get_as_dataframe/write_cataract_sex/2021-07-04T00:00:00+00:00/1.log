@@ -1,0 +1,24 @@
+[2021-07-05 10:31:16,033] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_cataract_sex 2021-07-04T00:00:00+00:00 [queued]>
+[2021-07-05 10:31:16,309] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_cataract_sex 2021-07-04T00:00:00+00:00 [queued]>
+[2021-07-05 10:31:16,334] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:31:16,363] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-05 10:31:16,370] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:31:16,620] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_cataract_sex> on 2021-07-04T00:00:00+00:00
+[2021-07-05 10:31:16,696] {standard_task_runner.py:52} INFO - Started process 19052 to run task
+[2021-07-05 10:31:16,735] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe', 'write_cataract_sex', '2021-07-04T00:00:00+00:00', '--job-id', '1161', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe.py', '--cfg-path', '/tmp/tmp3kegixs7', '--error-file', '/tmp/tmp46e3cseo']
+[2021-07-05 10:31:16,798] {standard_task_runner.py:77} INFO - Job 1161: Subtask write_cataract_sex
+[2021-07-05 10:31:17,530] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe.write_cataract_sex 2021-07-04T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-05 10:31:17,903] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe
+AIRFLOW_CTX_TASK_ID=write_cataract_sex
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-04T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-07-04T00:00:00+00:00
+[2021-07-05 10:31:18,212] {logging_mixin.py:104} INFO - Users after load:   Cataract Females Cataract Males
+0           (2593)         (1871)
+[2021-07-05 10:31:18,266] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-05 10:31:18,327] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe, task_id=write_cataract_sex, execution_date=20210704T000000, start_date=20210705T103116, end_date=20210705T103118
+[2021-07-05 10:31:18,707] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-05 10:31:18,762] {local_task_job.py:151} INFO - Task exited with return code 0

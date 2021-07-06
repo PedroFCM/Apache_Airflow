@@ -1,0 +1,25 @@
+[2021-07-01 08:56:01,564] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_1 2021-07-01T08:55:46.246726+00:00 [queued]>
+[2021-07-01 08:56:01,698] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_1 2021-07-01T08:55:46.246726+00:00 [queued]>
+[2021-07-01 08:56:01,698] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:56:01,699] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-01 08:56:01,704] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:56:01,737] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user_1> on 2021-07-01T08:55:46.246726+00:00
+[2021-07-01 08:56:01,743] {standard_task_runner.py:52} INFO - Started process 39888 to run task
+[2021-07-01 08:56:01,748] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'extracting_user_1', '2021-07-01T08:55:46.246726+00:00', '--job-id', '944', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmppn7732ii', '--error-file', '/tmp/tmp0008ejs1']
+[2021-07-01 08:56:01,758] {standard_task_runner.py:77} INFO - Job 944: Subtask extracting_user_1
+[2021-07-01 08:56:02,057] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.extracting_user_1 2021-07-01T08:55:46.246726+00:00 [running]> on host airflowvm
+[2021-07-01 08:56:02,624] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=extracting_user_1
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T08:55:46.246726+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T08:55:46.246726+00:00
+[2021-07-01 08:56:02,628] {http.py:111} INFO - Calling HTTP method
+[2021-07-01 08:56:02,715] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-07-01 08:56:02,742] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-07-01 08:56:03,148] {http.py:115} INFO - {"results":[{"gender":"female","name":{"title":"Mademoiselle","first":"Cynthia","last":"Laurent"},"location":{"street":{"number":9801,"name":"Place du 8 Février 1962"},"city":"Ingenbohl","state":"Schaffhausen","country":"Switzerland","postcode":6902,"coordinates":{"latitude":"-51.9156","longitude":"60.5263"},"timezone":{"offset":"-12:00","description":"Eniwetok, Kwajalein"}},"email":"cynthia.laurent@example.com","login":{"uuid":"3700f469-6744-4321-a233-856917ab1623","username":"brownlion385","password":"checker","salt":"Dtrlhe5k","md5":"e5b94c678efc0c35d1cffca7410dca17","sha1":"91a41e2692083ce9c8cda20a7a0434c79a89a268","sha256":"cd4c1de55b56808e605e2801c6e2ff1aa6b9ba6c0778bc8e22e6a12fd9bb331d"},"dob":{"date":"1967-03-30T01:02:01.272Z","age":54},"registered":{"date":"2012-06-16T21:35:13.092Z","age":9},"phone":"078 041 21 09","cell":"076 149 76 22","id":{"name":"AVS","value":"756.2143.1062.83"},"picture":{"large":"https://randomuser.me/api/portraits/women/6.jpg","medium":"https://randomuser.me/api/portraits/med/women/6.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/6.jpg"},"nat":"CH"}],"info":{"seed":"6a0c958049de3334","results":1,"page":1,"version":"1.3"}}
+[2021-07-01 08:56:03,365] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=extracting_user_1, execution_date=20210701T085546, start_date=20210701T085601, end_date=20210701T085603
+[2021-07-01 08:56:03,521] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 08:56:03,549] {local_task_job.py:151} INFO - Task exited with return code 0

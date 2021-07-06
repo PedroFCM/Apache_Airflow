@@ -1,0 +1,22 @@
+[2021-07-01 08:32:48,441] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.processing_user_4 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:48,586] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.processing_user_4 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:48,597] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:48,599] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-01 08:32:48,602] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:48,677] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): processing_user_4> on 2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:48,698] {standard_task_runner.py:52} INFO - Started process 2188 to run task
+[2021-07-01 08:32:48,793] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'processing_user_4', '2021-06-30T00:00:00+00:00', '--job-id', '909', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmpomqo282y', '--error-file', '/tmp/tmpl61dhv14']
+[2021-07-01 08:32:48,819] {standard_task_runner.py:77} INFO - Job 909: Subtask processing_user_4
+[2021-07-01 08:32:49,446] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.processing_user_4 2021-06-30T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-01 08:32:49,902] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=processing_user_4
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:50,140] {python.py:151} INFO - Done. Returned value was: {"first_name":{"0":"\u06cc\u0644\u062f\u0627"},"last_name":{"0":"\u0632\u0627\u0631\u0639\u06cc"},"country":{"0":"Iran"},"username":{"0":"whiterabbit220"},"password":{"0":"rockie"},"email":{"0":"yld.zraay@example.com"}}
+[2021-07-01 08:32:50,368] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=processing_user_4, execution_date=20210630T000000, start_date=20210701T083248, end_date=20210701T083250
+[2021-07-01 08:32:50,688] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 08:32:50,729] {local_task_job.py:151} INFO - Task exited with return code 0

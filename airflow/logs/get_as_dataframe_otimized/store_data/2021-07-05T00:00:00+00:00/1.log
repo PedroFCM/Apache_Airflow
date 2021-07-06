@@ -1,0 +1,23 @@
+[2021-07-06 13:47:04,144] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.store_data 2021-07-05T00:00:00+00:00 [queued]>
+[2021-07-06 13:47:04,184] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe_otimized.store_data 2021-07-05T00:00:00+00:00 [queued]>
+[2021-07-06 13:47:04,185] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 13:47:04,186] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-06 13:47:04,190] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-06 13:47:04,219] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): store_data> on 2021-07-05T00:00:00+00:00
+[2021-07-06 13:47:04,223] {standard_task_runner.py:52} INFO - Started process 2283 to run task
+[2021-07-06 13:47:04,235] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe_otimized', 'store_data', '2021-07-05T00:00:00+00:00', '--job-id', '1202', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe_otimized.py', '--cfg-path', '/tmp/tmpx9vbc02h', '--error-file', '/tmp/tmpizo0q4oz']
+[2021-07-06 13:47:04,240] {standard_task_runner.py:77} INFO - Job 1202: Subtask store_data
+[2021-07-06 13:47:04,362] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe_otimized.store_data 2021-07-05T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-06 13:47:04,478] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe_otimized
+AIRFLOW_CTX_TASK_ID=store_data
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-07-05T00:00:00+00:00
+[2021-07-06 13:47:04,497] {logging_mixin.py:104} INFO - [None, None, None]
+[2021-07-06 13:47:04,498] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-06 13:47:04,527] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe_otimized, task_id=store_data, execution_date=20210705T000000, start_date=20210706T134704, end_date=20210706T134704
+[2021-07-06 13:47:04,590] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-06 13:47:04,608] {local_task_job.py:151} INFO - Task exited with return code 0

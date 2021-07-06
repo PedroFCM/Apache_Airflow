@@ -1,0 +1,38 @@
+[2021-07-02 14:34:56,750] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient_and_diseases.storing_tasks.write_patients 2021-07-02T14:29:25.762239+00:00 [queued]>
+[2021-07-02 14:34:56,787] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient_and_diseases.storing_tasks.write_patients 2021-07-02T14:29:25.762239+00:00 [queued]>
+[2021-07-02 14:34:56,788] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 14:34:56,788] {taskinstance.py:1068} INFO - Starting attempt 2 of 2
+[2021-07-02 14:34:56,788] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 14:34:56,805] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): storing_tasks.write_patients> on 2021-07-02T14:29:25.762239+00:00
+[2021-07-02 14:34:56,815] {standard_task_runner.py:52} INFO - Started process 7122 to run task
+[2021-07-02 14:34:56,836] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient_and_diseases', 'storing_tasks.write_patients', '2021-07-02T14:29:25.762239+00:00', '--job-id', '1089', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpi2gqq7hf', '--error-file', '/tmp/tmpb8b96zwy']
+[2021-07-02 14:34:56,838] {standard_task_runner.py:77} INFO - Job 1089: Subtask storing_tasks.write_patients
+[2021-07-02 14:34:56,975] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient_and_diseases.storing_tasks.write_patients 2021-07-02T14:29:25.762239+00:00 [running]> on host airflowvm
+[2021-07-02 14:34:57,131] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient_and_diseases
+AIRFLOW_CTX_TASK_ID=storing_tasks.write_patients
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-02T14:29:25.762239+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-02T14:29:25.762239+00:00
+[2021-07-02 14:34:57,133] {logging_mixin.py:104} INFO - patients_treatment
+[2021-07-02 14:34:57,157] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/get_Data_Patient.py", line 65, in _write_users
+    users = json.loads(users)
+  File "/usr/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+[2021-07-02 14:34:57,164] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_data_patient_and_diseases, task_id=storing_tasks.write_patients, execution_date=20210702T142925, start_date=20210702T143456, end_date=20210702T143457
+[2021-07-02 14:34:57,262] {local_task_job.py:151} INFO - Task exited with return code 1

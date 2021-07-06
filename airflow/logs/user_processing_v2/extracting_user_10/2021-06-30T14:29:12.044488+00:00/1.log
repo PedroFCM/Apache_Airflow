@@ -1,0 +1,25 @@
+[2021-06-30 14:33:02,215] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_10 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:33:02,496] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_10 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:33:02,496] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:33:02,497] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-30 14:33:02,497] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:33:02,583] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user_10> on 2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:33:02,632] {standard_task_runner.py:52} INFO - Started process 4947 to run task
+[2021-06-30 14:33:02,873] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'extracting_user_10', '2021-06-30T14:29:12.044488+00:00', '--job-id', '827', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmprlqaxnsf', '--error-file', '/tmp/tmpcbpp3bcx']
+[2021-06-30 14:33:02,875] {standard_task_runner.py:77} INFO - Job 827: Subtask extracting_user_10
+[2021-06-30 14:33:04,073] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.extracting_user_10 2021-06-30T14:29:12.044488+00:00 [running]> on host airflowvm
+[2021-06-30 14:33:04,862] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=extracting_user_10
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T14:29:12.044488+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:33:04,866] {http.py:111} INFO - Calling HTTP method
+[2021-06-30 14:33:04,998] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-06-30 14:33:05,000] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-06-30 14:33:05,665] {http.py:115} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Bruni","last":"Flügel"},"location":{"street":{"number":8813,"name":"Schulstraße"},"city":"Dillingen an der Donau","state":"Bayern","country":"Germany","postcode":45072,"coordinates":{"latitude":"-46.3884","longitude":"5.1649"},"timezone":{"offset":"-12:00","description":"Eniwetok, Kwajalein"}},"email":"bruni.flugel@example.com","login":{"uuid":"23e0ed31-6841-43c4-ad85-02b33e845607","username":"goldenbear228","password":"long","salt":"IrfnXriZ","md5":"0e7918add64efcccb55e6e11d84b9fe8","sha1":"7ef9cf9e2c8cb775994a69ce80d990bdad6485d1","sha256":"9474bd5e40ff65b94abbc3e0dd302ef8672e99d00e602e82262c73648a789492"},"dob":{"date":"1981-11-24T23:27:44.225Z","age":40},"registered":{"date":"2005-08-03T04:56:10.664Z","age":16},"phone":"0952-3304956","cell":"0179-0162073","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/18.jpg","medium":"https://randomuser.me/api/portraits/med/women/18.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/18.jpg"},"nat":"DE"}],"info":{"seed":"1843310097d82542","results":1,"page":1,"version":"1.3"}}
+[2021-06-30 14:33:06,027] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=extracting_user_10, execution_date=20210630T142912, start_date=20210630T143302, end_date=20210630T143306
+[2021-06-30 14:33:06,503] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 14:33:06,617] {local_task_job.py:151} INFO - Task exited with return code 0

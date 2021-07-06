@@ -1,0 +1,25 @@
+[2021-07-02 15:57:23,145] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_diseases.diseases_treatment 2021-07-02T15:57:16.131360+00:00 [queued]>
+[2021-07-02 15:57:23,205] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_diseases.diseases_treatment 2021-07-02T15:57:16.131360+00:00 [queued]>
+[2021-07-02 15:57:23,206] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 15:57:23,208] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-02 15:57:23,210] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-02 15:57:23,266] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): diseases_treatment> on 2021-07-02T15:57:16.131360+00:00
+[2021-07-02 15:57:23,274] {standard_task_runner.py:52} INFO - Started process 18554 to run task
+[2021-07-02 15:57:23,292] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_diseases', 'diseases_treatment', '2021-07-02T15:57:16.131360+00:00', '--job-id', '1115', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Diseases.py', '--cfg-path', '/tmp/tmp8x9ugly_', '--error-file', '/tmp/tmpulyl4c4w']
+[2021-07-02 15:57:23,296] {standard_task_runner.py:77} INFO - Job 1115: Subtask diseases_treatment
+[2021-07-02 15:57:23,441] {logging_mixin.py:104} INFO - Running <TaskInstance: get_diseases.diseases_treatment 2021-07-02T15:57:16.131360+00:00 [running]> on host airflowvm
+[2021-07-02 15:57:23,649] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_diseases
+AIRFLOW_CTX_TASK_ID=diseases_treatment
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-02T15:57:16.131360+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-02T15:57:16.131360+00:00
+[2021-07-02 15:57:23,687] {logging_mixin.py:104} INFO -  [{'name_disease': 'Atrial Flutter', 'number_pacients': 2}, {'name_disease': 'Knee Osteoarthritis ', 'number_pacients': 1}, {'name_disease': 'Atrial Fibrillation', 'number_pacients': 60}, {'name_disease': 'Cataract', 'number_pacients': 4482}, {'name_disease': 'Older Person', 'number_pacients': 1}, {'name_disease': 'Obesity', 'number_pacients': 380}, {'name_disease': 'Diabetes', 'number_pacients': 3}]
+[2021-07-02 15:57:23,688] {logging_mixin.py:104} INFO - " [{'name_disease': 'Atrial Flutter', 'number_pacients': 2}, {'name_disease': 'Knee Osteoarthritis ', 'number_pacients': 1}, {'name_disease': 'Atrial Fibrillation', 'number_pacients': 60}, {'name_disease': 'Cataract', 'number_pacients': 4482}, {'name_disease': 'Older Person', 'number_pacients': 1}, {'name_disease': 'Obesity', 'number_pacients': 380}, {'name_disease': 'Diabetes', 'number_pacients': 3}]"
+[2021-07-02 15:57:23,689] {logging_mixin.py:104} INFO - Users:  [{"name_disease": "Atrial Flutter", "number_pacients": 2}, {"name_disease": "Knee Osteoarthritis ", "number_pacients": 1}, {"name_disease": "Atrial Fibrillation", "number_pacients": 60}, {"name_disease": "Cataract", "number_pacients": 4482}, {"name_disease": "Older Person", "number_pacients": 1}, {"name_disease": "Obesity", "number_pacients": 380}, {"name_disease": "Diabetes", "number_pacients": 3}]
+[2021-07-02 15:57:23,690] {python.py:151} INFO - Done. Returned value was:  [{"name_disease": "Atrial Flutter", "number_pacients": 2}, {"name_disease": "Knee Osteoarthritis ", "number_pacients": 1}, {"name_disease": "Atrial Fibrillation", "number_pacients": 60}, {"name_disease": "Cataract", "number_pacients": 4482}, {"name_disease": "Older Person", "number_pacients": 1}, {"name_disease": "Obesity", "number_pacients": 380}, {"name_disease": "Diabetes", "number_pacients": 3}]
+[2021-07-02 15:57:23,817] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_diseases, task_id=diseases_treatment, execution_date=20210702T155716, start_date=20210702T155723, end_date=20210702T155723
+[2021-07-02 15:57:24,028] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-02 15:57:24,087] {local_task_job.py:151} INFO - Task exited with return code 0

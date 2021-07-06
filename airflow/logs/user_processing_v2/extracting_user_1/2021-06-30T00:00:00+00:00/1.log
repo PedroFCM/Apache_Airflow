@@ -1,0 +1,25 @@
+[2021-07-01 08:32:40,615] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_1 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:40,726] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_1 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:40,728] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:40,728] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-01 08:32:40,733] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:40,786] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user_1> on 2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:40,837] {standard_task_runner.py:52} INFO - Started process 2087 to run task
+[2021-07-01 08:32:40,915] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'extracting_user_1', '2021-06-30T00:00:00+00:00', '--job-id', '907', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmpyjl12rda', '--error-file', '/tmp/tmp6iysj5jh']
+[2021-07-01 08:32:40,931] {standard_task_runner.py:77} INFO - Job 907: Subtask extracting_user_1
+[2021-07-01 08:32:41,372] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.extracting_user_1 2021-06-30T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-01 08:32:41,905] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=extracting_user_1
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:41,905] {http.py:111} INFO - Calling HTTP method
+[2021-07-01 08:32:41,978] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-07-01 08:32:41,980] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-07-01 08:32:42,511] {http.py:115} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Asélio","last":"Araújo"},"location":{"street":{"number":6842,"name":"Rua Belo Horizonte "},"city":"Guarulhos","state":"Alagoas","country":"Brazil","postcode":49802,"coordinates":{"latitude":"-77.2116","longitude":"-16.7018"},"timezone":{"offset":"-2:00","description":"Mid-Atlantic"}},"email":"aselio.araujo@example.com","login":{"uuid":"206a2517-0371-488f-be88-f2c183033f7a","username":"orangelion953","password":"tootsie","salt":"bnEhHF7B","md5":"14896fdd46b035d5e30d209b07262907","sha1":"7f79d3a67bec7f557d9c2dd7dafeba30be4f05c3","sha256":"5afa28a90f4c7d949629cb97aa3feb6fd40d1c01a0f7eb5db7cbca932f5f98fe"},"dob":{"date":"1952-12-12T06:47:44.392Z","age":69},"registered":{"date":"2015-11-20T13:34:26.051Z","age":6},"phone":"(52) 0219-4672","cell":"(09) 0839-1526","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/men/11.jpg","medium":"https://randomuser.me/api/portraits/med/men/11.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/11.jpg"},"nat":"BR"}],"info":{"seed":"1d243f9d9bd9112f","results":1,"page":1,"version":"1.3"}}
+[2021-07-01 08:32:42,731] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=extracting_user_1, execution_date=20210630T000000, start_date=20210701T083240, end_date=20210701T083242
+[2021-07-01 08:32:43,055] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 08:32:43,110] {local_task_job.py:151} INFO - Task exited with return code 0

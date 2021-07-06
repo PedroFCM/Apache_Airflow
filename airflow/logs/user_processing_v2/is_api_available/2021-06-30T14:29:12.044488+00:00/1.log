@@ -1,0 +1,44 @@
+[2021-06-30 14:29:23,324] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.is_api_available 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:29:23,358] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.is_api_available 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 14:29:23,358] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:29:23,358] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-06-30 14:29:23,358] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 14:29:23,372] {taskinstance.py:1087} INFO - Executing <Task(HttpSensor): is_api_available> on 2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:29:23,376] {standard_task_runner.py:52} INFO - Started process 4449 to run task
+[2021-06-30 14:29:23,388] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'is_api_available', '2021-06-30T14:29:12.044488+00:00', '--job-id', '824', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmp2mpcofpi', '--error-file', '/tmp/tmpj9l4if5k']
+[2021-06-30 14:29:23,390] {standard_task_runner.py:77} INFO - Job 824: Subtask is_api_available
+[2021-06-30 14:29:23,492] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.is_api_available 2021-06-30T14:29:12.044488+00:00 [running]> on host airflowvm
+[2021-06-30 14:29:23,687] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=is_api_available
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T14:29:12.044488+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-30T14:29:12.044488+00:00
+[2021-06-30 14:29:23,692] {http.py:101} INFO - Poking: api/
+[2021-06-30 14:29:23,862] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/sensors/base.py", line 226, in execute
+    while not self.poke(context):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/providers/http/sensors/http.py", line 117, in poke
+    raise exc
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/providers/http/sensors/http.py", line 103, in poke
+    response = self.hook.run(
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 122, in run
+    session = self.get_conn(headers)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/providers/http/hooks/http.py", line 72, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/connection.py", line 379, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `user_api` isn't defined
+[2021-06-30 14:29:23,865] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=user_processing_v2, task_id=is_api_available, execution_date=20210630T142912, start_date=20210630T142923, end_date=20210630T142923
+[2021-06-30 14:29:23,970] {local_task_job.py:151} INFO - Task exited with return code 1

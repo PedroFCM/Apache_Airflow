@@ -1,0 +1,25 @@
+[2021-06-30 15:05:17,835] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_2 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 15:05:18,192] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_2 2021-06-30T14:29:12.044488+00:00 [queued]>
+[2021-06-30 15:05:18,200] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 15:05:18,206] {taskinstance.py:1068} INFO - Starting attempt 5 of 5
+[2021-06-30 15:05:18,207] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-06-30 15:05:18,263] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user_2> on 2021-06-30T14:29:12.044488+00:00
+[2021-06-30 15:05:18,291] {standard_task_runner.py:52} INFO - Started process 9755 to run task
+[2021-06-30 15:05:18,347] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'extracting_user_2', '2021-06-30T14:29:12.044488+00:00', '--job-id', '892', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmpt1wstr9j', '--error-file', '/tmp/tmpfjqbyixu']
+[2021-06-30 15:05:18,348] {standard_task_runner.py:77} INFO - Job 892: Subtask extracting_user_2
+[2021-06-30 15:05:18,866] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.extracting_user_2 2021-06-30T14:29:12.044488+00:00 [running]> on host airflowvm
+[2021-06-30 15:05:19,202] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=extracting_user_2
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T14:29:12.044488+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-06-30T14:29:12.044488+00:00
+[2021-06-30 15:05:19,203] {http.py:111} INFO - Calling HTTP method
+[2021-06-30 15:05:19,232] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-06-30 15:05:19,247] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-06-30 15:05:19,695] {http.py:115} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Eloane","last":"Dubois"},"location":{"street":{"number":4646,"name":"Rue de L'Église"},"city":"Nancy","state":"Hautes-Alpes","country":"France","postcode":27477,"coordinates":{"latitude":"4.6388","longitude":"55.1508"},"timezone":{"offset":"-5:00","description":"Eastern Time (US & Canada), Bogota, Lima"}},"email":"eloane.dubois@example.com","login":{"uuid":"43e37997-38dc-47da-b16a-36a6ce586da0","username":"purpleduck457","password":"glotest","salt":"GZVC1Oof","md5":"f397b1dda9742d2aa4d595b7a00bcab2","sha1":"3161307100590b3da4a1aaaaa1d5129472a6dbf6","sha256":"1588c69d1b886f5eb323a398bf35d76ad66f1f1baf0a7657343bc262f0d49cb5"},"dob":{"date":"1981-07-25T17:25:52.483Z","age":40},"registered":{"date":"2009-02-24T10:30:28.430Z","age":12},"phone":"05-35-48-60-79","cell":"06-28-14-95-04","id":{"name":"INSEE","value":"2NNaN36534510 61"},"picture":{"large":"https://randomuser.me/api/portraits/women/76.jpg","medium":"https://randomuser.me/api/portraits/med/women/76.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/76.jpg"},"nat":"FR"}],"info":{"seed":"71afa03488e9d6be","results":1,"page":1,"version":"1.3"}}
+[2021-06-30 15:05:19,826] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=extracting_user_2, execution_date=20210630T142912, start_date=20210630T150517, end_date=20210630T150519
+[2021-06-30 15:05:19,923] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-06-30 15:05:19,948] {local_task_job.py:151} INFO - Task exited with return code 0

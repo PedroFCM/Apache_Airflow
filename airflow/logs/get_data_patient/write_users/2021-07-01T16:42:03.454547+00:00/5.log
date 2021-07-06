@@ -1,0 +1,51 @@
+[2021-07-01 16:45:01,748] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.write_users 2021-07-01T16:42:03.454547+00:00 [queued]>
+[2021-07-01 16:45:01,760] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.write_users 2021-07-01T16:42:03.454547+00:00 [queued]>
+[2021-07-01 16:45:01,761] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 16:45:01,761] {taskinstance.py:1068} INFO - Starting attempt 5 of 5
+[2021-07-01 16:45:01,762] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 16:45:01,781] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_users> on 2021-07-01T16:42:03.454547+00:00
+[2021-07-01 16:45:01,787] {standard_task_runner.py:52} INFO - Started process 26277 to run task
+[2021-07-01 16:45:01,791] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'write_users', '2021-07-01T16:42:03.454547+00:00', '--job-id', '1012', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpwwx7o8l7', '--error-file', '/tmp/tmpujmp9_uc']
+[2021-07-01 16:45:01,793] {standard_task_runner.py:77} INFO - Job 1012: Subtask write_users
+[2021-07-01 16:45:01,879] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.write_users 2021-07-01T16:42:03.454547+00:00 [running]> on host airflowvm
+[2021-07-01 16:45:01,990] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=write_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T16:42:03.454547+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T16:42:03.454547+00:00
+[2021-07-01 16:45:02,004] {logging_mixin.py:104} INFO - Users: [" [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}]"]
+[2021-07-01 16:45:02,004] {logging_mixin.py:104} INFO -  [{'id': 4718, 'uid': '404d86a4-6138-4d86-87ed-5efbc2561cf9', 'medical_history': {}, 'user_id': '502c3cfb-2b79-4131-ad46-722e2d470a3b', 'birthdate': '1930-08-01', 'sex': 'M', 'created_at': '2021-03-30T09:50:38.662702+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.865377+00:00', 'is_test': False}, {'id': 4727, 'uid': '57fc6ce3-5c5f-4811-b978-e58782716cda', 'medical_history': {}, 'user_id': '6a202726-9d80-46ac-9ff0-edd0940ea479', 'birthdate': '1947-03-15', 'sex': 'F', 'created_at': '2021-03-30T18:14:20.305891+00:00', 'deleted_at': None, 'updated_at': '2021-04-12T16:55:42.86945+00:00', 'is_test': False}]
+[2021-07-01 16:45:02,005] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/get_Data_Patient.py", line 52, in _write_users
+    df = read_json(users[0])
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/util/_decorators.py", line 199, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/util/_decorators.py", line 299, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 563, in read_json
+    return json_reader.read()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 694, in read
+    obj = self._get_object_parser(self.data)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 716, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 831, in parse
+    self._parse_no_numpy()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/pandas/io/json/_json.py", line 1079, in _parse_no_numpy
+    loads(json, precise_float=self.precise_float), dtype=None
+ValueError: Expected object or value
+[2021-07-01 16:45:02,007] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_data_patient, task_id=write_users, execution_date=20210701T164203, start_date=20210701T164501, end_date=20210701T164502
+[2021-07-01 16:45:02,046] {local_task_job.py:151} INFO - Task exited with return code 1

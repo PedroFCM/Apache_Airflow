@@ -1,0 +1,25 @@
+[2021-07-01 08:32:39,636] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_3 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:39,862] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: user_processing_v2.extracting_user_3 2021-06-30T00:00:00+00:00 [queued]>
+[2021-07-01 08:32:39,862] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:39,862] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-01 08:32:39,863] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 08:32:39,919] {taskinstance.py:1087} INFO - Executing <Task(SimpleHttpOperator): extracting_user_3> on 2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:39,941] {standard_task_runner.py:52} INFO - Started process 2062 to run task
+[2021-07-01 08:32:40,040] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'user_processing_v2', 'extracting_user_3', '2021-06-30T00:00:00+00:00', '--job-id', '903', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/user_processing_v2.py', '--cfg-path', '/tmp/tmp9q2qm1k9', '--error-file', '/tmp/tmp31n7s9fr']
+[2021-07-01 08:32:40,041] {standard_task_runner.py:77} INFO - Job 903: Subtask extracting_user_3
+[2021-07-01 08:32:40,414] {logging_mixin.py:104} INFO - Running <TaskInstance: user_processing_v2.extracting_user_3 2021-06-30T00:00:00+00:00 [running]> on host airflowvm
+[2021-07-01 08:32:40,981] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=user_processing_v2
+AIRFLOW_CTX_TASK_ID=extracting_user_3
+AIRFLOW_CTX_EXECUTION_DATE=2021-06-30T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-06-30T00:00:00+00:00
+[2021-07-01 08:32:40,982] {http.py:111} INFO - Calling HTTP method
+[2021-07-01 08:32:41,092] {base.py:69} INFO - Using connection to: id: user_api. Host: https://randomuser.me/, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-07-01 08:32:41,105] {http.py:140} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2021-07-01 08:32:41,548] {http.py:115} INFO - {"results":[{"gender":"male","name":{"title":"Mr","first":"Juho","last":"Kyllonen"},"location":{"street":{"number":2840,"name":"Aleksanterinkatu"},"city":"Kerimäki","state":"Finland Proper","country":"Finland","postcode":82632,"coordinates":{"latitude":"-14.0235","longitude":"-145.8402"},"timezone":{"offset":"+7:00","description":"Bangkok, Hanoi, Jakarta"}},"email":"juho.kyllonen@example.com","login":{"uuid":"66d4041c-ca5c-4568-a911-48bfc1cbdc24","username":"bigbutterfly329","password":"mistress","salt":"XOwYwAHl","md5":"8266bcf8ae3253f528c8c4c87465afba","sha1":"3245bc2e81d450da83aa152a624eb8b50d644c49","sha256":"6dce486cacd362d57d4c38ebe06e3e05e663a07760d62fb32bc27a6612fc9ae0"},"dob":{"date":"1974-05-09T08:53:15.365Z","age":47},"registered":{"date":"2015-03-21T09:07:57.641Z","age":6},"phone":"08-187-871","cell":"043-609-47-86","id":{"name":"HETU","value":"NaNNA955undefined"},"picture":{"large":"https://randomuser.me/api/portraits/men/94.jpg","medium":"https://randomuser.me/api/portraits/med/men/94.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/men/94.jpg"},"nat":"FI"}],"info":{"seed":"6b095cd4ce2ac724","results":1,"page":1,"version":"1.3"}}
+[2021-07-01 08:32:41,846] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=user_processing_v2, task_id=extracting_user_3, execution_date=20210630T000000, start_date=20210701T083239, end_date=20210701T083241
+[2021-07-01 08:32:42,048] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2021-07-01 08:32:42,077] {local_task_job.py:151} INFO - Task exited with return code 0

@@ -4,7 +4,6 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.operators.python import PythonOperator
 from airflow.hooks.postgres_hook import PostgresHook
-from airflow.operators.bash import BashOperator
 
 from datetime import datetime
 from pandas import json_normalize, DataFrame
@@ -96,6 +95,5 @@ with DAG('open_aq', schedule_interval = '@daily',
                                 python_callable = _storing)
 
     drop_table >> create_table >> is_API_available >> get_data >> process_data >> store_data 
-
 
     

@@ -1,0 +1,31 @@
+[2021-07-05 10:31:23,183] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_diseases 2021-07-05T10:31:10.571597+00:00 [queued]>
+[2021-07-05 10:31:23,246] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_diseases 2021-07-05T10:31:10.571597+00:00 [queued]>
+[2021-07-05 10:31:23,247] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:31:23,248] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-05 10:31:23,249] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 10:31:23,302] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_diseases> on 2021-07-05T10:31:10.571597+00:00
+[2021-07-05 10:31:23,324] {standard_task_runner.py:52} INFO - Started process 19157 to run task
+[2021-07-05 10:31:23,383] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe', 'write_diseases', '2021-07-05T10:31:10.571597+00:00', '--job-id', '1166', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe.py', '--cfg-path', '/tmp/tmpo_vh4fx_', '--error-file', '/tmp/tmpeuqn8b_q']
+[2021-07-05 10:31:23,399] {standard_task_runner.py:77} INFO - Job 1166: Subtask write_diseases
+[2021-07-05 10:31:23,723] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe.write_diseases 2021-07-05T10:31:10.571597+00:00 [running]> on host airflowvm
+[2021-07-05 10:31:23,948] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe
+AIRFLOW_CTX_TASK_ID=write_diseases
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T10:31:10.571597+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-05T10:31:10.571597+00:00
+[2021-07-05 10:31:23,990] {logging_mixin.py:104} INFO - {"Name of Disease":{"0":"Atrial Flutter","1":"Knee Osteoarthritis ","2":"Atrial Fibrillation","3":"Cataract","4":"Older Person","5":"Obesity","6":"Diabetes"},"Number of Pacients":{"0":2,"1":1,"2":60,"3":4482,"4":1,"5":380,"6":3}}
+[2021-07-05 10:31:24,074] {logging_mixin.py:104} INFO - Users after load:         Name of Disease  Number of Pacients
+0        Atrial Flutter                   2
+1  Knee Osteoarthritis                    1
+2   Atrial Fibrillation                  60
+3              Cataract                4482
+4          Older Person                   1
+5               Obesity                 380
+6              Diabetes                   3
+[2021-07-05 10:31:24,092] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-05 10:31:24,130] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe, task_id=write_diseases, execution_date=20210705T103110, start_date=20210705T103123, end_date=20210705T103124
+[2021-07-05 10:31:24,228] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-05 10:31:24,263] {local_task_job.py:151} INFO - Task exited with return code 0

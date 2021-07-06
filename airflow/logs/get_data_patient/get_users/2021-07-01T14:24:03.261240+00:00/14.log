@@ -1,0 +1,36 @@
+[2021-07-01 15:06:28,579] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:06:28,592] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 15:06:28,593] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:06:28,593] {taskinstance.py:1068} INFO - Starting attempt 14 of 14
+[2021-07-01 15:06:28,593] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 15:06:28,614] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): get_users> on 2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:06:28,620] {standard_task_runner.py:52} INFO - Started process 13797 to run task
+[2021-07-01 15:06:28,628] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'get_users', '2021-07-01T14:24:03.261240+00:00', '--job-id', '974', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmp5kot0x9g', '--error-file', '/tmp/tmp59v465v3']
+[2021-07-01 15:06:28,631] {standard_task_runner.py:77} INFO - Job 974: Subtask get_users
+[2021-07-01 15:06:28,721] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [running]> on host airflowvm
+[2021-07-01 15:06:28,846] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=get_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T14:24:03.261240+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T14:24:03.261240+00:00
+[2021-07-01 15:06:28,863] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-07-01 15:06:28,875] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/get_Data_Patient.py", line 29, in _get_users
+    sources = sources[0].replace('RealDictRow', '')[0]
+AttributeError: 'RealDictRow' object has no attribute 'replace'
+[2021-07-01 15:06:28,879] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_data_patient, task_id=get_users, execution_date=20210701T142403, start_date=20210701T150628, end_date=20210701T150628
+[2021-07-01 15:06:28,923] {local_task_job.py:151} INFO - Task exited with return code 1

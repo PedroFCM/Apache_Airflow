@@ -1,0 +1,39 @@
+[2021-07-01 14:33:49,862] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 14:33:49,883] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [queued]>
+[2021-07-01 14:33:49,883] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 14:33:49,884] {taskinstance.py:1068} INFO - Starting attempt 7 of 7
+[2021-07-01 14:33:49,884] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-01 14:33:49,909] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): get_users> on 2021-07-01T14:24:03.261240+00:00
+[2021-07-01 14:33:49,915] {standard_task_runner.py:52} INFO - Started process 9603 to run task
+[2021-07-01 14:33:49,925] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_patient', 'get_users', '2021-07-01T14:24:03.261240+00:00', '--job-id', '961', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_Data_Patient.py', '--cfg-path', '/tmp/tmpcms53274', '--error-file', '/tmp/tmpu41rm1pb']
+[2021-07-01 14:33:49,926] {standard_task_runner.py:77} INFO - Job 961: Subtask get_users
+[2021-07-01 14:33:50,035] {logging_mixin.py:104} INFO - Running <TaskInstance: get_data_patient.get_users 2021-07-01T14:24:03.261240+00:00 [running]> on host airflowvm
+[2021-07-01 14:33:50,152] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_data_patient
+AIRFLOW_CTX_TASK_ID=get_users
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-01T14:24:03.261240+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-01T14:24:03.261240+00:00
+[2021-07-01 14:33:50,166] {base.py:69} INFO - Using connection to: id: ***_default. Host: localhost, Port: 5432, Schema: , Login: ***, Password: ***, extra: {'cursor': 'realdictcursor'}
+[2021-07-01 14:33:50,188] {logging_mixin.py:104} INFO - RealDictRow([('id', 4718), ('uid', '404d86a4-6138-4d86-87ed-5efbc2561cf9'), ('medical_history', {}), ('user_id', '502c3cfb-2b79-4131-ad46-722e2d470a3b'), ('birthdate', datetime.date(1930, 8, 1)), ('sex', 'M'), ('created_at', datetime.datetime(2021, 3, 30, 9, 50, 38, 662702, tzinfo=datetime.timezone.utc)), ('deleted_at', None), ('updated_at', datetime.datetime(2021, 4, 12, 16, 55, 42, 865377, tzinfo=datetime.timezone.utc)), ('is_test', False)])
+[2021-07-01 14:33:50,189] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/sandbox/lib/python3.8/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/airflow/dags/get_Data_Patient.py", line 30, in _get_users
+    return json.loads(sources)
+  File "/usr/lib/python3.8/json/__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not RealDictRow
+[2021-07-01 14:33:50,193] {taskinstance.py:1524} INFO - Marking task as FAILED. dag_id=get_data_patient, task_id=get_users, execution_date=20210701T142403, start_date=20210701T143349, end_date=20210701T143350
+[2021-07-01 14:33:50,267] {local_task_job.py:151} INFO - Task exited with return code 1

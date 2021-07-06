@@ -1,0 +1,462 @@
+[2021-07-06 13:45:16,041] {scheduler_job.py:182} INFO - Started process (PID=1871) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:45:16,044] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:45:16,045] {logging_mixin.py:104} INFO - [2021-07-06 13:45:16,045] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:45:17,216] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:45:17,261] {logging_mixin.py:104} INFO - [2021-07-06 13:45:17,260] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:45:17,298] {logging_mixin.py:104} INFO - [2021-07-06 13:45:17,298] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:45:17,322] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 1.295 seconds
+[2021-07-06 13:45:48,003] {scheduler_job.py:182} INFO - Started process (PID=1967) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:45:48,005] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:45:48,006] {logging_mixin.py:104} INFO - [2021-07-06 13:45:48,006] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:45:49,046] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:45:49,128] {logging_mixin.py:104} INFO - [2021-07-06 13:45:49,127] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:45:49,174] {logging_mixin.py:104} INFO - [2021-07-06 13:45:49,174] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:45:49,231] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 1.237 seconds
+[2021-07-06 13:46:22,051] {scheduler_job.py:182} INFO - Started process (PID=2049) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:46:22,054] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:46:22,055] {logging_mixin.py:104} INFO - [2021-07-06 13:46:22,055] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:46:22,905] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:46:22,945] {logging_mixin.py:104} INFO - [2021-07-06 13:46:22,945] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:46:22,973] {logging_mixin.py:104} INFO - [2021-07-06 13:46:22,972] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:46:22,983] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.939 seconds
+[2021-07-06 13:46:53,305] {scheduler_job.py:182} INFO - Started process (PID=2130) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:46:53,309] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:46:53,310] {logging_mixin.py:104} INFO - [2021-07-06 13:46:53,310] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:46:54,854] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:46:54,954] {logging_mixin.py:104} INFO - [2021-07-06 13:46:54,954] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:46:54,995] {logging_mixin.py:104} INFO - [2021-07-06 13:46:54,995] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:46:55,032] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 1.732 seconds
+[2021-07-06 13:47:25,765] {scheduler_job.py:182} INFO - Started process (PID=2323) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:47:25,768] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:47:25,769] {logging_mixin.py:104} INFO - [2021-07-06 13:47:25,769] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:47:26,328] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:47:26,372] {logging_mixin.py:104} INFO - [2021-07-06 13:47:26,372] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:47:26,407] {logging_mixin.py:104} INFO - [2021-07-06 13:47:26,407] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:47:26,425] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.663 seconds
+[2021-07-06 13:47:56,817] {scheduler_job.py:182} INFO - Started process (PID=2404) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:47:56,825] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:47:56,828] {logging_mixin.py:104} INFO - [2021-07-06 13:47:56,828] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:47:57,378] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:47:57,406] {logging_mixin.py:104} INFO - [2021-07-06 13:47:57,406] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:47:57,428] {logging_mixin.py:104} INFO - [2021-07-06 13:47:57,428] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:47:57,444] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.630 seconds
+[2021-07-06 13:48:27,956] {scheduler_job.py:182} INFO - Started process (PID=2485) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:48:27,961] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:48:27,963] {logging_mixin.py:104} INFO - [2021-07-06 13:48:27,963] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:48:28,581] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:48:28,618] {logging_mixin.py:104} INFO - [2021-07-06 13:48:28,617] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:48:28,645] {logging_mixin.py:104} INFO - [2021-07-06 13:48:28,645] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:48:28,662] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.709 seconds
+[2021-07-06 13:48:58,918] {scheduler_job.py:182} INFO - Started process (PID=2567) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:48:58,934] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:48:58,935] {logging_mixin.py:104} INFO - [2021-07-06 13:48:58,935] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:48:59,609] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:48:59,645] {logging_mixin.py:104} INFO - [2021-07-06 13:48:59,645] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:48:59,684] {logging_mixin.py:104} INFO - [2021-07-06 13:48:59,684] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:48:59,700] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.788 seconds
+[2021-07-06 13:49:30,643] {scheduler_job.py:182} INFO - Started process (PID=2646) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:49:30,644] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:49:30,645] {logging_mixin.py:104} INFO - [2021-07-06 13:49:30,645] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:49:31,375] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:49:31,411] {logging_mixin.py:104} INFO - [2021-07-06 13:49:31,411] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:49:31,444] {logging_mixin.py:104} INFO - [2021-07-06 13:49:31,444] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:49:31,459] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.820 seconds
+[2021-07-06 13:50:01,531] {scheduler_job.py:182} INFO - Started process (PID=2731) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:50:01,532] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:50:01,533] {logging_mixin.py:104} INFO - [2021-07-06 13:50:01,533] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:50:02,232] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:50:02,258] {logging_mixin.py:104} INFO - [2021-07-06 13:50:02,257] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:50:02,281] {logging_mixin.py:104} INFO - [2021-07-06 13:50:02,281] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:50:02,290] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.763 seconds
+[2021-07-06 13:50:32,484] {scheduler_job.py:182} INFO - Started process (PID=2813) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:50:32,487] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:50:32,490] {logging_mixin.py:104} INFO - [2021-07-06 13:50:32,490] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:50:33,165] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:50:33,196] {logging_mixin.py:104} INFO - [2021-07-06 13:50:33,195] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:50:33,245] {logging_mixin.py:104} INFO - [2021-07-06 13:50:33,245] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:50:33,262] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.784 seconds
+[2021-07-06 13:51:04,212] {scheduler_job.py:182} INFO - Started process (PID=2895) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:51:04,217] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:51:04,223] {logging_mixin.py:104} INFO - [2021-07-06 13:51:04,222] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:51:06,110] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:51:06,175] {logging_mixin.py:104} INFO - [2021-07-06 13:51:06,174] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:51:06,287] {logging_mixin.py:104} INFO - [2021-07-06 13:51:06,286] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:51:06,342] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 2.135 seconds
+[2021-07-06 13:51:36,656] {scheduler_job.py:182} INFO - Started process (PID=3093) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:51:36,662] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:51:36,664] {logging_mixin.py:104} INFO - [2021-07-06 13:51:36,663] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:51:37,350] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:51:37,390] {logging_mixin.py:104} INFO - [2021-07-06 13:51:37,389] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:51:37,430] {logging_mixin.py:104} INFO - [2021-07-06 13:51:37,429] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:51:37,456] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.807 seconds
+[2021-07-06 13:52:07,867] {scheduler_job.py:182} INFO - Started process (PID=3175) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:52:07,870] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:52:07,871] {logging_mixin.py:104} INFO - [2021-07-06 13:52:07,871] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:52:08,668] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:52:08,711] {logging_mixin.py:104} INFO - [2021-07-06 13:52:08,711] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:52:08,736] {logging_mixin.py:104} INFO - [2021-07-06 13:52:08,735] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:52:08,754] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.893 seconds
+[2021-07-06 13:52:39,012] {scheduler_job.py:182} INFO - Started process (PID=3381) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:52:39,014] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:52:39,015] {logging_mixin.py:104} INFO - [2021-07-06 13:52:39,015] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:52:39,581] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:52:39,626] {logging_mixin.py:104} INFO - [2021-07-06 13:52:39,626] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:52:39,666] {logging_mixin.py:104} INFO - [2021-07-06 13:52:39,666] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:52:39,677] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.669 seconds
+[2021-07-06 13:53:09,957] {scheduler_job.py:182} INFO - Started process (PID=3462) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:53:09,958] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:53:09,959] {logging_mixin.py:104} INFO - [2021-07-06 13:53:09,959] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:53:10,606] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:53:10,635] {logging_mixin.py:104} INFO - [2021-07-06 13:53:10,635] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:53:10,670] {logging_mixin.py:104} INFO - [2021-07-06 13:53:10,670] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:53:10,678] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.725 seconds
+[2021-07-06 13:53:41,304] {scheduler_job.py:182} INFO - Started process (PID=3544) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:53:41,307] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:53:41,309] {logging_mixin.py:104} INFO - [2021-07-06 13:53:41,309] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:53:42,008] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:53:42,043] {logging_mixin.py:104} INFO - [2021-07-06 13:53:42,043] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:53:42,082] {logging_mixin.py:104} INFO - [2021-07-06 13:53:42,082] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:53:42,107] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.807 seconds
+[2021-07-06 13:54:12,508] {scheduler_job.py:182} INFO - Started process (PID=3625) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:54:12,509] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:54:12,510] {logging_mixin.py:104} INFO - [2021-07-06 13:54:12,510] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:54:13,112] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:54:13,142] {logging_mixin.py:104} INFO - [2021-07-06 13:54:13,141] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:54:13,178] {logging_mixin.py:104} INFO - [2021-07-06 13:54:13,178] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:54:13,198] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.695 seconds
+[2021-07-06 13:54:44,108] {scheduler_job.py:182} INFO - Started process (PID=3706) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:54:44,110] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:54:44,111] {logging_mixin.py:104} INFO - [2021-07-06 13:54:44,111] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:54:44,698] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:54:44,730] {logging_mixin.py:104} INFO - [2021-07-06 13:54:44,730] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:54:44,758] {logging_mixin.py:104} INFO - [2021-07-06 13:54:44,758] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:54:44,770] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.666 seconds
+[2021-07-06 13:55:15,740] {scheduler_job.py:182} INFO - Started process (PID=3790) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:55:15,742] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:55:15,744] {logging_mixin.py:104} INFO - [2021-07-06 13:55:15,744] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:55:16,395] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:55:16,439] {logging_mixin.py:104} INFO - [2021-07-06 13:55:16,439] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:55:16,463] {logging_mixin.py:104} INFO - [2021-07-06 13:55:16,463] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:55:16,473] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.744 seconds
+[2021-07-06 13:55:46,881] {scheduler_job.py:182} INFO - Started process (PID=3870) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:55:46,883] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:55:46,884] {logging_mixin.py:104} INFO - [2021-07-06 13:55:46,884] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:55:47,528] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:55:47,569] {logging_mixin.py:104} INFO - [2021-07-06 13:55:47,569] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:55:47,605] {logging_mixin.py:104} INFO - [2021-07-06 13:55:47,605] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:55:47,618] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.747 seconds
+[2021-07-06 13:56:17,899] {scheduler_job.py:182} INFO - Started process (PID=3946) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:56:17,900] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:56:17,900] {logging_mixin.py:104} INFO - [2021-07-06 13:56:17,900] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:56:18,552] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:56:18,585] {logging_mixin.py:104} INFO - [2021-07-06 13:56:18,585] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:56:18,611] {logging_mixin.py:104} INFO - [2021-07-06 13:56:18,610] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:56:18,625] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.731 seconds
+[2021-07-06 13:56:49,143] {scheduler_job.py:182} INFO - Started process (PID=4035) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:56:49,146] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:56:49,148] {logging_mixin.py:104} INFO - [2021-07-06 13:56:49,148] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:56:49,788] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:56:49,829] {logging_mixin.py:104} INFO - [2021-07-06 13:56:49,828] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:56:49,862] {logging_mixin.py:104} INFO - [2021-07-06 13:56:49,862] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:56:49,889] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.757 seconds
+[2021-07-06 13:57:21,129] {scheduler_job.py:182} INFO - Started process (PID=4115) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:57:21,130] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:57:21,131] {logging_mixin.py:104} INFO - [2021-07-06 13:57:21,130] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:57:22,066] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:57:22,102] {logging_mixin.py:104} INFO - [2021-07-06 13:57:22,102] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:57:22,133] {logging_mixin.py:104} INFO - [2021-07-06 13:57:22,132] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:57:22,147] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 1.022 seconds
+[2021-07-06 13:57:52,662] {scheduler_job.py:182} INFO - Started process (PID=4306) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:57:52,664] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:57:52,666] {logging_mixin.py:104} INFO - [2021-07-06 13:57:52,666] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:57:53,301] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:57:53,376] {logging_mixin.py:104} INFO - [2021-07-06 13:57:53,376] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:57:53,459] {logging_mixin.py:104} INFO - [2021-07-06 13:57:53,443] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:57:53,484] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.825 seconds
+[2021-07-06 13:58:23,600] {scheduler_job.py:182} INFO - Started process (PID=4385) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:58:23,604] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:58:23,606] {logging_mixin.py:104} INFO - [2021-07-06 13:58:23,606] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:58:24,248] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:58:24,298] {logging_mixin.py:104} INFO - [2021-07-06 13:58:24,298] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:58:24,333] {logging_mixin.py:104} INFO - [2021-07-06 13:58:24,333] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:58:24,345] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.750 seconds
+[2021-07-06 13:58:54,469] {scheduler_job.py:182} INFO - Started process (PID=4466) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:58:54,472] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:58:54,477] {logging_mixin.py:104} INFO - [2021-07-06 13:58:54,477] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:58:55,308] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:58:55,345] {logging_mixin.py:104} INFO - [2021-07-06 13:58:55,345] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:58:55,369] {logging_mixin.py:104} INFO - [2021-07-06 13:58:55,369] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:58:55,385] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.922 seconds
+[2021-07-06 13:59:26,080] {scheduler_job.py:182} INFO - Started process (PID=4549) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:59:26,087] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:59:26,091] {logging_mixin.py:104} INFO - [2021-07-06 13:59:26,091] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:59:26,721] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:59:26,763] {logging_mixin.py:104} INFO - [2021-07-06 13:59:26,761] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:59:26,800] {logging_mixin.py:104} INFO - [2021-07-06 13:59:26,800] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:59:26,817] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.745 seconds
+[2021-07-06 13:59:57,883] {scheduler_job.py:182} INFO - Started process (PID=4646) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:59:57,891] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 13:59:57,894] {logging_mixin.py:104} INFO - [2021-07-06 13:59:57,893] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:59:58,548] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 13:59:58,576] {logging_mixin.py:104} INFO - [2021-07-06 13:59:58,576] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 13:59:58,597] {logging_mixin.py:104} INFO - [2021-07-06 13:59:58,597] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 13:59:58,617] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.740 seconds
+[2021-07-06 14:00:29,032] {scheduler_job.py:182} INFO - Started process (PID=4729) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:00:29,034] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:00:29,036] {logging_mixin.py:104} INFO - [2021-07-06 14:00:29,036] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:00:29,758] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:00:29,799] {logging_mixin.py:104} INFO - [2021-07-06 14:00:29,799] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:00:29,835] {logging_mixin.py:104} INFO - [2021-07-06 14:00:29,835] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:00:29,849] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.822 seconds
+[2021-07-06 14:01:00,412] {scheduler_job.py:182} INFO - Started process (PID=4816) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:01:00,416] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:01:00,418] {logging_mixin.py:104} INFO - [2021-07-06 14:01:00,418] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:01:01,112] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:01:01,146] {logging_mixin.py:104} INFO - [2021-07-06 14:01:01,146] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:01:01,176] {logging_mixin.py:104} INFO - [2021-07-06 14:01:01,175] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:01:01,187] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.779 seconds
+[2021-07-06 14:01:31,532] {scheduler_job.py:182} INFO - Started process (PID=4897) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:01:31,552] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:01:31,554] {logging_mixin.py:104} INFO - [2021-07-06 14:01:31,554] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:01:32,229] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:01:32,264] {logging_mixin.py:104} INFO - [2021-07-06 14:01:32,264] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:01:32,301] {logging_mixin.py:104} INFO - [2021-07-06 14:01:32,301] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:01:32,314] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.786 seconds
+[2021-07-06 14:02:03,571] {scheduler_job.py:182} INFO - Started process (PID=4980) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:02:03,575] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:02:03,580] {logging_mixin.py:104} INFO - [2021-07-06 14:02:03,580] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:02:04,759] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:02:04,799] {logging_mixin.py:104} INFO - [2021-07-06 14:02:04,798] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:02:04,839] {logging_mixin.py:104} INFO - [2021-07-06 14:02:04,839] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:02:04,887] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 1.323 seconds
+[2021-07-06 14:02:35,160] {scheduler_job.py:182} INFO - Started process (PID=5064) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:02:35,162] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:02:35,163] {logging_mixin.py:104} INFO - [2021-07-06 14:02:35,163] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:02:35,938] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:02:35,973] {logging_mixin.py:104} INFO - [2021-07-06 14:02:35,973] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:02:35,995] {logging_mixin.py:104} INFO - [2021-07-06 14:02:35,995] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:02:36,006] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.851 seconds
+[2021-07-06 14:03:06,169] {scheduler_job.py:182} INFO - Started process (PID=5142) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:03:06,171] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:03:06,172] {logging_mixin.py:104} INFO - [2021-07-06 14:03:06,171] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:03:06,933] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:03:06,960] {logging_mixin.py:104} INFO - [2021-07-06 14:03:06,960] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:03:06,998] {logging_mixin.py:104} INFO - [2021-07-06 14:03:06,998] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:03:07,009] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.844 seconds
+[2021-07-06 14:03:37,728] {scheduler_job.py:182} INFO - Started process (PID=5415) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:03:37,737] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:03:37,740] {logging_mixin.py:104} INFO - [2021-07-06 14:03:37,739] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:03:38,373] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:03:38,421] {logging_mixin.py:104} INFO - [2021-07-06 14:03:38,420] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:03:38,457] {logging_mixin.py:104} INFO - [2021-07-06 14:03:38,457] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:03:38,472] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.749 seconds
+[2021-07-06 14:04:08,846] {scheduler_job.py:182} INFO - Started process (PID=5502) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:04:08,849] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:04:08,851] {logging_mixin.py:104} INFO - [2021-07-06 14:04:08,850] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:04:09,446] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:04:09,488] {logging_mixin.py:104} INFO - [2021-07-06 14:04:09,487] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:04:09,522] {logging_mixin.py:104} INFO - [2021-07-06 14:04:09,521] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:04:09,539] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.697 seconds
+[2021-07-06 14:04:40,506] {scheduler_job.py:182} INFO - Started process (PID=5585) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:04:40,509] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:04:40,511] {logging_mixin.py:104} INFO - [2021-07-06 14:04:40,510] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:04:41,286] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:04:41,313] {logging_mixin.py:104} INFO - [2021-07-06 14:04:41,313] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:04:41,332] {logging_mixin.py:104} INFO - [2021-07-06 14:04:41,332] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:04:41,350] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.854 seconds
+[2021-07-06 14:05:11,523] {scheduler_job.py:182} INFO - Started process (PID=5668) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:05:11,524] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:05:11,525] {logging_mixin.py:104} INFO - [2021-07-06 14:05:11,525] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:05:12,104] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:05:12,135] {logging_mixin.py:104} INFO - [2021-07-06 14:05:12,135] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:05:12,161] {logging_mixin.py:104} INFO - [2021-07-06 14:05:12,161] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:05:12,172] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.653 seconds
+[2021-07-06 14:05:42,796] {scheduler_job.py:182} INFO - Started process (PID=5749) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:05:42,799] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:05:42,801] {logging_mixin.py:104} INFO - [2021-07-06 14:05:42,801] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:05:43,368] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:05:43,405] {logging_mixin.py:104} INFO - [2021-07-06 14:05:43,404] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:05:43,424] {logging_mixin.py:104} INFO - [2021-07-06 14:05:43,424] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:05:43,440] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.647 seconds
+[2021-07-06 14:06:13,635] {scheduler_job.py:182} INFO - Started process (PID=5829) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:06:13,638] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:06:13,640] {logging_mixin.py:104} INFO - [2021-07-06 14:06:13,640] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:06:14,316] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:06:14,347] {logging_mixin.py:104} INFO - [2021-07-06 14:06:14,346] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:06:14,382] {logging_mixin.py:104} INFO - [2021-07-06 14:06:14,382] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:06:14,396] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.765 seconds
+[2021-07-06 14:06:44,655] {scheduler_job.py:182} INFO - Started process (PID=5910) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:06:44,656] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:06:44,657] {logging_mixin.py:104} INFO - [2021-07-06 14:06:44,657] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:06:45,364] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:06:45,390] {logging_mixin.py:104} INFO - [2021-07-06 14:06:45,390] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:06:45,408] {logging_mixin.py:104} INFO - [2021-07-06 14:06:45,408] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:06:45,420] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.770 seconds
+[2021-07-06 14:07:15,964] {scheduler_job.py:182} INFO - Started process (PID=5991) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:07:15,969] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:07:15,975] {logging_mixin.py:104} INFO - [2021-07-06 14:07:15,975] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:07:16,648] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:07:16,696] {logging_mixin.py:104} INFO - [2021-07-06 14:07:16,696] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:07:16,732] {logging_mixin.py:104} INFO - [2021-07-06 14:07:16,732] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:07:16,745] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.785 seconds
+[2021-07-06 14:07:47,028] {scheduler_job.py:182} INFO - Started process (PID=6076) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:07:47,032] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:07:47,035] {logging_mixin.py:104} INFO - [2021-07-06 14:07:47,035] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:07:47,675] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:07:47,709] {logging_mixin.py:104} INFO - [2021-07-06 14:07:47,708] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:07:47,740] {logging_mixin.py:104} INFO - [2021-07-06 14:07:47,739] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:07:47,753] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.730 seconds
+[2021-07-06 14:08:18,782] {scheduler_job.py:182} INFO - Started process (PID=6158) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:08:18,784] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:08:18,786] {logging_mixin.py:104} INFO - [2021-07-06 14:08:18,786] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:08:19,439] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:08:19,472] {logging_mixin.py:104} INFO - [2021-07-06 14:08:19,469] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:08:19,511] {logging_mixin.py:104} INFO - [2021-07-06 14:08:19,510] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:08:19,524] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.746 seconds
+[2021-07-06 14:08:49,667] {scheduler_job.py:182} INFO - Started process (PID=6239) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:08:49,671] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:08:49,675] {logging_mixin.py:104} INFO - [2021-07-06 14:08:49,673] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:08:50,263] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:08:50,289] {logging_mixin.py:104} INFO - [2021-07-06 14:08:50,288] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:08:50,313] {logging_mixin.py:104} INFO - [2021-07-06 14:08:50,312] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:08:50,325] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.663 seconds
+[2021-07-06 14:09:20,874] {scheduler_job.py:182} INFO - Started process (PID=6320) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:09:20,877] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:09:20,878] {logging_mixin.py:104} INFO - [2021-07-06 14:09:20,878] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:09:21,536] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:09:21,562] {logging_mixin.py:104} INFO - [2021-07-06 14:09:21,562] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:09:21,589] {logging_mixin.py:104} INFO - [2021-07-06 14:09:21,589] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:09:21,607] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.737 seconds
+[2021-07-06 14:09:51,824] {scheduler_job.py:182} INFO - Started process (PID=6401) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:09:51,826] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:09:51,829] {logging_mixin.py:104} INFO - [2021-07-06 14:09:51,829] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:09:52,456] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:09:52,487] {logging_mixin.py:104} INFO - [2021-07-06 14:09:52,487] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:09:52,516] {logging_mixin.py:104} INFO - [2021-07-06 14:09:52,516] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:09:52,531] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.711 seconds
+[2021-07-06 14:10:22,710] {scheduler_job.py:182} INFO - Started process (PID=6482) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:10:22,714] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:10:22,716] {logging_mixin.py:104} INFO - [2021-07-06 14:10:22,716] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:10:23,282] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:10:23,320] {logging_mixin.py:104} INFO - [2021-07-06 14:10:23,320] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:10:23,346] {logging_mixin.py:104} INFO - [2021-07-06 14:10:23,345] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:10:23,359] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.652 seconds
+[2021-07-06 14:10:53,584] {scheduler_job.py:182} INFO - Started process (PID=6563) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:10:53,587] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:10:53,589] {logging_mixin.py:104} INFO - [2021-07-06 14:10:53,589] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:10:54,194] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:10:54,225] {logging_mixin.py:104} INFO - [2021-07-06 14:10:54,225] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:10:54,264] {logging_mixin.py:104} INFO - [2021-07-06 14:10:54,264] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:10:54,274] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.693 seconds
+[2021-07-06 14:11:24,464] {scheduler_job.py:182} INFO - Started process (PID=6646) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:11:24,466] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:11:24,467] {logging_mixin.py:104} INFO - [2021-07-06 14:11:24,467] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:11:24,985] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:11:25,015] {logging_mixin.py:104} INFO - [2021-07-06 14:11:25,014] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:11:25,038] {logging_mixin.py:104} INFO - [2021-07-06 14:11:25,038] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:11:25,050] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.589 seconds
+[2021-07-06 14:11:55,667] {scheduler_job.py:182} INFO - Started process (PID=6727) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:11:55,668] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:11:55,670] {logging_mixin.py:104} INFO - [2021-07-06 14:11:55,670] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:11:56,315] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:11:56,349] {logging_mixin.py:104} INFO - [2021-07-06 14:11:56,349] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:11:56,374] {logging_mixin.py:104} INFO - [2021-07-06 14:11:56,374] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:11:56,386] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.725 seconds
+[2021-07-06 14:12:26,549] {scheduler_job.py:182} INFO - Started process (PID=6808) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:12:26,550] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:12:26,551] {logging_mixin.py:104} INFO - [2021-07-06 14:12:26,551] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:12:27,142] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:12:27,178] {logging_mixin.py:104} INFO - [2021-07-06 14:12:27,177] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:12:27,210] {logging_mixin.py:104} INFO - [2021-07-06 14:12:27,210] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:12:27,226] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.680 seconds
+[2021-07-06 14:12:57,918] {scheduler_job.py:182} INFO - Started process (PID=6889) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:12:57,920] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:12:57,922] {logging_mixin.py:104} INFO - [2021-07-06 14:12:57,922] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:12:58,615] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:12:58,645] {logging_mixin.py:104} INFO - [2021-07-06 14:12:58,645] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:12:58,672] {logging_mixin.py:104} INFO - [2021-07-06 14:12:58,670] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:12:58,685] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.770 seconds
+[2021-07-06 14:13:28,980] {scheduler_job.py:182} INFO - Started process (PID=6970) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:13:28,984] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:13:28,986] {logging_mixin.py:104} INFO - [2021-07-06 14:13:28,986] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:13:29,549] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:13:29,575] {logging_mixin.py:104} INFO - [2021-07-06 14:13:29,574] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:13:29,603] {logging_mixin.py:104} INFO - [2021-07-06 14:13:29,603] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:13:29,617] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.642 seconds
+[2021-07-06 14:13:59,958] {scheduler_job.py:182} INFO - Started process (PID=7052) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:13:59,960] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:13:59,962] {logging_mixin.py:104} INFO - [2021-07-06 14:13:59,961] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:14:00,593] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:14:00,634] {logging_mixin.py:104} INFO - [2021-07-06 14:14:00,633] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:14:00,668] {logging_mixin.py:104} INFO - [2021-07-06 14:14:00,668] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:14:00,676] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.727 seconds
+[2021-07-06 14:14:30,849] {scheduler_job.py:182} INFO - Started process (PID=7133) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:14:30,853] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:14:30,860] {logging_mixin.py:104} INFO - [2021-07-06 14:14:30,860] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:14:31,443] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:14:31,476] {logging_mixin.py:104} INFO - [2021-07-06 14:14:31,475] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:14:31,497] {logging_mixin.py:104} INFO - [2021-07-06 14:14:31,496] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:14:31,515] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.670 seconds
+[2021-07-06 14:15:01,749] {scheduler_job.py:182} INFO - Started process (PID=7214) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:15:01,754] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:15:01,755] {logging_mixin.py:104} INFO - [2021-07-06 14:15:01,755] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:15:02,426] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:15:02,465] {logging_mixin.py:104} INFO - [2021-07-06 14:15:02,464] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:15:02,497] {logging_mixin.py:104} INFO - [2021-07-06 14:15:02,497] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:15:02,508] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.768 seconds
+[2021-07-06 14:15:32,681] {scheduler_job.py:182} INFO - Started process (PID=7300) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:15:32,682] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:15:32,684] {logging_mixin.py:104} INFO - [2021-07-06 14:15:32,683] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:15:33,308] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:15:33,340] {logging_mixin.py:104} INFO - [2021-07-06 14:15:33,340] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:15:33,372] {logging_mixin.py:104} INFO - [2021-07-06 14:15:33,372] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:15:33,386] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.709 seconds
+[2021-07-06 14:16:03,715] {scheduler_job.py:182} INFO - Started process (PID=7381) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:16:03,717] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:16:03,718] {logging_mixin.py:104} INFO - [2021-07-06 14:16:03,717] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:16:04,361] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:16:04,395] {logging_mixin.py:104} INFO - [2021-07-06 14:16:04,395] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:16:04,415] {logging_mixin.py:104} INFO - [2021-07-06 14:16:04,415] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:16:04,428] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.716 seconds
+[2021-07-06 14:16:34,706] {scheduler_job.py:182} INFO - Started process (PID=7462) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:16:34,707] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:16:34,708] {logging_mixin.py:104} INFO - [2021-07-06 14:16:34,708] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:16:35,371] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:16:35,404] {logging_mixin.py:104} INFO - [2021-07-06 14:16:35,404] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:16:35,438] {logging_mixin.py:104} INFO - [2021-07-06 14:16:35,437] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:16:35,451] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.755 seconds
+[2021-07-06 14:17:05,744] {scheduler_job.py:182} INFO - Started process (PID=7548) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:17:05,745] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:17:05,746] {logging_mixin.py:104} INFO - [2021-07-06 14:17:05,746] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:17:06,427] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:17:06,459] {logging_mixin.py:104} INFO - [2021-07-06 14:17:06,459] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:17:06,507] {logging_mixin.py:104} INFO - [2021-07-06 14:17:06,507] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:17:06,519] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.779 seconds
+[2021-07-06 14:17:36,618] {scheduler_job.py:182} INFO - Started process (PID=7629) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:17:36,621] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:17:36,622] {logging_mixin.py:104} INFO - [2021-07-06 14:17:36,622] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:17:37,255] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:17:37,287] {logging_mixin.py:104} INFO - [2021-07-06 14:17:37,287] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:17:37,334] {logging_mixin.py:104} INFO - [2021-07-06 14:17:37,334] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:17:37,350] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.738 seconds
+[2021-07-06 14:18:08,104] {scheduler_job.py:182} INFO - Started process (PID=7711) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:18:08,105] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:18:08,106] {logging_mixin.py:104} INFO - [2021-07-06 14:18:08,106] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:18:08,748] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:18:08,787] {logging_mixin.py:104} INFO - [2021-07-06 14:18:08,787] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:18:08,815] {logging_mixin.py:104} INFO - [2021-07-06 14:18:08,815] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:18:08,841] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.743 seconds
+[2021-07-06 14:18:39,068] {scheduler_job.py:182} INFO - Started process (PID=7793) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:18:39,070] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:18:39,077] {logging_mixin.py:104} INFO - [2021-07-06 14:18:39,077] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:18:39,777] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:18:39,825] {logging_mixin.py:104} INFO - [2021-07-06 14:18:39,825] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:18:39,855] {logging_mixin.py:104} INFO - [2021-07-06 14:18:39,854] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:18:39,875] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.811 seconds
+[2021-07-06 14:19:10,299] {scheduler_job.py:182} INFO - Started process (PID=7904) to work on /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:19:10,303] {scheduler_job.py:633} INFO - Processing file /home/airflow/airflow/dags/get_Data_Patient.py for tasks to queue
+[2021-07-06 14:19:10,311] {logging_mixin.py:104} INFO - [2021-07-06 14:19:10,311] {dagbag.py:487} INFO - Filling up the DagBag from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:19:11,125] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['get_patients']) retrieved from /home/airflow/airflow/dags/get_Data_Patient.py
+[2021-07-06 14:19:11,159] {logging_mixin.py:104} INFO - [2021-07-06 14:19:11,158] {dag.py:1832} INFO - Sync 1 DAGs
+[2021-07-06 14:19:11,218] {logging_mixin.py:104} INFO - [2021-07-06 14:19:11,218] {dag.py:2305} INFO - Setting next_dagrun for get_patients to 2021-07-05 00:00:00+00:00
+[2021-07-06 14:19:11,239] {scheduler_job.py:190} INFO - Processing /home/airflow/airflow/dags/get_Data_Patient.py took 0.947 seconds

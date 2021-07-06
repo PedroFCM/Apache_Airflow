@@ -1,0 +1,36 @@
+[2021-07-05 14:26:50,299] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_countries 2021-07-05T14:26:38.236023+00:00 [queued]>
+[2021-07-05 14:26:50,474] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: get_as_dataframe.write_countries 2021-07-05T14:26:38.236023+00:00 [queued]>
+[2021-07-05 14:26:50,475] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 14:26:50,475] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2021-07-05 14:26:50,475] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2021-07-05 14:26:50,581] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): write_countries> on 2021-07-05T14:26:38.236023+00:00
+[2021-07-05 14:26:50,613] {standard_task_runner.py:52} INFO - Started process 4764 to run task
+[2021-07-05 14:26:50,678] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_as_dataframe', 'write_countries', '2021-07-05T14:26:38.236023+00:00', '--job-id', '1172', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_as_Dataframe.py', '--cfg-path', '/tmp/tmpe0szm86r', '--error-file', '/tmp/tmp64iqd_w2']
+[2021-07-05 14:26:50,680] {standard_task_runner.py:77} INFO - Job 1172: Subtask write_countries
+[2021-07-05 14:26:50,992] {logging_mixin.py:104} INFO - Running <TaskInstance: get_as_dataframe.write_countries 2021-07-05T14:26:38.236023+00:00 [running]> on host airflowvm
+[2021-07-05 14:26:51,343] {taskinstance.py:1280} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_as_dataframe
+AIRFLOW_CTX_TASK_ID=write_countries
+AIRFLOW_CTX_EXECUTION_DATE=2021-07-05T14:26:38.236023+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-07-05T14:26:38.236023+00:00
+[2021-07-05 14:26:51,960] {logging_mixin.py:104} INFO - Countries after load:     iso                   name           capital       area  ...  currency_name   phone                             languages            neighbours
+0    AD                Andorra  Andorra la Vella      468.0  ...           Euro     376                                    ca                 ES,FR
+1    AE   United Arab Emirates         Abu Dhabi    82880.0  ...         Dirham     971                     ar-AE,fa,en,hi,ur                 SA,OM
+2    AF            Afghanistan             Kabul   647500.0  ...        Afghani      93                     fa-AF,ps,uz-AF,tk     TM,CN,IR,TJ,PK,UZ
+3    AG    Antigua and Barbuda        St. John's      443.0  ...         Dollar  +1-268                                 en-AG                  None
+4    AI               Anguilla        The Valley      102.0  ...         Dollar  +1-264                                 en-AI                  None
+..   ..                    ...               ...        ...  ...            ...     ...                                   ...                   ...
+247  ZA           South Africa          Pretoria  1219912.0  ...           Rand      27  zu,xh,af,nso,en-ZA,tn,st,ts,ss,ve,nr     ZW,SZ,MZ,BW,NA,LS
+248  ZM                 Zambia            Lusaka   752614.0  ...         Kwacha     260          en-ZM,bem,loz,lun,lue,ny,toi  ZW,TZ,MZ,CD,NA,MW,AO
+249  ZW               Zimbabwe            Harare   390580.0  ...         Dollar     263                        en-ZW,sn,nr,nd           ZA,MZ,BW,ZM
+250  CS  Serbia and Montenegro          Belgrade   102350.0  ...          Dinar     381                           cu,hu,sq,sr  AL,HU,MK,RO,HR,BA,BG
+251  AN   Netherlands Antilles        Willemstad      960.0  ...        Guilder     599                           nl-AN,en,es                    GP
+
+[252 rows x 11 columns]
+[2021-07-05 14:26:52,008] {python.py:151} INFO - Done. Returned value was: None
+[2021-07-05 14:26:52,130] {taskinstance.py:1184} INFO - Marking task as SUCCESS. dag_id=get_as_dataframe, task_id=write_countries, execution_date=20210705T142638, start_date=20210705T142650, end_date=20210705T142652
+[2021-07-05 14:26:52,430] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2021-07-05 14:26:52,455] {local_task_job.py:151} INFO - Task exited with return code 0
